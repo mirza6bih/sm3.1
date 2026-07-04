@@ -5,14 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tekstovi | SM Projekt</title>
-    <meta name="description" content="Strucni tekstovi o gradjevinarstvu i arhitekturi — konstrukcije, materijali, energetska efikasnost i temeljenje." />
+    <meta name="description" content="Stručni tekstovi o građevinarstvu i arhitekturi — konstrukcije, materijali, energetska efikasnost i temeljenje." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body class="antialiased">
-    <!-- Navbar - starts with white/light background for subpages -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-lg">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       <div class="container-custom">
         <div class="flex items-center justify-between h-20">
           <!-- Logo -->
@@ -21,24 +21,24 @@
               <span class="text-white font-bold text-lg">SM</span>
             </div>
             <div>
-              <span id="logo-text" class="font-bold text-lg leading-tight text-primary-900">SM Projekt</span>
-              <span id="logo-subtext" class="block text-xs leading-tight text-charcoal-500">Arhitektura i Gradjevinarstvo</span>
+              <span id="logo-text" class="font-bold text-lg leading-tight text-white">SM Projekt</span>
+              <span id="logo-subtext" class="block text-xs leading-tight text-white/70">Arhitektura i Građevinarstvo</span>
             </div>
           </a>
 
           <!-- Desktop nav -->
           <div class="hidden lg:flex items-center gap-8">
-            <a href="index.html#home" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Pocetna</a>
-            <a href="index.html#about" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">O nama</a>
-            <a href="index.html#services" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Usluge</a>
-            <a href="index.html#contact" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Kontakt</a>
-            <a href="savjeti.html" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Savjeti</a>
-            <a href="tekstovi.html" class="nav-link text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors">Tekstovi</a>
+            <a href="index.html#home" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Početna</a>
+            <a href="index.html#about" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">O nama</a>
+            <a href="index.html#services" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Usluge</a>
+            <a href="index.html#contact" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Kontakt</a>
+            <a href="savjeti.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Savjeti</a>
+            <a href="tekstovi.html" class="nav-link text-sm font-semibold text-accent-300 hover:text-accent-200 transition-colors">Tekstovi</a>
             <a href="index.html#contact" class="btn-primary !py-2.5 !px-5 text-sm">Zatražite ponudu</a>
           </div>
 
           <!-- Mobile toggle -->
-          <button id="mobile-menu-btn" class="lg:hidden p-2 text-charcoal-700">
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-white">
             <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -51,7 +51,7 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-charcoal-100 rounded-b-2xl shadow-xl">
           <div class="py-4 px-4 space-y-1">
-            <a href="index.html#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Pocetna</a>
+            <a href="index.html#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Početna</a>
             <a href="index.html#about" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">O nama</a>
             <a href="index.html#services" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Usluge</a>
             <a href="index.html#contact" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Kontakt</a>
@@ -64,65 +64,19 @@
     </nav>
 
     <!-- Hero -->
-    <section class="relative bg-primary-900 pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden min-h-[320px] flex items-center">
+    <section class="relative bg-primary-900 pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
       <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
-      <!-- Decorative elements -->
-      <div class="absolute top-0 right-0 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-80 h-80 bg-primary-400/10 rounded-full blur-3xl"></div>
       <div class="container-custom relative z-10">
-        <div class="max-w-3xl mx-auto text-center">
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
+        <div class="max-w-3xl">
+          <div class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
             <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
-            <span class="text-accent-300 text-sm font-medium">Strucni Tekstovi</span>
+            <span class="text-accent-300 text-sm font-medium">Stručni Tekstovi</span>
           </div>
-          <h1 class="heading-xl text-white mb-4">Tekstovi o gradjevinarstvu i arhitekturi</h1>
-          <p class="text-lg text-charcoal-300 leading-relaxed max-w-2xl mx-auto">
-            Strucni tekstovi iz oblasti konstrukcija, materijala i savremenih pristupa projektovanju —
-            za investitore koji zele razumjeti dublje, i za kolege iz struke.
+          <h1 class="heading-xl text-white mb-6">Tekstovi o građevinarstvu i arhitekturi</h1>
+          <p class="text-lg text-charcoal-300 leading-relaxed">
+            Stručni tekstovi iz oblasti konstrukcija, materijala i savremenih pristupa projektovanju —
+            za investitore koji žele razumjeti dublje, i za kolege iz struke.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Table of Contents -->
-    <section class="py-8 bg-charcoal-50 border-b border-charcoal-100">
-      <div class="container-custom">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-lg font-semibold text-primary-900 mb-4">Sadrzaj</h2>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            <a href="#vodic-dozvole" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">1</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Kako do gradjevinske dozvole</span>
-            </a>
-            <a href="#projektna-dokumentacija" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">2</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Vrste projekte dokumentacije</span>
-            </a>
-            <a href="#cijena-projektovanja" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">3</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Cijena projektovanja</span>
-            </a>
-            <a href="#cijena-gradnje" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">4</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Cijena gradnje kuce</span>
-            </a>
-            <a href="#greske-investitora" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">5</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Ceste greske investitora</span>
-            </a>
-            <a href="#legalizacija" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">6</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Legalizacija objekata</span>
-            </a>
-            <a href="#staticki-proracun" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">7</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Staticki proracun</span>
-            </a>
-            <a href="#adaptacija-rekonstrukcija" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-charcoal-100 hover:border-accent-300 hover:shadow-sm transition-all group">
-              <span class="w-8 h-8 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center text-sm font-semibold group-hover:bg-accent-200 transition-colors">8</span>
-              <span class="text-sm text-charcoal-700 group-hover:text-accent-600 transition-colors">Adaptacija i rekonstrukcija</span>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -130,382 +84,638 @@
     <!-- Articles -->
     <section class="section-padding bg-white">
       <div class="container-custom">
-        <div class="max-w-4xl mx-auto space-y-12">
+        <div class="max-w-4xl mx-auto space-y-10">
 
-          <!-- Article 1: Vodic do građevinske dozvole -->
-          <article id="vodic-dozvole" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
+          <!-- Article 0: Vodič do građevinske dozvole -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
             <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Dozvole i procedura</span>
-            <h2 class="heading-md text-primary-900 mb-4">Kako doci do gradjevinske dozvole u Federaciji BiH — vodic korak po korak</h2>
+            <h2 class="heading-md text-primary-900 mb-4">Kako doći do građevinske dozvole u Federaciji BiH — vodič korak po korak</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
               <p>
-                Malo koja tema izaziva toliko nedoumica kod investitora kao pribavljanje gradjevinske dozvole. Razlog je
-                jednostavan: procedura nije jedan akt, nego lanac medusobno uslovljenih koraka, a svaki od njih ima svoje
-                rokove, dokumente i troskove. Ko taj lanac razumije unaprijed, gradi bez zastoja. Ko krene „napamet",
+                Malo koja tema izaziva toliko nedoumica kod investitora kao pribavljanje građevinske dozvole. Razlog je
+                jednostavan: procedura nije jedan akt, nego lanac međusobno uslovljenih koraka, a svaki od njih ima svoje
+                rokove, dokumente i troškove. Ko taj lanac razumije unaprijed, gradi bez zastoja. Ko krene „napamet",
                 po pravilu gubi mjesece — a nerijetko i novac.
               </p>
-
-              <h3 class="heading-sm text-primary-900 pt-6">Prva i najvaznija napomena: propisi su kantonalni</h3>
               <p>
-                U Federaciji BiH prostorno uredjenje i gradjenje nisu uredjeni jednim zakonom za cijelu Federaciju — svaki
-                kanton ima vlastiti zakon o prostornom uredjenju i gradjenju. To znaci da se nazivi akata, rokovi i pojedini
-                uslovi razlikuju od kantona do kantona, iako je logika procedure svugdje ista.
+                U ovom tekstu proći ćemo cijeli put, od parcele do upotrebne dozvole, onako kako on izgleda u praksi
+                Federacije BiH.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Korak 0: Provjerite parcelu prije svega</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Prva i najvažnija napomena: propisi su kantonalni</h3>
               <p>
-                <strong class="text-primary-900">Imovinsko-pravni status.</strong> Zemljisnoknjizni izvadak (ZK izvadak)
-                mora pokazivati cisto vlasnistvo, bez tereta i suvlasnickih sporova.
+                U Federaciji BiH prostorno uređenje i građenje nisu uređeni jednim zakonom za cijelu Federaciju — svaki
+                kanton ima vlastiti zakon o prostornom uređenju i građenju. To znači da se nazivi akata, rokovi i pojedini
+                uslovi razlikuju od kantona do kantona, iako je logika procedure svugdje ista. Ono što ćete pročitati u
+                nastavku je zajednički okvir; tačne detalje za vašu lokaciju uvijek treba provjeriti u nadležnoj općinskoj
+                službi ili kod projektanta koji radi na tom području.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 0: Provjerite parcelu prije svega</h3>
+              <p>
+                Najskuplje greške dešavaju se prije nego što je i jedan papir predat. Prije kupovine zemljišta ili odluke
+                o gradnji potrebno je provjeriti dvije stvari:
+              </p>
+              <p>
+                <strong class="text-primary-900">Imovinsko-pravni status.</strong> Zemljišnoknjižni izvadak (ZK izvadak)
+                mora pokazivati čisto vlasništvo, bez tereta i suvlasničkih sporova. Neusklađenost katastra i gruntovnice —
+                česta pojava u BiH — mora se riješiti prije podnošenja zahtjeva, jer organ uprave neće izdati dozvolu na
+                parceli sa spornim vlasništvom.
               </p>
               <p>
                 <strong class="text-primary-900">Planska dokumentacija.</strong> Svaka parcela potpada pod neki prostorni
-                ili regulacioni plan. Iz njega se cita sta se na parceli uopste smije graditi: namjena, maksimalna spratnost,
-                koeficijent izgradenosti, udaljenosti od međa i saobracajnica.
+                ili regulacioni plan. Iz njega se čita šta se na parceli uopšte smije graditi: namjena (stambena, poslovna,
+                poljoprivredna), maksimalna spratnost, koeficijent izgrađenosti, udaljenosti od međa i saobraćajnica.
+                Izvod iz planske dokumentacije možete zatražiti u općini i on je prvi dokument koji donosite projektantu.
+                Parcela na kojoj plan ne dozvoljava ono što ste zamislili — bez obzira koliko je lijepa i povoljna — za
+                vašu namjeru jednostavno ne vrijedi.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Korak 1: Lokacijska informacija ili urbanisticka saglasnost</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 1: Lokacijska informacija ili urbanistička saglasnost</h3>
               <p>
-                Prvi formalni akt u proceduri jeste utvrdjivanje urbanisticko-tehnickih uslova gradnje. Rezultat ovog koraka
-                su konkretni uslovi: gabariti, spratnost, gradjevinska i regulaciona linija, uslovi prikljucenja na infrastrukturu.
+                Prvi formalni akt u proceduri jeste utvrđivanje urbanističko-tehničkih uslova gradnje. Zavisno od kantona
+                i vrste objekta, to će biti <strong class="text-primary-900">lokacijska informacija</strong> (jednostavniji,
+                brži akt, tamo gdje postoji detaljna planska dokumentacija) ili
+                <strong class="text-primary-900">urbanistička saglasnost</strong> (upravni postupak u kojem se uslovi
+                utvrđuju detaljnije, po pravilu tamo gdje detaljnog plana nema).
               </p>
-
-              <h3 class="heading-sm text-primary-900 pt-6">Korak 2: Glavni projekat</h3>
               <p>
-                Glavni projekat je srce cijele dokumentacije i osnov po kojem se objekat gradi. Obuhvata: arhitektonsku fazu,
-                konstruktivnu fazu sa statickim proracunom, fazu elektroinstalacija, fazu masinskih instalacija, fazu vodovoda
-                i kanalizacije, te pratece elaborate.
+                Uz zahtjev se obično prilažu kopija katastarskog plana, ZK izvadak i idejno rješenje objekta — skica koja
+                pokazuje šta i gdje namjeravate graditi. Rezultat ovog koraka su konkretni uslovi: gabariti, spratnost,
+                građevinska i regulaciona linija, uslovi priključenja na infrastrukturu. Ti uslovi postaju obavezujući
+                okvir za izradu glavnog projekta.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Praktičan savjet: idejno rješenje nemojte tretirati kao formalnost. Dobro promišljeno idejno rješenje u
+                ovoj fazi štedi značajan novac kasnije, jer se izmjene na papiru mjere stotinama maraka, a izmjene u
+                glavnom projektu — hiljadama.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Korak 3: Saglasnosti javnih preduzeca</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 2: Glavni projekat</h3>
               <p>
-                Paralelno sa izradom ili po zavrsetku glavnog projekta pribavljaju se saglasnosti nadleznih javnih preduzeca:
-                elektrodistribucije, vodovoda i kanalizacije, uprave za ceste, komunalnih sluzbi, protivpozarne saglasnosti.
+                Glavni projekat je srce cijele dokumentacije i osnov po kojem se objekat gradi. Za porodičnu kuću on
+                tipično obuhvata: arhitektonsku fazu (osnove, presjeci, fasade, detalji), konstruktivnu fazu sa statičkim
+                proračunom (dimenzionisanje temelja, zidova, ploča i krova, uključujući seizmički proračun — Bosna i
+                Hercegovina je seizmički aktivno područje i to nije stavka na kojoj se štedi), fazu elektroinstalacija,
+                fazu mašinskih instalacija (grijanje, ventilacija), fazu vodovoda i kanalizacije, te prateće elaborate —
+                najčešće elaborat energetske efikasnosti, elaborat zaštite od požara i, kod zahtjevnijih terena,
+                geomehanički elaborat.
               </p>
-
-              <h3 class="heading-sm text-primary-900 pt-6">Korak 4: Zahtjev za odobrenje za gradjenje</h3>
               <p>
-                Kada je dokumentacija kompletna, podnosi se zahtjev za odobrenje za gradjenje nadleznoj opcinskoj sluzbi.
-                Uz naknade za administrativne takse, placaju se naknada za pogodnost gradskog gradjevinskog zemljista (renta)
-                i naknada za uredjenje gradjevinskog zemljista.
+                Projekat mora izraditi ovlašteno pravno lice registrovano za projektovanje, a svaku fazu potpisuje
+                odgovorni projektant odgovarajuće struke sa važećom licencom. Za složenije objekte zakon predviđa i
+                reviziju projekta od strane nezavisnog revidenta.
               </p>
-
-              <h3 class="heading-sm text-primary-900 pt-6">Koliko sve to traje?</h3>
               <p>
-                Iskustveno, za porodicnu kucu na urednoj parceli, od prvog izvoda iz plana do pravosnazne gradjevinske dozvole
-                treba racunati <strong class="text-primary-900">tri do sest mjeseci</strong>.
+                Ovdje se vraćamo na uslove iz urbanističke saglasnosti: glavni projekat mora biti usklađen s njima.
+                Odstupanje — makar i „sitno" povećanje gabarita — znači vraćanje na početak.
               </p>
 
-              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4 mt-6">
-                Napomena: Tekst je informativnog karaktera. Propisi o prostornom uredjenju i gradjenju u FBiH doneseni su
-                na nivou kantona i podlozni su izmjenama.
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 3: Saglasnosti javnih preduzeća</h3>
+              <p>
+                Paralelno sa izradom ili po završetku glavnog projekta pribavljaju se saglasnosti nadležnih javnih
+                preduzeća i organa: elektrodistribucije, vodovoda i kanalizacije, po potrebi uprave za ceste (priključak
+                na javni put), komunalnih službi, protivpožarne saglasnosti i drugih, zavisno od lokacije i vrste objekta.
+                Spisak potrebnih saglasnosti definisan je već u urbanističkoj saglasnosti, pa iznenađenja ne bi smjelo
+                biti — ali rokovi javnih preduzeća znaju biti rastegljivi, pa je pametno krenuti s njima što ranije.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 4: Zahtjev za odobrenje za građenje</h3>
+              <p>
+                Kada je dokumentacija kompletna, podnosi se zahtjev za odobrenje za građenje (kolokvijalno: građevinska
+                dozvola) nadležnoj općinskoj, odnosno gradskoj službi. Standardni prilozi su: dokaz o pravu građenja
+                (ZK izvadak, po potrebi ugovori), kopija katastarskog plana, urbanistička saglasnost odnosno lokacijska
+                informacija, glavni projekat u propisanom broju primjeraka, pribavljene saglasnosti, te dokazi o uplati
+                naknada.
+              </p>
+              <p>
+                O naknadama vrijedi reći riječ više, jer su za mnoge investitore neugodno iznenađenje. Uz administrativne
+                takse, plaćaju se <strong class="text-primary-900">naknada za pogodnost gradskog građevinskog zemljišta
+                (renta)</strong> i <strong class="text-primary-900">naknada za uređenje građevinskog zemljišta</strong>,
+                koje se obračunavaju po kvadratnom metru korisne površine objekta i zavise od zone u kojoj se parcela
+                nalazi. Kod većih objekata u atraktivnim zonama ove naknade mogu biti stavka od više desetina hiljada
+                maraka — planirajte ih u budžetu od samog početka.
+              </p>
+              <p>
+                Organ uprave provjerava kompletnost i usklađenost dokumentacije i, ako je sve uredno, izdaje rješenje o
+                odobrenju za građenje. Zakonski rokovi za izdavanje po pravilu su 15 do 30 dana od kompletnog zahtjeva —
+                naglasak je na riječi <em>kompletnog</em>, jer svaki nedostajući dokument zaustavlja rok.
+              </p>
+              <p>
+                Važno: građevinska dozvola ima rok važenja — gradnja se, po pravilu, mora započeti u roku od jedne godine
+                od pravosnažnosti rješenja (rok varira po kantonima), inače dozvola prestaje važiti.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 5: Prijava gradnje i sama gradnja</h3>
+              <p>
+                Prije početka radova gradilište se prijavljuje nadležnoj službi i građevinskoj inspekciji, vrši se
+                iskolčenje objekta od strane ovlaštenog geodete, a na gradilištu se od prvog dana vodi građevinski
+                dnevnik. Investitor je dužan angažovati nadzornog inženjera — nezavisnog stručnjaka koji u ime investitora
+                kontroliše da li izvođač gradi po projektu i pravilima struke. Nadzor nije trošak nego osiguranje:
+                prosječna ušteda koju dobar nadzor ostvari sprječavanjem grešaka i nekvalitetnog rada višestruko premašuje
+                njegovu cijenu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 6: Tehnički prijem i upotrebna dozvola</h3>
+              <p>
+                Završetkom gradnje priča nije gotova. Objekat se smije koristiti tek nakon tehničkog prijema — pregleda
+                koji vrši komisija stručnjaka — i izdavanja upotrebne dozvole. Za tehnički prijem pripremaju se projekat
+                izvedenog stanja (ako je bilo izmjena), atesti ugrađenih materijala i instalacija, geodetski snimak
+                izvedenog objekta i građevinski dnevnik. Tek s upotrebnom dozvolom objekat se može uknjižiti u zemljišne
+                knjige, osigurati, legalno priključiti na infrastrukturu i — što mnogi zaborave — legalno prodati po
+                punoj tržišnoj vrijednosti.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Koliko sve to traje?</h3>
+              <p>
+                Iskustveno, za porodičnu kuću na urednoj parceli, od prvog izvoda iz plana do pravosnažne građevinske
+                dozvole treba računati <strong class="text-primary-900">tri do šest mjeseci</strong>, pod uslovom da se
+                koraci vode paralelno gdje je to moguće i da dokumentacija bude kompletna iz prvog pokušaja. Neuredna
+                parcela, neusklađen katastar i gruntovnica, ili nedostatak planske dokumentacije mogu taj rok produžiti
+                i na godinu i više.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Umjesto zaključka</h3>
+              <p>
+                Procedura pribavljanja građevinske dozvole u FBiH nije ni brza ni jednostavna, ali je predvidiva — pod
+                uslovom da se vodi sistematično i da se svaki korak pripremi prije nego što prethodni završi. Najveći
+                saveznik investitora u tom procesu jeste projektant koji proceduru poznaje iz prakse, na konkretnom
+                terenu i u konkretnoj općini.
+              </p>
+              <p>
+                Ako planirate gradnju i želite provjeriti šta vaša parcela dozvoljava, ili vam treba kompletna projektna
+                dokumentacija — <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>.
+                Prva konsultacija i pregled dokumentacije ništa vas ne koštaju, a mogu vas poštedjeti najskupljih grešaka.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera. Propisi o prostornom uređenju i građenju u FBiH doneseni su
+                na nivou kantona i podložni su izmjenama, pa tačne uslove za konkretnu lokaciju uvijek provjerite u
+                nadležnoj službi.
               </p>
             </div>
           </article>
-
-          <!-- Article 2: Projektna dokumentacija -->
-          <article id="projektna-dokumentacija" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
+          <!-- Article 0b: Idejni, glavni i izvedbeni -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
             <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Projektna dokumentacija</span>
-            <h2 class="heading-md text-primary-900 mb-4">Idejni, glavni i izvedbeni projekat — koja je razlika i sta vam zaista treba?</h2>
+            <h2 class="heading-md text-primary-900 mb-4">Idejni, glavni i izvedbeni projekat — koja je razlika i šta vam zaista treba?</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
               <p>
-                Kada investitor prvi put dode u projektni biro, gotovo po pravilu trazi „projekat kuce" — u jednini.
-                A onda sazna da projekata ima vise: idejno rjesenje, idejni projekat, glavni projekat, izvedbeni projekat...
+                Kada investitor prvi put dođe u projektni biro, gotovo po pravilu traži „projekat kuće" — u jednini.
+                A onda sazna da projekata ima više: idejno rješenje, idejni projekat, glavni projekat, izvedbeni projekat,
+                projekat izvedenog stanja... Razumljivo je da to zbunjuje. Još je razumljivije pitanje koje slijedi:
+                moram li ja sve to platiti?
+              </p>
+              <p>
+                Odgovor je: ne uvijek sve, ali svaki od ovih dokumenata postoji s razlogom. U ovom tekstu objasnit ćemo
+                šta je šta, čemu koji projekat služi i — najvažnije — šta vam je za vašu gradnju zaista potrebno.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Idejno rjesenje i idejni projekat — faza odluke</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Zašto uopšte postoji više nivoa projekta?</h3>
               <p>
-                <strong class="text-primary-900">Idejno rjesenje</strong> je prvi, najgrublji nivo: situacija objekta
-                na parceli, osnove etaza, karakteristicni presjek i izgledi fasada. Sluzi kao prilog zahtjevu za urbanisticku
-                saglasnost.
+                Projektovanje objekta je proces postepenog preciziranja. Na početku postoji ideja: kuća od oko 150
+                kvadrata, prizemlje i sprat, garaža, tri spavaće sobe. Na kraju mora postojati dokument po kojem majstor
+                zna tačno koliko šipki armature ugrađuje u nadvoj iznad prozora dnevnog boravka. Između te dvije tačke
+                leži ogroman raspon detaljnosti — i upravo taj raspon pokrivaju različiti nivoi projektne dokumentacije.
+              </p>
+              <p>
+                Svaki nivo ima svoju publiku: idejno rješenje govori investitoru i urbanisti, glavni projekat govori
+                organu uprave koji izdaje dozvolu, a izvedbeni projekat govori izvođaču na gradilištu. Kada se to
+                razumije, cijela hijerarhija postaje logična.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Idejno rješenje i idejni projekat — faza odluke</h3>
+              <p>
+                <strong class="text-primary-900">Idejno rješenje</strong> je prvi, najgrublji nivo: situacija objekta
+                na parceli, osnove etaža, karakteristični presjek i izgledi fasada, uz osnovne numeričke pokazatelje
+                (površine, spratnost, gabariti). Njegova svrha je dvostruka. Prvo, investitoru daje jasnu sliku šta
+                dobija — raspored prostorija, orijentaciju, odnos prema parceli i susjedima. Drugo, služi kao prilog
+                zahtjevu za urbanističku saglasnost odnosno lokacijsku informaciju, jer organ uprave mora vidjeti šta
+                se namjerava graditi da bi utvrdio urbanističko-tehničke uslove.
+              </p>
+              <p>
+                <strong class="text-primary-900">Idejni projekat</strong> je razrađeniji oblik idejnog rješenja i kod
+                zahtjevnijih objekata predstavlja zaseban korak; kod porodičnih kuća se u praksi ova dva pojma često
+                preklapaju.
+              </p>
+              <p>
+                Ovo je faza u kojoj se donose sve krupne odluke — i faza u kojoj su izmjene najjeftinije. Pomjeriti
+                stepenište, dodati sobu, okrenuti kuću za dvadeset stepeni prema jugu: na nivou idejnog rješenja to je
+                nekoliko sati rada. U glavnom projektu, ista izmjena povlači ponovni statički proračun i korekciju svih
+                instalaterskih faza. Na gradilištu, ona se mjeri hiljadama maraka i sedmicama kašnjenja.
               </p>
               <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Vrijeme ulozeno u idejnu fazu je najisplativije vrijeme cijelog projekta. Ne potpisujte saglasnost na idejno
-                rjesenje dok niste sigurni da je to kuca u kojoj zelite zivjeti.
+                Zato našim klijentima uvijek kažemo: vrijeme uloženo u idejnu fazu je najisplativije vrijeme cijelog
+                projekta. Ne potpisujte saglasnost na idejno rješenje dok niste sigurni da je to kuća u kojoj želite
+                živjeti.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Glavni projekat — faza dozvole</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Glavni projekat — faza dozvole</h3>
               <p>
-                Glavni projekat je zakonski obavezan dokument na osnovu kojeg se izdaje odobrenje za gradjenje. Obuhvata
-                vise projektnih faza: arhitektonsku, konstruktivnu sa statickim proracunom, instalaterske faze i pratece
-                elaborate (energetske efikasnosti, zastite od pozara).
+                Glavni projekat je zakonski obavezan dokument na osnovu kojeg se izdaje odobrenje za građenje. To više
+                nije jedan crtež, nego elaborat od nekoliko stotina stranica koji obuhvata više projektnih faza:
+              </p>
+              <p>
+                <strong class="text-primary-900">Arhitektonska faza</strong> definiše objekat u cjelini — osnove svih
+                etaža sa dimenzijama i namjenom prostorija, presjeke, fasade, obračun površina, opis materijala i
+                završnih obrada.
+              </p>
+              <p>
+                <strong class="text-primary-900">Konstruktivna faza sa statičkim proračunom</strong> je dio koji se ne
+                vidi, a o kojem sve ovisi. Ovdje se dimenzionišu temelji, zidovi, stubovi, grede, međuspratne ploče i
+                krovna konstrukcija, uz obavezan proračun na seizmička dejstva — Bosna i Hercegovina je trusno područje
+                i konstrukcija koja „drži" samo vertikalno opterećenje nije konstrukcija nego rizik.
+              </p>
+              <p>
+                <strong class="text-primary-900">Instalaterske faze</strong> — elektroinstalacije jake i slabe struje,
+                vodovod i kanalizacija, mašinske instalacije (grijanje, hlađenje, ventilacija) — definišu trase,
+                kapacitete i priključke.
+              </p>
+              <p>
+                <strong class="text-primary-900">Prateći elaborati</strong> — energetske efikasnosti, zaštite od požara,
+                po potrebi geomehanički — zaokružuju dokumentaciju prema zahtjevima propisa.
+              </p>
+              <p>
+                Svaku fazu izrađuje i potpisuje odgovorni projektant odgovarajuće struke s važećom licencom, a projekat
+                kao cjelinu ovjerava ovlašteno pravno lice registrovano za projektovanje. Za određene kategorije objekata
+                propisana je i nezavisna revizija projekta.
+              </p>
+              <p>
+                Bitno je razumjeti čemu glavni projekat služi, a čemu ne. On dokazuje organu uprave da je objekat
+                usklađen s urbanističkim uslovima, da je konstruktivno stabilan i da zadovoljava propise. On je dovoljan
+                osnov za gradnju jednostavnijih objekata. Ali on, po svojoj prirodi, ne razrađuje svaki detalj do nivoa
+                radioničke izrade — i tu na scenu stupa treći nivo.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Izvedbeni projekat — faza gradilista</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Izvedbeni projekat — faza gradilišta</h3>
               <p>
-                Izvedbeni projekat razrađuje rjesenja glavnog projekta do nivoa potrebnog za neposredno izvodjenje:
-                detaljni armaturni nacrti, detalji hidroizolacije, sheme stolarije, precizne specifikacije materijala.
+                Izvedbeni projekat razrađuje rješenja glavnog projekta do nivoa potrebnog za neposredno izvođenje:
+                detaljni armaturni nacrti sa specifikacijama svake pozicije čelika, detalji hidroizolacije i termičkih
+                mostova, sheme stolarije i bravarije sa svim mjerama, detalji fasade, razrade spojeva i oslonaca,
+                precizne specifikacije materijala i opreme.
+              </p>
+              <p>
+                Da li vam treba? Za porodičnu kuću uobičajene složenosti, dobro urađen glavni projekat s razrađenim
+                armaturnim planovima često je dovoljan — i to je razlog zašto se izvedbeni projekat kod manjih objekata
+                rijetko ugovara kao zaseban dokument. Ali postoje situacije u kojima je on izuzetno pametna investicija:
+                kada gradite putem tendera ili s izvođačem kojeg ne poznajete, jer precizna specifikacija onemogućava
+                „tumačenja" i skrivene doplate; kada je objekat konstruktivno ili oblikovno zahtjevan (velike raspone,
+                konzole, kose ploče, složenu fasadu); kada želite čvrst predračun radova, jer se tačan predmjer može
+                uraditi samo iz detaljno razrađenog projekta.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Naše iskustvo iz nadzora je nedvosmisleno: najveći broj sporova između investitora i izvođača nastaje
+                tamo gdje projekat „šuti", pa svako šutnju tumači u svoju korist. Izvedbeni projekat je način da projekat
+                ne šuti ni o čemu.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Sta vam zaista treba?</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Projekat izvedenog stanja — faza završetka</h3>
               <p>
-                Za porodicnu kucu: <strong class="text-primary-900">idejno rjesenje</strong> vam treba uvijek,
+                Za kraj, četvrti dokument koji se često miješa s prethodnima. Projekat izvedenog stanja izrađuje se
+                nakon završetka gradnje, i to samo ako je tokom izvođenja došlo do odstupanja od glavnog projekta.
+                On dokumentuje objekat onakvim kakav stvarno jeste i služi kao podloga za tehnički prijem i izdavanje
+                upotrebne dozvole. Njegova posebna varijanta javlja se i u postupcima legalizacije, gdje se snima
+                postojeći bespravno izgrađeni objekat.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Dakle — šta vam zaista treba?</h3>
+              <p>
+                Sažmimo praktično. Ako gradite porodičnu kuću: <strong class="text-primary-900">idejno rješenje</strong>
+                vam treba uvijek (i za vlastitu odluku i za urbanističku saglasnost),
                 <strong class="text-primary-900">glavni projekat</strong> vam treba obavezno (bez njega nema dozvole),
-                a <strong class="text-primary-900">izvedbeni projekat</strong> vrijedi razmotriti ako gradite s nepoznatim
-                izvodjacem ili je objekat zahtjevniji.
+                a <strong class="text-primary-900">izvedbeni projekat</strong> je opcija koju vrijedi ozbiljno razmotriti
+                ako gradite s nepoznatim izvođačem, želite čvrste cijene ili je objekat iole zahtjevniji. Ako gradite
+                poslovni, kolektivni stambeni ili javni objekat, izvedbeni projekat prestaje biti opcija i postaje
+                standard struke.
+              </p>
+              <p>
+                I jedan savjet iz prakse umjesto zaključka: kada poredite ponude projektnih biroa, ne poredite samo
+                cifre — poredite sadržaj. „Projekat kuće" za 1.500 KM i „projekat kuće" za 4.000 KM često nisu isti
+                dokument: prvi može biti arhitektonska faza s tipskim detaljima, a drugi kompletan glavni projekat sa
+                svim fazama, elaboratima i razrađenom armaturom. Najjeftinija ponuda na papiru zna biti najskuplja na
+                gradilištu.
+              </p>
+              <p>
+                Ako niste sigurni koji nivo dokumentacije odgovara vašem projektu —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">pitajte nas</a>.
+                Pregledat ćemo vašu situaciju i reći vam otvoreno šta vam treba, a šta ne. Ponekad je najbolji savjet
+                upravo onaj koji vas poštedi nepotrebnog troška.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera. Obim i sadržaj projektne dokumentacije propisani su
+                kantonalnim zakonima o prostornom uređenju i građenju u FBiH, pa tačne zahtjeve za konkretan objekat i
+                lokaciju uvijek provjerite u nadležnoj službi ili kod svog projektanta.
               </p>
             </div>
           </article>
-
-          <!-- Article 3: Cijena projektovanja -->
-          <article id="cijena-projektovanja" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
+          <!-- Article 0c: Koliko košta projektovanje -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
             <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Cijene i ponude</span>
-            <h2 class="heading-md text-primary-900 mb-4">Koliko kosta projektovanje kuce? Struktura cijene projektne dokumentacije</h2>
+            <h2 class="heading-md text-primary-900 mb-4">Koliko košta projektovanje kuće? Struktura cijene projektne dokumentacije — i zašto najjeftinija ponuda često ispadne najskuplja</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
               <p>
-                Cijena projektovanja nije cijena crteza. Ono sto zapravo placate jeste inzenjersko odlucivanje — stotine
-                odluka o dimenzijama, materijalima, konstrukciji i instalacijama.
+                Ovo je vjerovatno najčešće pitanje koje projektant čuje, i jedino pošteno je odgovoriti na njega otvoreno.
+                Ali prije nego što dođemo do brojki, moramo raščistiti jedno pogrešno polazište: cijena projektovanja
+                nije cijena crteža. Crtež je samo nosač informacije. Ono što zapravo plaćate jeste inženjersko
+                odlučivanje — stotine odluka o dimenzijama, materijalima, konstrukciji i instalacijama, od kojih svaka
+                utiče na sigurnost, trajnost i troškove objekta koji će vas koštati dvjesto do petsto puta više od
+                samog projekta.
+              </p>
+              <p>Kada se to razumije, i brojke dobijaju drugačiji smisao.</p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Od čega se sastoji cijena projekta?</h3>
+              <p>
+                Kompletan glavni projekat porodične kuće nije jedan posao nego zbir više njih, i to je prvi razlog
+                velikih razlika u ponudama. Standardni sadržaj obuhvata:
+              </p>
+              <p>
+                <strong class="text-primary-900">Arhitektonsku fazu</strong> — funkcionalno rješenje, osnove, presjeke,
+                fasade, materijalizaciju. Ovo je faza koju investitor „vidi" i po kojoj najčešće sudi o cijelom projektu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Konstruktivnu fazu sa statičkim proračunom</strong> — dimenzionisanje
+                temelja, konstruktivnih zidova, ploča, greda i krova, uključujući seizmički proračun. Faza koju investitor
+                ne vidi, a koja nosi najveću inženjersku odgovornost u cijelom dokumentu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Instalaterske faze</strong> — elektroinstalacije, vodovod i kanalizacija,
+                mašinske instalacije. Svaku potpisuje inženjer odgovarajuće struke, što znači da iza kompletnog projekta
+                kuće stoje najmanje četiri licencirana inženjera.
+              </p>
+              <p>
+                <strong class="text-primary-900">Prateće elaborate</strong> — energetske efikasnosti, zaštite od požara,
+                po potrebi geomehanički elaborat (koji uključuje i terenska ispitivanja tla, pa se često ugovara i plaća
+                zasebno).
+              </p>
+              <p>
+                Uz to idu i poslovi koji se ne vide u sveskama: obilazak i snimanje parcele, usklađivanje s urbanističkim
+                uslovima, koordinacija svih faza međusobno, priprema dokumentacije za predaju i komunikacija s nadležnom
+                službom tokom postupka.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Od cega se sastoji cijena projekta?</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Kako se cijena obračunava — i koje su realne brojke?</h3>
               <p>
-                Kompletan glavni projekat porodicne kuce obuhvata: <strong class="text-primary-900">Arhitektonsku fazu</strong>,
-                <strong class="text-primary-900">Konstruktivnu fazu sa statickim proracunom</strong>,
-                <strong class="text-primary-900">Instalaterske faze</strong> (elektro, vodovod, kanalizacija, masinske),
-                i <strong class="text-primary-900">Pratece elaborate</strong>.
+                U praksi u BiH susrećete dva modela: cijenu po kvadratnom metru bruto površine objekta i paušalnu cijenu
+                za cijeli projekat. Oba su legitimna; bitno je samo da znate šta je ponudom obuhvaćeno.
+              </p>
+              <p>
+                Orijentaciono, za tržište Federacije BiH: kompletan glavni projekat porodične kuće — sa svim fazama i
+                standardnim elaboratima — kreće se najčešće u rasponu od <strong class="text-primary-900">10 do 25 KM
+                po m²</strong> bruto građevinske površine, zavisno od složenosti objekta, terena i obima dokumentacije.
+                Za kuću od 150 do 200 m² to praktično znači ukupan iznos reda veličine
+                <strong class="text-primary-900">2.000 do 5.000 KM</strong>. Idejno rješenje, ako se ugovara zasebno,
+                obično nosi 15–25% te vrijednosti; izvedbeni projekat, tamo gdje se radi, dodaje otprilike 30–50% na
+                cijenu glavnog projekta.
+              </p>
+              <p>
+                Ove brojke navodimo kao orijentir, ne kao cjenovnik — konkretna cijena zavisi od konkretnog objekta.
+                Kosi i zahtjevan teren, veliki rasponi, razuđena osnova, suteren u padini ili nestandardna konstrukcija
+                opravdano podižu cijenu, jer podižu i količinu inženjerskog posla. Ali orijentir vam treba iz jednog
+                važnog razloga: da prepoznate ponude koje od njega drastično odstupaju — u oba smjera.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Realne brojke</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Stavimo cijenu u kontekst</h3>
               <p>
-                Kompletan glavni projekat porodicne kuce — sa svim fazama i standardnim elaboratima — krece se najcesce
-                u rasponu od <strong class="text-primary-900">10 do 25 KM po m²</strong> bruto gradjevinske povrsine.
-                Za kucu od 150 do 200 m² to prakticno znaci ukupan iznos reda velicine
-                <strong class="text-primary-900">2.000 do 5.000 KM</strong>.
+                Uzmimo kuću od 180 m² čija će gradnja, po današnjim cijenama u BiH, do useljivosti koštati negdje između
+                250.000 i 400.000 KM, zavisno od standarda opremanja. Kompletan projekat za takvu kuću — recimo 3.500 KM —
+                čini <strong class="text-primary-900">oko jedan posto</strong> ukupne investicije.
+              </p>
+              <p>
+                A taj jedan posto odlučuje o preostalih devedeset devet. Dobro funkcionalno rješenje štedi kvadrate
+                (svaki nepotreban kvadrat košta 1.500+ KM u gradnji); racionalno dimenzionisana konstrukcija štedi beton
+                i čelik bez ugrožavanja sigurnosti; promišljena energetska koncepcija štedi na grijanju svake godine
+                narednih pedeset godina. Nijedna druga stavka u budžetu gradnje nema takav omjer uloženog i dobijenog.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-6">Stavimo cijenu u kontekst</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Zašto najjeftinija ponuda često ispadne najskuplja</h3>
               <p>
-                Uzmimo kucu od 180 m² cija ce gradnja kostati izmedu 250.000 i 400.000 KM. Kompletan projekat za takvu kucu —
-                recimo 3.500 KM — cini <strong class="text-primary-900">oko jedan posto</strong> ukupne investicije.
-                A taj jedan posto odlucuje o preostalih devedeset devet.
+                Sada dolazimo do srži. Kada dobijete ponudu koja je upola niža od ostalih, novac se morao „naći" negdje.
+                U praksi se nalazi na tri mjesta, i sva tri plaćate kasnije — s kamatom.
               </p>
-
-              <h3 class="heading-sm text-primary-900 pt-6">Zasto najjeftinija ponuda cesto ispadne najskuplja</h3>
               <p>
-                Kada dobijete ponudu koja je upola niza od ostalih, novac se morao „naci" negdje: u obimu dokumentacije,
-                u predimenzionisanju umjesto proracuna, ili u vasem vremenu.
+                <strong class="text-primary-900">Prvo mjesto: obim dokumentacije.</strong> „Projekat kuće za 1.200 KM"
+                nerijetko znači arhitektonsku fazu s tipskim, preslikanim detaljima — bez razrađene statike za vaš
+                konkretan objekat, s instalacijama svedenim na shemu principa. Takav dokument možda prođe proceduru,
+                ali na gradilištu ne odgovara ni na jedno stvarno pitanje. Odgovore onda daje izvođač — po vlastitom
+                nahođenju i vlastitom cjenovniku.
+              </p>
+              <p>
+                <strong class="text-primary-900">Drugo mjesto: predimenzionisanje umjesto proračuna.</strong> Paradoksalno,
+                jeftin projekat često znači skuplju gradnju: tamo gdje se ne računa precizno, dimenzioniše se „od oka,
+                pa neka bude deblje". Višak betona i armature u temeljima i pločama kuće od 180 m² lako premaši cijelu
+                uštedu na projektu — a da sigurnost time nije dobila ništa, jer sigurnost ne dolazi od debljine nego od
+                ispravnog proračuna.
+              </p>
+              <p>
+                <strong class="text-primary-900">Treće mjesto: vaše vrijeme.</strong> Nepotpuna dokumentacija vraća se
+                s dopunama iz nadležne službe, a svaki krug dopuna znači sedmice čekanja. Investitori koji su „uštedjeli"
+                na projektu često taj iznos višestruko potroše na produžene rokove, kirije i vezani kapital.
               </p>
               <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                „Projekat kuce" za 1.500 KM i „projekat kuce" za 4.000 KM cesto nisu isti dokument.
+                Postoji i četvrta, najskuplja varijanta: projekat koji šuti tamo gdje ne smije. Spor s izvođačem oko
+                toga šta je „podrazumijevano" u cijeni radova prosječno košta više od tri kompletna projekta — o živcima
+                da ne govorimo.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako pametno porediti ponude</h3>
+              <p>
+                Umjesto da poredite samo konačne cifre, tražite od svakog ponuđača da specificira: koje faze projekat
+                obuhvata (svih pet, ili samo arhitekturu?), koji elaborati su uključeni a koji se doplaćuju, da li je
+                uključen izlazak na teren i snimanje parcele, koliko izmjena idejnog rješenja je uključeno u cijenu,
+                da li ponuđač prati predmet kroz proceduru izdavanja dozvole, i ko su odgovorni projektanti po fazama.
+                Kada tako postavite pitanja, ponude odjednom postanu uporedive — i često se pokaže da „skuplja" ponuda
+                nudi znatno više po marki.
+              </p>
+              <p>
+                I posljednji savjet: tražite da vidite primjer ranije urađenog projekta. Ozbiljan biro to pokazuje bez
+                ustezanja, jer je razlika između dokumenta od 60 i dokumenta od 300 stranica vidljiva golim okom — i
+                vrijedi više od svakog marketinga.
+              </p>
+              <p>
+                Ako želite konkretnu procjenu za svoju parcelu i svoju ideju,
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>
+                s osnovnim podacima — lokacija, željena kvadratura, spratnost — i dobit ćete jasnu, specificiranu ponudu
+                u kojoj se tačno vidi šta plaćate. Bez sitnih slova i bez naknadnih doplata.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Navedeni rasponi cijena su orijentacioni i odražavaju tržišne prilike u FBiH u vrijeme pisanja
+                teksta. Konačna cijena projektne dokumentacije zavisi od složenosti objekta, lokacije i obima ugovorenih
+                usluga.
               </p>
             </div>
           </article>
-
-          <!-- Article 4: Cijena gradnje -->
-          <article id="cijena-gradnje" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
-            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Budzet i planiranje</span>
-            <h2 class="heading-md text-primary-900 mb-4">Koliko realno kosta gradnja kuce u BiH u 2026. godini?</h2>
+          <!-- Article 0d: Koliko košta gradnja -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Budžet i planiranje</span>
+            <h2 class="heading-md text-primary-900 mb-4">Koliko realno košta gradnja kuće u BiH u 2026. godini?</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
-              <h3 class="heading-sm text-primary-900 pt-4">Prvo racistimo pojmove: sta znaci „kvadrat"?</h3>
               <p>
-                <strong class="text-primary-900">Bruto gradjevinska povrsina</strong> obuhvata sve etaze mjerene po
-                vanjskim gabaritima. <strong class="text-primary-900">Neto korisna povrsina</strong> je tipicno 20–25%
-                manja. Ista kuce, po neto kvadratu ispada cetvrtinu „skuplja".
+                Ako postoji pitanje na koje svaki investitor želi jednostavan odgovor, a svaki pošten inženjer mora
+                odgovoriti „zavisi" — onda je to ovo. Pa ipak, „zavisi" nije odgovor s kojim se planira budžet. Zato
+                ćemo u ovom tekstu uraditi ono što rijetko ko radi: raščlaniti od čega se cijena gradnje zapravo sastoji,
+                dati realne raspone po kvadratu za današnje tržište i, što je možda najvažnije, pokazati gdje se kriju
+                troškovi koje kalkulacije „po kvadratu" prešućuju.
+              </p>
+              <p>
+                Jedna napomena prije brojki: sve cijene u tekstu su orijentacione, odnose se na tržište Federacije BiH
+                i podložne su promjenama. Cilj im nije da zamijene predračun — nego da vas poštede nerealnih očekivanja
+                u oba smjera.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Prvo raščistimo pojmove: šta znači „kvadrat"?</h3>
+              <p>
+                Najveći broj nesporazuma oko cijene gradnje ne dolazi od cijena nego od pojmova. Kada neko kaže da je
+                „sagradio kuću za 1.200 KM po kvadratu", prvo pitanje glasi: po kvadratu čega i do koje faze?
+              </p>
+              <p>
+                <strong class="text-primary-900">Bruto građevinska površina</strong> obuhvata sve etaže mjerene po
+                vanjskim gabaritima — uključujući zidove, stepeništa, terase (obračunski umanjene) i podrum.
+                <strong class="text-primary-900">Neto korisna površina</strong> je ono po čemu kuća „izgleda" — i tipično
+                je 20–25% manja od bruto površine. Ista kuća, dakle, po neto kvadratu ispada četvrtinu „skuplja" nego po
+                bruto kvadratu, a da se ni jedna marka nije promijenila. Građevinske kalkulacije rade se po bruto
+                površini; kada poredite tuđa iskustva, uvijek provjerite o kojoj površini govore.
+              </p>
+              <p>Drugi pojam je faza završenosti, i tu razlikujemo tri standardne tačke:</p>
+              <p>
+                <strong class="text-primary-900">Gruba gradnja (roh-bau)</strong> — temelji, konstrukcija, zidovi, ploče,
+                krov s pokrivanjem, obično i vanjska stolarija. Kuća „pod ključem" u bukvalnom smislu: zaključava se,
+                ali se u njoj ne živi.
+              </p>
+              <p>
+                <strong class="text-primary-900">Završeno do useljivosti („ključ u ruke")</strong> — sve instalacije,
+                unutrašnja obrada, podovi, kupatila, fasada, stolarija. Nedostaje samo namještaj.
+              </p>
+              <p>
+                <strong class="text-primary-900">Potpuno opremljeno</strong> — s kuhinjom, namještajem i uređenim okolišem.
               </p>
 
               <h3 class="heading-sm text-primary-900 pt-4">Realne brojke za 2026. godinu</h3>
               <p>
-                <strong class="text-primary-900">Gruba gradnja:</strong> 700–1.000 KM/m².
+                Uz sve navedene ograde, evo orijentacionih raspona po bruto kvadratu za porodičnu kuću uobičajene
+                složenosti:
               </p>
               <p>
-                <strong class="text-primary-900">Kljuc u ruke, standardna oprema:</strong> 1.500–2.000 KM/m².
+                <strong class="text-primary-900">Gruba gradnja:</strong> okvirno
+                <strong class="text-primary-900">700–1.000 KM/m²</strong>. Donja granica podrazumijeva jednostavnu,
+                kompaktnu kuću na ravnom terenu; gornja razuđenije osnove, veće raspone ili rad u padini.
               </p>
               <p>
-                <strong class="text-primary-900">Kljuc u ruke, visi standard:</strong> 2.000–2.600 KM/m².
+                <strong class="text-primary-900">Ključ u ruke, standardna oprema:</strong> okvirno
+                <strong class="text-primary-900">1.500–2.000 KM/m²</strong>. U ovom rasponu se realno kreće najveći broj
+                porodičnih kuća — solidna keramika i parket, PVC stolarija kvalitetnijih profila, demit fasada,
+                standardna kupatila.
               </p>
               <p>
-                <strong class="text-primary-900">Luksuzni segment:</strong> od 2.600–3.000 KM/m² pa nadalje.
+                <strong class="text-primary-900">Ključ u ruke, viši standard:</strong>
+                <strong class="text-primary-900">2.000–2.600 KM/m²</strong> i naviše. Aluminijska stolarija s prekinutim
+                termičkim mostom, podno grijanje s toplotnom pumpom, kvalitetnija obrada, elementi pametne kuće.
+              </p>
+              <p>
+                <strong class="text-primary-900">Luksuzni segment:</strong> od
+                <strong class="text-primary-900">2.600–3.000 KM/m² pa nadalje</strong>, praktično bez gornje granice —
+                kamene fasade, velike staklene stijene, nestandardna konstrukcija i oprema po narudžbi vrlo brzo
+                pomjeraju cifru.
               </p>
               <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Prakticno: kuce od 180 m² bruto, kljuc u ruke standardnog kvaliteta, danas realno znaci investiciju od
-                270.000 do 360.000 KM — bez zemljista i bez troskova koje cemo navesti nize.
+                Praktično: kuća od 180 m² bruto, ključ u ruke standardnog kvaliteta, danas realno znači investiciju od
+                270.000 do 360.000 KM — bez zemljišta i bez troškova koje ćemo navesti niže.
               </p>
 
-              <h3 class="heading-sm text-primary-900 pt-4">Troskovi koje „cijena po kvadratu" ne vidi</h3>
+              <h3 class="heading-sm text-primary-900 pt-4">Šta zapravo pomjera cijenu?</h3>
               <p>
-                Projektna dokumentacija (1–1,5% investicije), naknade uz gradjevinsku dozvolu, prikljuci na infrastrukturu
-                (5.000–15.000 KM), geodetski radovi, nadzor nad gradnjom, vanjsko uredjenje (15.000–30.000 KM).
+                Iskustvo pokazuje da o konačnoj cifri ne odlučuje „kvalitet gradnje" kao apstraktan pojam, nego nekoliko
+                vrlo konkretnih odluka.
+              </p>
+              <p>
+                <strong class="text-primary-900">Teren i temeljenje.</strong> Kuća u padini sa suterenom i potpornim
+                zidovima može samo na zemljanim radovima i temeljenju pojesti razliku od desetina hiljada maraka u odnosu
+                na istu kuću na ravnom. Zato geomehanički elaborat nije trošak nego rano upozorenje.
+              </p>
+              <p>
+                <strong class="text-primary-900">Oblik objekta.</strong> Svaki lom fasade, erker, konzola i uvala na
+                krovu košta — i u materijalu i u radu i u detaljima hidroizolacije. Kompaktna kuća kvadratne osnove s
+                jednostavnim dvovodnim krovom je najekonomičnija forma koju gradnja poznaje. To ne znači da treba graditi
+                kutije; znači da svaku razuđenost treba svjesno platiti, a ne otkriti je u predračunu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Stolarija.</strong> Razlika između solidne PVC i kvalitetne aluminijske
+                stolarije na kući sa 40-ak m² otvora lako iznosi
+                <strong class="text-primary-900">10.000–20.000 KM</strong>. ALU ima svoje opravdanje kod velikih stijena
+                i kliznih sistema; kod standardnih prozora, kvalitetan PVC sedmokomorni profil s trostrukim staklom daje
+                odličan omjer cijene i performansi.
+              </p>
+              <p>
+                <strong class="text-primary-900">Fasada.</strong> Standardna demit fasada (EPS ili kamena vuna s
+                tankoslojnim malterom) prema ventilisanoj fasadi ili kamenim oblogama — razlika je višestruka po kvadratu
+                obloge. Kamen na cijeloj kući je luksuzna odluka; kamen kao akcenat na dijelu fasade često daje 80%
+                efekta za 20% cijene.
+              </p>
+              <p>
+                <strong class="text-primary-900">Instalacije grijanja.</strong> Klasično radijatorsko grijanje na pelet
+                naspram podnog grijanja s toplotnom pumpom zrak-voda: druga varijanta je početno skuplja za 15.000–25.000
+                KM na tipičnoj kući, ali dugoročno jeftinija u pogonu. Ovo je odluka koja se donosi u projektu — naknadna
+                promjena koncepta grijanja spada među najskuplje prepravke koje postoje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Troškovi koje „cijena po kvadratu" ne vidi</h3>
+              <p>
+                Sada dolazimo do dijela zbog kojeg mnogi budžeti puknu — ne zato što je gradnja poskupjela, nego zato
+                što u kalkulaciji nisu bile stavke koje s gradnjom neizbježno dolaze:
+                <strong class="text-primary-900">projektna dokumentacija</strong> (orijentaciono 1–1,5% investicije),
+                <strong class="text-primary-900">naknade uz građevinsku dozvolu</strong> — renta i uređenje građevinskog
+                zemljišta, koje zavisno od zone i kvadrature mogu iznositi od par hiljada do više desetina hiljada maraka,
+                <strong class="text-primary-900">priključci na infrastrukturu</strong> (struja, voda, kanalizacija ili
+                septička, po potrebi plin) — realno 5.000–15.000 KM ukupno, zavisno od udaljenosti i uslova distributera,
+                <strong class="text-primary-900">geodetski radovi</strong> (snimanje, iskolčenje, upis),
+                <strong class="text-primary-900">nadzor nad gradnjom</strong>, te
+                <strong class="text-primary-900">vanjsko uređenje</strong> — ograda, prilaz, parking, minimalno zelenilo —
+                koje se gotovo uvijek potcijeni, a rijetko košta ispod 15.000–30.000 KM ako se radi kako treba.
               </p>
               <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Zbrojeno, ove „nevidljive" stavke tipicno dodaju 10–15% na cijenu samog objekta.
+                Zbrojeno, ove „nevidljive" stavke tipično dodaju 10–15% na cijenu samog objekta. Budžet koji ih ne sadrži
+                nije budžet nego želja.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako isplanirati budžet koji drži vodu</h3>
+              <p>
+                Iz svega navedenog slijedi jednostavna metodologija. Prvo, definišite ukupan iznos kojim raspolažete —
+                realno, uključujući kredit ako ga planirate. Drugo, od tog iznosa odbijte zemljište (ako ga nemate), pa
+                12–15% za prateće troškove, pa <strong class="text-primary-900">rezervu od najmanje 10%</strong> za
+                nepredviđeno — jer nepredviđeno na gradilištu nije mogućnost nego izvjesnost. Tek ono što ostane je novac
+                za objekat, i tek iz njega, podijeljenog s realnom cijenom kvadrata za željeni standard, dobijate
+                kvadraturu koju sebi možete priuštiti.
+              </p>
+              <p>
+                Primijetite da je ovo obrnut redoslijed od uobičajenog. Većina investitora prvo nacrta kuću iz snova,
+                pa onda traži način da je plati — i tu nastaju nedovršene kuće koje godinama stoje pod krovom bez fasade.
+                Ispravan put je suprotan: budžet definiše kvadraturu, a zadatak dobrog projektanta je da u toj kvadraturi
+                izvuče maksimum funkcije i kvaliteta. Dobro projektovana kuća od 140 m² pruža više od loše organizovanih
+                190 m² — a košta 75.000 KM manje.
+              </p>
+              <p>
+                Ako ste u fazi planiranja i želite provjeriti da li se vaša ideja i vaš budžet uopšte poznaju —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>.
+                Prije nego što se nacrta ijedna linija, proći ćemo zajedno kroz brojke. To je razgovor koji ništa ne
+                košta, a zna uštedjeti više od bilo kojeg drugog koraka u cijelom procesu.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Sve navedene cijene su orijentacione, odnose se na tržišne prilike u FBiH u vrijeme pisanja i
+                služe isključivo za okvirno planiranje. Tačnu cijenu za konkretan objekat daje samo predmjer i predračun
+                radova izrađen iz projektne dokumentacije.
               </p>
             </div>
           </article>
 
-          <!-- Article 5: Greske investitora -->
-          <article id="greske-investitora" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
-            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Za investitore</span>
-            <h2 class="heading-md text-primary-900 mb-4">Pet najcescih gresaka investitora prije pocetka gradnje</h2>
-            <div class="space-y-4 text-charcoal-600 leading-relaxed">
-              <h3 class="heading-sm text-primary-900 pt-4">Greska 1: Kupovina parcele prije provjere sta se na njoj smije graditi</h3>
-              <p>
-                Investitor pronadje parcelu — lijepa lokacija, dobar prilaz, povoljna cijena — i kupi je. Tek potom sazna:
-                da parcela regulacionim planom nije predvidjena za stambenu gradnju, ili da dozvoljena spratnost ne odgovara zamisljenoj kuci.
-              </p>
-              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Kako se stiti: prije kapare, u opcini zatrazite izvod iz planske dokumentacije za parcelu.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Greska 2: Pocetak gradnje prije dozvole</h3>
-              <p>
-                „Sezona je kratka, ekipa je slobodna sada, a svi tako rade." Rezultat je objekat koji pravno ne postoji.
-              </p>
-              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Kako se stiti: redoslijed je dozvola pa gradnja, bez izuzetka.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Greska 3: Stednja na onome sto se ne vidi — tlo, temelji, konstrukcija</h3>
-              <p>
-                Investitori vole ulagati u ono sto se vidi: fasadu, stolariju, kupatila. A stede na geomehanickom ispitivanju
-                tla i statickom proracunu.
-              </p>
-              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Fizika ne pregovara. Kuca prenosi svu svoju tezinu na tlo preko temelja projektovanih prema stvarnoj nosivosti tog tla.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Greska 4: Ugovor s izvodjacem „na rijec"</h3>
-              <p>
-                Posao vrijedan trista hiljada maraka ugovori se na dvije stranice teksta, s cijenom „po kvadratu, sve ukalkulisano".
-              </p>
-              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Kako se stiti: trazite ponude na osnovu predmjera iz projektne dokumentacije.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Greska 5: Budzet bez rezerve</h3>
-              <p>
-                Investitor prvo nacrta kucu kakvu zeli, pa onda trazi nacin da je plati. Rezultat: kuce pod krovom, bez fasade,
-                vec petu godinu.
-              </p>
-            </div>
-          </article>
-
-          <!-- Article 6: Legalizacija -->
-          <article id="legalizacija" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
-            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Legalizacija</span>
-            <h2 class="heading-md text-primary-900 mb-4">Legalizacija bespravno izgradjenih objekata u FBiH</h2>
-            <div class="space-y-4 text-charcoal-600 leading-relaxed">
-              <p>
-                Procjene govore o stotinama hiljada objekata izgradjenih bez odobrenja ili s odstupanjima od njega.
-                Legalizacija je pravni mehanizam kojim se takav objekat naknadno uvodi u pravni sistem.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Sta se moze legalizovati — a sta ne</h3>
-              <p>
-                <strong class="text-primary-900">Moze se legalizovati</strong> objekat koji je u skladu s namjenom prostora,
-                izgradjen na zemljistu s rijesenim imovinsko-pravnim odnosima, i koji je konstruktivno stabilan.
-              </p>
-              <p>
-                <strong class="text-primary-900">Ne moze se legalizovati</strong> objekat izgradjen na javnim povrsinama,
-                u zastitnim pojasevima infrastrukture, na klizistima i plavnim podrucjima.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Kako postupak izgleda</h3>
-              <p>
-                <strong class="text-primary-900">Korak 1:</strong> Zahtjev nadleznoj opcinskoj sluzbi.
-              </p>
-              <p>
-                <strong class="text-primary-900">Korak 2:</strong> Geodetski snimak izvedenog stanja.
-              </p>
-              <p>
-                <strong class="text-primary-900">Korak 3:</strong> Snimak postojeceg stanja objekta.
-              </p>
-              <p>
-                <strong class="text-primary-900">Korak 4:</strong> Ocjena konstruktivne stabilnosti.
-              </p>
-              <p>
-                <strong class="text-primary-900">Korak 5:</strong> Rjesenje i naknade.
-              </p>
-              <p>
-                <strong class="text-primary-900">Korak 6:</strong> Upotrebna dozvola i upis.
-              </p>
-
-              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Legalizacija nije trosak; ona je otkljucavanje vrijednosti koja u objektu vec stoji zarobljena.
-                Kuca koja vrijedi 300.000 KM, a pravno ne postoji, na trzistu ne vrijedi ni pola toga.
-              </p>
-            </div>
-          </article>
-
-          <!-- Article 7: Staticki proracun -->
-          <article id="staticki-proracun" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
-            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Konstrukcije</span>
-            <h2 class="heading-md text-primary-900 mb-4">Zasto vam treba staticki proracun — i sta se desava kad ga nema</h2>
-            <div class="space-y-4 text-charcoal-600 leading-relaxed">
-              <p>
-                Staticki proracun je matematicki dokaz da ce konstrukcija nositi sve sto je u njenom vijeku moze zadesiti —
-                vlastita tezina, korisno opterecenje, snijeg, vjetar, i seizmicko dejstvo.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Zasto je u Bosni ovo pitanje ozbiljnije nego drugdje</h3>
-              <p>
-                Bosna i Hercegovina lezi u seizmicki aktivnom pojasu. Banja Luka 1969. godine ostala je bez velikog dijela
-                stambenog fonda; razorni zemljotresi u Albaniji 2019. i u Petrinji 2020. podsjetili su cijeli region.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Sta se desava kad proracuna nema</h3>
-              <p>
-                <strong class="text-primary-900">Prvi oblik: placate visak.</strong> Tamo gdje niko nije racunao,
-                dimenzionise se strahom — „daj deblje, daj jos zeljeza".
-              </p>
-              <p>
-                <strong class="text-primary-900">Drugi oblik: placate sanaciju.</strong> Slijeganje temelja, progib
-                preslabe ploce, pukotine od nadvoja — sanacija kostava visestruko vise od ispravnog rjesenja.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Koliko statika kosta</h3>
-              <p>
-                U strukturi cijene projekta, konstruktivna faza sa statickim proracunom tipicno nosi cetvrtinu do trecine
-                ukupnog iznosa — za prosjecnu kucu, red velicine nekoliko stotina do hiljadu i nesto maraka.
-                Naspram investicije od tristo hiljada, to je promil-dva.
-              </p>
-            </div>
-          </article>
-
-          <!-- Article 8: Adaptacija i rekonstrukcija -->
-          <article id="adaptacija-rekonstrukcija" class="scroll-mt-24 card p-8 md:p-10 animate-on-scroll">
-            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Dozvole i procedura</span>
-            <h2 class="heading-md text-primary-900 mb-4">Adaptacija, rekonstrukcija, dogradnja — sta od toga zahtijeva dozvolu?</h2>
-            <div class="space-y-4 text-charcoal-600 leading-relaxed">
-              <p>
-                Najveci broj gradjevinskih poduhvata u BiH uopste nisu nove kuce. To su zahvati na postojecim objektima:
-                renoviranje, spajanje prostorija, pretvaranje potkrovlja u stan, dogradnja garaze.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Kljucni princip</h3>
-              <p>
-                Pitanje nije „koliko je zahvat velik" nego „sta zahvat mijenja". Tri su pitanja koja odlucuju:
-              </p>
-              <p>
-                Da li zahvat dira <strong class="text-primary-900">konstrukciju</strong> — nosive zidove, stubove, grede, ploce, temelje, krovnu konstrukciju?
-              </p>
-              <p>
-                Da li mijenja <strong class="text-primary-900">gabarit</strong> — vanjske dimenzije, spratnost, volumen objekta?
-              </p>
-              <p>
-                Da li mijenja <strong class="text-primary-900">namjenu</strong> — stan u poslovni prostor, tavan u stambeni prostor?
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Sta obavezno zahtijeva dozvolu</h3>
-              <p>
-                Dogradnja (povecanje gabarita), nadogradnja (nova etaža), rekonstrukcija koja dira konstrukciju,
-                promjena namjene objekta, otvaranje velikih otvora u nosivim zidovima.
-              </p>
-
-              <h3 class="heading-sm text-primary-900 pt-4">Sta obicno ne zahtijeva dozvolu</h3>
-              <p>
-                Zamjena podova, keramike, bojenje, sitni reparacioni radovi, zamjena stolarije bez mijenjanja otvora,
-                instalaterski radovi unutar postojecih trasaa.
-              </p>
-
-              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4 mt-6">
-                Kao i cijela oblast gradjenja u FBiH, i ovo je uredjeno kantonalnim zakonima. Za konkretan zahvat,
-                provjera u nadleznoj sluzbi ili kod projektanta je obavezan prvi korak.
-              </p>
-            </div>
-          </article>
+          <!-- Pagination -->
+          <nav class="flex flex-wrap items-center justify-center gap-3 pt-4" aria-label="Stranice tekstova">
+            <span class="w-10 h-10 flex items-center justify-center rounded-lg bg-accent-600 text-white font-semibold">1</span>
+            <a href="tekstovi-2.html" class="w-10 h-10 flex items-center justify-center rounded-lg border border-charcoal-200 text-charcoal-600 font-medium hover:bg-accent-50 hover:text-accent-600 hover:border-accent-300 transition-colors">2</a>
+            <a href="tekstovi-3.html" class="w-10 h-10 flex items-center justify-center rounded-lg border border-charcoal-200 text-charcoal-600 font-medium hover:bg-accent-50 hover:text-accent-600 hover:border-accent-300 transition-colors">3</a>
+            <a href="tekstovi-2.html" class="px-4 h-10 flex items-center justify-center rounded-lg border border-charcoal-200 text-charcoal-600 font-medium hover:bg-accent-50 hover:text-accent-600 hover:border-accent-300 transition-colors">Sljedeća &rarr;</a>
+          </nav>
 
           <!-- CTA -->
-          <div class="bg-primary-900 rounded-2xl p-8 md:p-10 text-center animate-on-scroll">
-            <h3 class="text-2xl font-bold text-white mb-3">Imate pitanje o svom projektu?</h3>
-            <p class="text-charcoal-300 mb-6 max-w-xl mx-auto">Rado cemo pomoci. Kontaktirajte nas za besplatnu pocetnu konsultaciju.</p>
+          <div class="text-center pt-6 animate-on-scroll">
+            <p class="text-charcoal-600 mb-6">Trebate stručno mišljenje za svoj objekat? Javite nam se.</p>
             <a href="index.html#contact" class="btn-primary">Zatražite ponudu</a>
           </div>
 
@@ -531,8 +741,8 @@
               </div>
             </a>
             <p class="text-charcoal-400 leading-relaxed mb-6">
-              Fokusirana arhitektonska i gradjevinska projektna praksa koja isporucuje kompletnu
-              dokumentaciju — od idejnih nacrta do izvedbenih crteza.
+              Fokusirana arhitektonska i građevinska projektna praksa koja isporučuje kompletnu
+              dokumentaciju — od idejnih nacrta do izvedbenih crteža.
             </p>
             <div class="space-y-3">
               <div class="flex items-center gap-3 text-charcoal-400">
@@ -561,7 +771,7 @@
           <div>
             <h4 class="text-lg font-semibold mb-6">Brzi Linkovi</h4>
             <ul class="space-y-3">
-              <li><a href="index.html#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Pocetna</a></li>
+              <li><a href="index.html#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Početna</a></li>
               <li><a href="index.html#about" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>O Nama</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Usluge</a></li>
               <li><a href="savjeti.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Savjeti</a></li>
@@ -572,12 +782,12 @@
 
           <!-- Services -->
           <div>
-            <h4 class="text-lg font-semibold mb-6">Nasi Deliverables</h4>
+            <h4 class="text-lg font-semibold mb-6">Naši Deliverables</h4>
             <ul class="space-y-3">
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Idejni projekti</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Glavni projekti</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Izvedbeni projekti</a></li>
-              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predracun</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predračun</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Ostala dokumentacija</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Procjena vrijednosti nekretnina</a></li>
             </ul>
@@ -587,12 +797,12 @@
           <div>
             <h4 class="text-lg font-semibold mb-6">Budite u Toku</h4>
             <p class="text-charcoal-400 text-sm mb-4">
-              Pretplatite se na nas newsletter za najnovije novosti o projektima i industrijske uvide.
+              Pretplatite se na naš newsletter za najnovije novosti o projektima i industrijske uvide.
             </p>
             <form class="flex gap-2" onsubmit="event.preventDefault();">
               <input
                 type="email"
-                placeholder="Vas email"
+                placeholder="Vaš email"
                 class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-charcoal-500 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent"
               />
               <button type="submit" class="px-4 py-2.5 bg-accent-600 text-white text-sm font-medium rounded-lg hover:bg-accent-700 transition-colors">Prijavi se</button>
@@ -612,10 +822,10 @@
         <!-- Divider -->
         <div class="border-t border-white/10 pt-8">
           <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadrzana.</p>
+            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadržana.</p>
             <div class="flex items-center gap-6 text-sm text-charcoal-500">
               <a href="#" class="hover:text-accent-400 transition-colors">Politika Privatnosti</a>
-              <a href="#" class="hover:text-accent-400 transition-colors">Uslovi Koristenja</a>
+              <a href="#" class="hover:text-accent-400 transition-colors">Uslovi Korištenja</a>
             </div>
             <button id="scroll-top-btn" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Scroll to top">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

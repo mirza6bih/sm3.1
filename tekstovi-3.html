@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tekstovi — stranica 3 | SM Projekt</title>
+    <meta name="description" content="Stručni tekstovi o građevinarstvu i arhitekturi — konstrukcije, materijali, energetska efikasnost i temeljenje." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <div class="container-custom">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-lg">SM</span>
+            </div>
+            <div>
+              <span id="logo-text" class="font-bold text-lg leading-tight text-white">SM Projekt</span>
+              <span id="logo-subtext" class="block text-xs leading-tight text-white/70">Arhitektura i Građevinarstvo</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html#home" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Početna</a>
+            <a href="index.html#about" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">O nama</a>
+            <a href="index.html#services" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Usluge</a>
+            <a href="index.html#contact" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Kontakt</a>
+            <a href="savjeti.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Savjeti</a>
+            <a href="tekstovi.html" class="nav-link text-sm font-semibold text-accent-300 hover:text-accent-200 transition-colors">Tekstovi</a>
+            <a href="index.html#contact" class="btn-primary !py-2.5 !px-5 text-sm">Zatražite ponudu</a>
+          </div>
+
+          <!-- Mobile toggle -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-white">
+            <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-charcoal-100 rounded-b-2xl shadow-xl">
+          <div class="py-4 px-4 space-y-1">
+            <a href="index.html#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Početna</a>
+            <a href="index.html#about" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">O nama</a>
+            <a href="index.html#services" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Usluge</a>
+            <a href="index.html#contact" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Kontakt</a>
+            <a href="savjeti.html" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Savjeti</a>
+            <a href="tekstovi.html" class="mobile-nav-link block px-4 py-3 text-accent-600 bg-accent-50 rounded-lg transition-colors font-semibold">Tekstovi</a>
+            <a href="index.html#contact" class="block px-4 py-3 bg-accent-600 text-white rounded-lg text-center font-medium hover:bg-accent-700 transition-colors mt-2">Zatražite ponudu</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative bg-primary-900 pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+      <div class="container-custom relative z-10">
+        <div class="max-w-3xl">
+          <div class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
+            <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
+            <span class="text-accent-300 text-sm font-medium">Stručni Tekstovi</span>
+          </div>
+          <h1 class="heading-xl text-white mb-6">Tekstovi o građevinarstvu i arhitekturi</h1>
+          <p class="text-lg text-charcoal-300 leading-relaxed">
+            Stručni tekstovi iz oblasti konstrukcija, materijala i savremenih pristupa projektovanju —
+            za investitore koji žele razumjeti dublje, i za kolege iz struke.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto space-y-10">
+
+          <!-- Article 0i: Izbor parcele -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Za investitore</span>
+            <h2 class="heading-md text-primary-900 mb-4">Kako izabrati parcelu za gradnju — vodič kroz ono što oglasi ne pišu</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Izbor parcele je prva i najnepovratnija odluka u cijelom procesu gradnje. Kuću možete preprojektovati,
+                izvođača promijeniti, budžet preraspodijeliti — parcelu, kad je jednom kupite, mijenjati ne možete.
+                A ipak, upravo se ta odluka najčešće donosi najbrže: na osnovu lokacije, cijene i utiska sa sunčanog
+                popodneva.
+              </p>
+              <p>
+                Ovaj tekst je pokušaj da tu odluku usporimo i naoružamo. Napisan je iz ugla projektanata koji parcele
+                gledaju poslije kupovine — kad se od terena mora napraviti najbolje što se može — i koji zato dobro
+                znaju šta bi kupci voljeli da su provjerili prije.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj prvi: pravni — šta se na parceli smije</h3>
+              <p>
+                O ovome smo detaljno pisali u tekstu o greškama investitora, pa ovdje samo učvrstimo temelj: prije bilo
+                kakve kapare, parcela mora proći dvije provjere.
+              </p>
+              <p>
+                <strong class="text-primary-900">Planska dokumentacija.</strong> Izvod iz regulacionog ili prostornog
+                plana (dobija se u općini) kaže šta se na parceli smije graditi: namjenu, spratnost, koeficijente
+                izgrađenosti, građevinsku liniju, udaljenosti od međa. Bez tog papira ne znate da li kupujete
+                građevinsko zemljište ili skupu livadu. Posebno provjerite da preko parcele ili uz nju nije planirana
+                saobraćajnica, dalekovod ili drugi infrastrukturni koridor — planovi znaju „vidjeti" ono što na terenu
+                još ne postoji.
+              </p>
+              <p>
+                <strong class="text-primary-900">Imovinsko-pravni status.</strong> Svjež ZK izvadak bez tereta,
+                usklađenost katastra i gruntovnice, jasne međe (idealno obilježene i potvrđene geodetskim snimkom).
+                Suvlasništvo „koje će se lako riješiti" i međa „koju svi znaju gdje je" — dva su najskuplja optimizma
+                u prometu zemljištem.
+              </p>
+              <p>Tek kad parcela prođe pravni sloj, vrijedi je gledati dalje. Sada dolazi ono o čemu se piše rjeđe.</p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj drugi: teren — šta parcela fizički jeste</h3>
+              <p>
+                <strong class="text-primary-900">Nagib.</strong> Ravna parcela je najjeftinija za gradnju; to je
+                poznato. Manje je poznato koliko padina košta: potporni zidovi, veći iskopi, složenije temeljenje,
+                suteren koji „morate" napraviti — na strmijim terenima ovi troškovi lako dodaju 15–30% na cijenu
+                objekta. To ne znači da padinu treba izbjegavati: padina daruje pogled, svjetlo i etažu više bez
+                povećanja gabarita u planu. Znači da razliku u cijeni parcele treba računati zajedno s razlikom u
+                cijeni gradnje — jeftinija strma parcela s pogledom i skuplja ravna bez njega često se na kraju sretnu
+                u istoj ukupnoj cifri. Birajte, dakle, svjesno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Tlo.</strong> Ono što se ne vidi, a o svemu odlučuje. Nasip, glina
+                koja bubri, visok nivo podzemne vode, stijena na pola metra dubine — svako od toga mijenja koncept i
+                cijenu temeljenja. Signali koje možete uočiti i sami: trska i vodoljubivo rastinje (voda), okolne kuće
+                s pukotinama ili saniranim soklovima, svježi nasipi („parcela je nasuta i poravnata" u oglasu je
+                rečenica koju treba čitati s posebnom pažnjom — pitanje je čime i kada). Kod ozbiljne sumnje,
+                geomehaničko sondiranje prije kupovine košta nekoliko stotina maraka i predstavlja najisplativiju
+                analizu u cijelom procesu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Voda — u svim oblicima.</strong> Provjerite da li je parcela u plavnoj
+                zoni (blizina potoka i rijeka, tragovi mulja na okolnim ogradama), kuda otiče oborinska voda s okolnih
+                terena (parcela u „džepu" padine prima tuđu vodu), te — na padinama — postoje li znaci klizišta:
+                nakrivljena stabla, valovit teren, pukotine u okolnim potpornim zidovima. Klizište je jedini problem na
+                ovoj listi koji novac ponekad ne može riješiti; od takve parcele se odustaje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj treći: infrastruktura — šta do parcele dolazi</h3>
+              <p>
+                <strong class="text-primary-900">Pristupni put.</strong> Zvuči banalno, a među najčešćim je problemima
+                u praksi: parcela mora imati <strong class="text-primary-900">pravno uređen</strong> pristup s javnog
+                puta — ne stazu „kojom se oduvijek prolazi" preko komšijine njive. Provjerite i širinu i nagib pristupa:
+                put kojim ne može proći mješalica i kamion s materijalom znači pretovar i poskupljenje svake faze
+                gradnje, a zimi na strmom prilazu i svakodnevni problem.
+              </p>
+              <p>
+                <strong class="text-primary-900">Priključci.</strong> Za svaki od njih pitanje nije samo „ima li ga u
+                ulici" nego „koliko košta do moje parcele": struja (udaljenost od trafostanice i raspoloživa snaga —
+                pogotovo ako planirate toplotnu pumpu ili punjač za auto), voda (pritisak u mreži na višim kotama zna
+                biti mizeran), kanalizacija (ako je nema, računajte septičku jamu ili mini-prečistač — i prostor za njih
+                na parceli), te internet, koji je za sve više kupaca postao infrastruktura prvog reda. Udaljenost od
+                mreža mjeri se novcem: svaki metar priključnog voda je stavka, a stotinjak metara do najbližeg stuba
+                može značiti i deset hiljada maraka prije prvog iskopa.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj četvrti: orijentacija i okruženje — kako će se na parceli živjeti</h3>
+              <p>
+                <strong class="text-primary-900">Sunce.</strong> Parcela s pristupom sa sjevera je mala tajna
+                projektantskog zanata: kuća se tada prirodno postavlja uz sjevernu među, s dnevnim prostorima i baštom
+                prema jugu, u privatnosti od ulice. Parcela s pristupom s juga traži pažljivije rješenje da dnevni
+                boravak ne završi gledajući u ulicu ili u sjenku vlastite garaže. Ni jedno ni drugo nije prepreka —
+                ali je razlika koju dobar projektant koristi, a loš trpi. Na padinama pazite i na
+                <strong class="text-primary-900">zasjenjenje reljefom</strong>: parcela na sjevernoj strani brda u
+                dolini zimi zna ostati bez direktnog sunca sedmicama.
+              </p>
+              <p>
+                <strong class="text-primary-900">Okruženje — današnje i buduće.</strong> Prošetajte lokacijom u
+                različita doba dana i sedmice: saobraćaj ponedjeljkom u osam ujutro, miris i buka okolnih pogona,
+                punoća ulice parkiranim autima. A zatim se vratite planskoj dokumentaciji s drugim pitanjem: ne šta
+                smijem ja, nego <strong class="text-primary-900">šta smiju susjedi</strong>. Prazna parcela s pogledom
+                preko puta vrijedi malo ako plan na njoj dozvoljava četiri etaže. Pogled se ne kupuje kupovinom svoje
+                parcele — on se provjerava u tuđim koeficijentima.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj peti: ekonomija — cijela jednačina, ne pola</h3>
+              <p>
+                Sad sve sastavimo. Prava cijena parcele nije cifra iz oglasa, nego zbir: cijena zemljišta + trošak
+                dovođenja priključaka + korekcija cijene gradnje zbog terena i tla + naknade koje slijede uz dozvolu
+                (renta zavisi od zone!) + eventualni troškovi pravnog sređivanja. Tek ta suma je uporediva među
+                parcelama.
+              </p>
+              <p>
+                Kad se tako računa, tabela se često preokrene: „skupa" parcela u opremljenoj zoni s ravnim terenom i
+                priključcima na međi ispadne jeftinija od „povoljne" ledine do koje treba dovesti sve, preko puta koji
+                treba tek uknjižiti, na tlu koje traži ploču umjesto traka. Oglas prodaje kvadrate; vi kupujete ukupan
+                trošak stanovanja na tom mjestu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Umjesto zaključka: sat vremena koji mijenja sve</h3>
+              <p>
+                Većina provjera iz ovog teksta ne traži ni novac ni struku — traži samo da se obave prije kapare, a ne
+                poslije. Za ostatak — čitanje plana, ocjenu terena, procjenu troškova temeljenja i priključaka — postoji
+                rješenje koje uporno preporučujemo i u ovom slučaju otvoreno reklamiramo, jer iza njega stojimo:
+                <strong class="text-primary-900">povedite projektanta na parcelu prije kupovine</strong>. Sat-dva
+                stručnog obilaska s izvodom iz plana u ruci pretvara kupovinu na dojam u kupovinu s pokrićem — i
+                nerijetko uštedi upravo onih nekoliko desetina hiljada maraka koje razdvajaju dobru odluku od skupe.
+              </p>
+              <p>
+                Gledate parcelu i dvoumite se?
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">Pošaljite nam</a>
+                lokaciju i ono što o njoj znate — pregledat ćemo plansku situaciju i reći vam na šta da obratite pažnju,
+                a po dogovoru izlazimo i na teren. Taj razgovor ništa ne košta, a dolazi u jedinom trenutku kad još sve
+                opcije stoje otvorene: prije potpisa.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera. Uslovi gradnje na konkretnoj parceli utvrđuju se planskom
+                dokumentacijom i propisima kantona i općine na čijem se području parcela nalazi, pa ih prije kupovine
+                obavezno provjerite u nadležnoj službi.
+              </p>
+            </div>
+          </article>
+          <!-- Article 0j: Nadzor nad gradnjom -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Gradnja i nadzor</span>
+            <h2 class="heading-md text-primary-900 mb-4">Nadzor nad gradnjom — zašto je obavezan i kako vas štiti</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Kada investitor prvi put čuje da uz izvođača mora platiti i nadzornog inženjera, reakcija je gotovo
+                uvijek ista: „Zar ja plaćam nekoga da gleda kako drugi rade?" Pitanje je legitimno — i zaslužuje ozbiljan
+                odgovor, a ne pozivanje na propis. Jer nadzor jeste zakonska obaveza, ali to je najmanje zanimljivo o
+                njemu. Zanimljivo je zašto ta obaveza postoji, šta nadzorni inženjer stvarno radi, i zašto je — po našem
+                dubokom uvjerenju, izgrađenom na gradilištima, ne u kancelariji — nadzor najisplativija stavka u budžetu
+                svake gradnje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Osnovni problem: sukob interesa ugrađen u svaku gradnju</h3>
+              <p>
+                Krenimo od strukture situacije. Gradnja je posao u kojem investitor plaća nešto u šta se ne razumije,
+                izvođaču čiji je interes — sasvim legitimno — da posao završi što brže i uz što manji vlastiti trošak.
+                Devedeset posto onoga što se plaća biva zauvijek sakriveno: armatura nestaje u betonu, hidroizolacija
+                pod estrihom, instalacije pod žbukom. Kvalitet se, dakle, ne može provjeriti na kraju — na kraju se vidi
+                samo keramika.
+              </p>
+              <p>
+                U takvoj strukturi, investitor bez stručnog zastupnika nije ugovorna strana nego posmatrač. Nadzorni
+                inženjer je odgovor sistema na taj problem: <strong class="text-primary-900">stručnjak koji na
+                gradilištu zastupa isključivo interes investitora</strong>, s ovlaštenjem da traži, zaustavi i ne prizna.
+                Zato zakon i traži da nadzor bude nezavisan od izvođača — nadzor kojeg predloži i „uračuna" izvođač nije
+                nadzor nego dekor. To je prva stvar koju treba znati: nadzornog inženjera birate i angažujete vi, ne
+                majstor.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta nadzorni inženjer konkretno radi?</h3>
+              <p>
+                Riječ „nadzor" zvuči pasivno — kao neko ko povremeno navrati i pogleda. Stvarni sadržaj posla je
+                drugačiji, i vrijedi ga nabrojati konkretno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Kontroliše da se gradi po projektu.</strong> Svaka dimenzija, svaki
+                materijal, svaki detalj — ono što je u projektu proračunato i plaćeno, to na gradilištu mora i biti.
+                Odstupanja bez saglasnosti projektanta nadzor ne propušta; a kad su izmjene opravdane, nadzor ih kanališe
+                kroz propisanu proceduru umjesto kroz „dogovorili smo se s majstorom".
+              </p>
+              <p>
+                <strong class="text-primary-900">Prima radove koji se zatvaraju — prije nego što se zatvore.</strong>
+                Ovo je srce posla. Armatura temelja, serklaža i ploča pregleda se i prima
+                <strong class="text-primary-900">prije betoniranja</strong>, jer je to posljednji trenutak u kojem se
+                količina, profili, raspored i preklopi armature mogu vidjeti i uporediti s armaturnim nacrtima. Isto
+                važi za hidroizolaciju prije zatrpavanja, instalacije prije žbukanja, slojeve poda prije estriha. Svaki
+                od tih prijema upisuje se u građevinski dnevnik — i svaki od njih je tačka na kojoj se loša gradnja
+                zaustavlja jeftino. Poslije betoniranja, ista greška se ne popravlja nego sanira, a to su dvije
+                nesamjerljive cijene.
+              </p>
+              <p>
+                <strong class="text-primary-900">Kontroliše materijale i ateste.</strong> Beton koji stiže na gradilište
+                mora biti marke iz projekta i s pratećom dokumentacijom; čelik, blokovi, izolacije — sve što se ugrađuje
+                mora imati dokaz kvaliteta. Bez nadzora, atesti se skupljaju „poslije, za tehnički" — što znači nikad
+                ili napamet. S nadzorom, dokumentacija raste zajedno s kućom, i tehnički prijem na kraju prolazi bez
+                drame.
+              </p>
+              <p>
+                <strong class="text-primary-900">Kontroliše obračun.</strong> Nadzor ovjerava građevinske situacije —
+                obračune izvedenih radova po kojima izvođaču plaćate. Svaka stavka i količina provjerava se prema
+                stvarno izvedenom i prema ugovorenom predmjeru. Ovo je dio posla koji se najdirektnije mjeri novcem:
+                razlika između „piše da je ugrađeno" i „izmjereno je da je ugrađeno" na prosječnoj kući nije zanemariva —
+                a bez nadzora je ne mjeri niko.
+              </p>
+              <p>
+                <strong class="text-primary-900">Vodi red u papirima i procesu.</strong> Uredno vođen građevinski
+                dnevnik (o kojem smo pisali u tekstu o greškama investitora), evidentirane izmjene, dokumentovani
+                prijemi faza — sve to nije birokratija nego memorija gradilišta. Ako spora nikad ne bude, dnevnik je
+                koštao malo. Ako spora bude, dnevnik je jedini svjedok koji ne mijenja iskaz.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">„Ali ja imam dobrog majstora, radio je i bratu i komšiji"</h3>
+              <p>
+                Vjerujemo — i nemamo ništa protiv dobrih majstora; s njima je i nadzoru posao lakši i ljepši. Ali
+                argument promašuje strukturu problema iz dva razloga.
+              </p>
+              <p>
+                Prvi: dobar izvođač i nezavisna kontrola nisu alternative nego par, u svakoj ozbiljnoj djelatnosti.
+                I najbolji pilot leti uz kontrolne liste i drugu ruku u kokpitu; i najbolja apoteka ima duplu provjeru
+                lijeka. Kontrola nije uvreda kvalitetu — ona je uslov da kvalitet bude dokaziv, a ne stvar povjerenja.
+              </p>
+              <p>
+                Drugi, praktičniji: „dobar majstor" je po pravilu dobar u onome što najčešće radi. Zidanje i
+                betoniranje — vrlo vjerovatno. Ali da li zna zašto je projektant tražio baš takav raspored uzengija u
+                čvoru grede i stuba (odgovor je: seizmika — o čemu smo pisali u tekstu o statičkom proračunu), ili kako
+                se pravilno izvodi detalj hidroizolacije na spoju temelja i zida u padini? Možda zna. Nadzor postoji da
+                „možda" zamijeni sa „provjereno". Kuća se ne gradi na povjerenju u prosjek — gradi se na provjeri svakog
+                kritičnog detalja.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Koliko nadzor košta — i koliko vraća</h3>
+              <p>
+                Nadzor za porodičnu kuću tipično se ugovara kao procenat vrijednosti radova (najčešće oko jedan posto,
+                zavisno od obima i dinamike) ili kao fiksni mjesečni iznos za period gradnje. Na investiciji od 300.000
+                KM, govorimo dakle o iznosu reda veličine dvije do četiri hiljade maraka za cijelu gradnju.
+              </p>
+              <p>
+                Šta stoji na drugoj strani vage? Precizno obračunate situacije umjesto paušalnih; greške zaustavljene
+                prije betoniranja umjesto sanacija poslije njega; materijali koji odgovaraju plaćenima; dokumentacija
+                spremna za tehnički prijem bez naknadnog „sastavljanja"; i — teško mjerljivo, ali svakome ko je gradio
+                poznato — mir investitora koji zna da na gradilištu ima svoje oči. Naše iskustvo, a ono se poklapa sa
+                svjetskim: nadzor se vrati već na obračunu, a sve što spriječi je čista dobit. Zato ga ne opisujemo kao
+                trošak nego onako kako smo počeli ovu seriju tekstova: kao osiguranje s premijom od jedan posto i
+                pokrićem od svih ostalih devedeset devet.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako izabrati nadzornog inženjera</h3>
+              <p>
+                Tri kriterija, po važnosti. <strong class="text-primary-900">Nezavisnost:</strong> nikakve poslovne
+                veze s izvođačem — to je uslov bez kojeg sve ostalo ne vrijedi.
+                <strong class="text-primary-900">Struka koja odgovara fazi:</strong> za grubu gradnju to je građevinski
+                inženjer konstruktivnog usmjerenja, jer se tada donose sve odluke koje kuća nosi do kraja vijeka; kod
+                složenijih objekata nadzor je timski, po fazama (građevinska, elektro, mašinska).
+                <strong class="text-primary-900">Prisustvo, ne formalnost:</strong> ugovorite jasno šta nadzor
+                obuhvata — obavezno prisustvo svim prijemima faza koje se zatvaraju, dostupnost za vanredne situacije,
+                ovjeru situacija. Nadzor koji se pojavi dvaput i potpiše na kraju nije jeftiniji nadzor; to je skuplji
+                pečat.
+              </p>
+              <p>
+                Prirodno je pitanje može li nadzor raditi biro koji je radio i projekat. Može — i to ima svoje
+                prednosti: niko ne poznaje projekat bolje od njegovog autora, pa se pitanja s gradilišta rješavaju u
+                istom danu, bez prevodilaca između papira i terena. Bitno je samo da ostane ona prva, nepregovoriva
+                tačka: nezavisnost od izvođača.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Za kraj serije: gradnja kao lanac provjera</h3>
+              <p>
+                Ovim tekstom zaokružujemo seriju vodiča za investitore — od parcele, preko dozvole i projekta, do
+                gradilišta. Ako iz svih deset tekstova treba izvući jednu misao, ona bi glasila:
+                <strong class="text-primary-900">uspješna gradnja nije niz sretnih okolnosti nego lanac provjera</strong> —
+                plana prije kupovine, tla prije temelja, projekta prije dozvole, ugovora prije potpisa, armature prije
+                betona. Nadzor je posljednja karika tog lanca, ona koja sve prethodne drži zategnutim tamo gdje se
+                odluke pretvaraju u beton.
+              </p>
+              <p>
+                Planirate gradnju i treba vam nadzor — ili tek slažete cijeli lanac od početka?
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">Javite nam se</a>.
+                Radimo i projektovanje i nadzor, na način o kojem smo u ovih deset tekstova otvoreno pisali: s
+                proračunom umjesto dojma, s papirima umjesto obećanja, i s vašim interesom kao jedinim na koji
+                odgovaramo. Prvi razgovor, kao i uvijek — ništa ne košta.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Obaveza stručnog nadzora nad građenjem, uslovi za nadzornog inženjera i sadržaj nadzora
+                propisani su kantonalnim zakonima o prostornom uređenju i građenju u FBiH. Tekst je informativnog
+                karaktera; detalje za konkretnu gradnju provjerite u važećem propisu svog kantona.
+              </p>
+            </div>
+          </article>
+          <!-- Article 1 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Konstrukcije</span>
+            <h2 class="heading-md text-primary-900 mb-4">Projektovanje na seizmičkim područjima</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Bosna i Hercegovina spada u seizmički aktivna područja, i to je činjenica koja mora oblikovati
+                svaku konstrukciju od prvog koncepta. Seizmička otpornost se ne "dodaje" na kraju proračuna —
+                ona se postiže prije svega pravilnom koncepcijom objekta.
+              </p>
+              <p>
+                Osnovna načela su jednostavna, a presudna: <strong class="text-primary-900">pravilnost osnove i po visini</strong>
+                (izbjegavanje naglih promjena krutosti), <strong class="text-primary-900">kontinuitet vertikalnih elemenata</strong>
+                od temelja do krova, i jasna putanja prenosa horizontalnih sila. Objekat pravilne, simetrične osnove sa
+                dobro raspoređenim zidovima ili jezgrima ponašaće se pri potresu neuporedivo bolje od nepravilnog,
+                čak i uz isti utrošak materijala.
+              </p>
+              <p>
+                Savremeni proračun zasniva se na evropskim normama (Eurocode 8), koje definišu projektno seizmičko
+                opterećenje prema lokaciji, tipu tla i značaju objekta. Posebnu pažnju zahtijevaju detalji armiranja —
+                duktilnost konstrukcije, odnosno njena sposobnost da se deformiše bez loma, postiže se upravo pravilnim
+                detaljima čvorova, uzengija i preklopa, a ne samo količinom armature.
+              </p>
+            </div>
+          </article>
+          <!-- Article 2 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Materijali</span>
+            <h2 class="heading-md text-primary-900 mb-4">Beton, čelik ili drvo — kako se bira konstruktivni sistem</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Izbor osnovnog materijala konstrukcije rijetko je stvar ukusa — on proizlazi iz namjene objekta,
+                raspona, lokacije, budžeta i dinamike gradnje.
+              </p>
+              <p>
+                <strong class="text-primary-900">Armirani beton</strong> je kod nas dominantan izbor za stambene i
+                poslovne objekte: trajan je, otporan na požar, prilagodljiv gotovo svakoj formi i oslanja se na
+                lokalno dostupnu radnu snagu i materijal. Njegova masa je prednost kod zvučne izolacije, ali i
+                dodatno seizmičko opterećenje koje proračun mora obuhvatiti.
+              </p>
+              <p>
+                <strong class="text-primary-900">Čelik</strong> dolazi do izražaja kod velikih raspona i brze montaže —
+                hale, industrijski objekti, nadogradnje. Manja težina konstrukcije znači manje temelje, ali zahtijeva
+                pažljivu protivpožarnu zaštitu i kvalitetnu antikorozivnu obradu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Drvo</strong>, posebno lijepljeno lamelirano i CLT, doživljava povratak
+                kao konstruktivni materijal — lagano je, obnovljivo i omogućava izuzetno brzu montažu. Kod nas se najviše
+                koristi za krovne konstrukcije i manje objekte, a savremeni inženjerski proizvodi od drveta otvaraju
+                prostor i za ozbiljnije konstrukcije.
+              </p>
+              <p>
+                U praksi, najbolja rješenja su često kombinovana: betonsko jezgro i temelji, čelična ili drvena
+                krovna konstrukcija — svaki materijal tamo gdje mu je mjesto.
+              </p>
+            </div>
+          </article>
+          <!-- Article 3 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Energetska efikasnost</span>
+            <h2 class="heading-md text-primary-900 mb-4">Fasada kao inženjerski sistem, ne samo izgled</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Fasada je mjesto gdje se susreću arhitektura, građevinska fizika i ekonomija održavanja objekta.
+                Odluka o fasadnom sistemu utiče na potrošnju energije narednih pedeset godina.
+              </p>
+              <p>
+                Kontaktne fasade (tzv. <strong class="text-primary-900">demit fasade</strong>) su najrasprostranjenije
+                rješenje — ekonomične su i energetski efikasne, uz uslov pravilne izvedbe: kvalitetno lijepljenje i
+                tiplovanje izolacije, armiranje mrežicom i obrada detalja oko otvora. Većina problema sa ovim fasadama
+                ne dolazi od sistema, nego od loše izvedbe detalja.
+              </p>
+              <p>
+                <strong class="text-primary-900">Ventilisane fasade</strong> (kamen, keramika, HPL, lim) odvajaju
+                završnu oblogu od izolacije zračnim slojem koji odvodi vlagu. Skuplje su, ali izuzetno trajne i
+                pogodne za reprezentativne objekte. Kod njih je ključan proračun podkonstrukcije i termičkih mostova
+                na mjestima sidrenja.
+              </p>
+              <p>
+                Bez obzira na sistem, tri detalja odlučuju o kvalitetu: <strong class="text-primary-900">termički mostovi</strong>
+                (balkoni, nadvoji, sokle), <strong class="text-primary-900">zaptivenost</strong> spojeva oko stolarije, i
+                <strong class="text-primary-900">upravljanje vlagom</strong> — paropropusnost slojeva mora biti usklađena
+                da konstrukcija "diše" prema vani.
+              </p>
+            </div>
+          </article>
+          <!-- Article 4 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Geotehnika</span>
+            <h2 class="heading-md text-primary-900 mb-4">Temeljenje: sve počinje od tla</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Nijedan dio konstrukcije nije toliko skriven, a toliko presudan, kao temelji. Greške u nadzemnoj
+                konstrukciji obično se vide i mogu se sanirati; greške u temeljenju otkrivaju se kasno i koštaju najviše.
+              </p>
+              <p>
+                Zato ozbiljno projektovanje počinje <strong class="text-primary-900">geomehaničkim ispitivanjem tla</strong> —
+                istražnim bušotinama ili raskopima koji daju sliku o nosivosti, slojevima i nivou podzemne vode.
+                Trošak tog elaborata je zanemariv u odnosu na rizik temeljenja "napamet".
+              </p>
+              <p>
+                Na dobrom tlu, <strong class="text-primary-900">trakasti temelji ili temeljna ploča</strong> rješavaju
+                većinu stambenih objekata. Temeljna ploča je posebno racionalna kod slabijeg ili neujednačenog tla jer
+                raspodjeljuje opterećenje i smanjuje diferencijalna slijeganja. Kod loših tla ili teških objekata
+                prelazi se na <strong class="text-primary-900">duboko temeljenje</strong> — šipove koji opterećenje
+                prenose u nosive slojeve.
+              </p>
+              <p>
+                Posebna tema na našim terenima su <strong class="text-primary-900">padine i klizišta</strong>: drenaža,
+                potporne konstrukcije i pravilno vođenje oborinskih voda često su važniji za stabilnost objekta od
+                same dimenzije temelja.
+              </p>
+            </div>
+          </article>
+
+          <!-- Pagination -->
+          <nav class="flex flex-wrap items-center justify-center gap-3 pt-4" aria-label="Stranice tekstova">
+            <a href="tekstovi-2.html" class="px-4 h-10 flex items-center justify-center rounded-lg border border-charcoal-200 text-charcoal-600 font-medium hover:bg-accent-50 hover:text-accent-600 hover:border-accent-300 transition-colors">&larr; Prethodna</a>
+            <a href="tekstovi.html" class="w-10 h-10 flex items-center justify-center rounded-lg border border-charcoal-200 text-charcoal-600 font-medium hover:bg-accent-50 hover:text-accent-600 hover:border-accent-300 transition-colors">1</a>
+            <a href="tekstovi-2.html" class="w-10 h-10 flex items-center justify-center rounded-lg border border-charcoal-200 text-charcoal-600 font-medium hover:bg-accent-50 hover:text-accent-600 hover:border-accent-300 transition-colors">2</a>
+            <span class="w-10 h-10 flex items-center justify-center rounded-lg bg-accent-600 text-white font-semibold">3</span>
+          </nav>
+
+          <!-- CTA -->
+          <div class="text-center pt-6 animate-on-scroll">
+            <p class="text-charcoal-600 mb-6">Trebate stručno mišljenje za svoj objekat? Javite nam se.</p>
+            <a href="index.html#contact" class="btn-primary">Zatražite ponudu</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-950 text-white">
+      <div class="container-custom pt-20 pb-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand -->
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-6">
+              <div class="p-2 bg-accent-600 rounded-lg">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xl font-bold">SM</span>
+                <span class="text-xl font-bold text-accent-400">Projekt</span>
+              </div>
+            </a>
+            <p class="text-charcoal-400 leading-relaxed mb-6">
+              Fokusirana arhitektonska i građevinska projektna praksa koja isporučuje kompletnu
+              dokumentaciju — od idejnih nacrta do izvedbenih crteža.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-sm">Sarajevo, 71 000, Bosna i Hercegovina</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span class="text-sm">+387 63 435 010</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span class="text-sm">sm.projektovanje@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Brzi Linkovi</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Početna</a></li>
+              <li><a href="index.html#about" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>O Nama</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Usluge</a></li>
+              <li><a href="savjeti.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Savjeti</a></li>
+              <li><a href="tekstovi.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Tekstovi</a></li>
+              <li><a href="index.html#contact" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Kontakt</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Naši Deliverables</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Idejni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Glavni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Izvedbeni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predračun</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Ostala dokumentacija</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Procjena vrijednosti nekretnina</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Budite u Toku</h4>
+            <p class="text-charcoal-400 text-sm mb-4">
+              Pretplatite se na naš newsletter za najnovije novosti o projektima i industrijske uvide.
+            </p>
+            <form class="flex gap-2" onsubmit="event.preventDefault();">
+              <input
+                type="email"
+                placeholder="Vaš email"
+                class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-charcoal-500 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent"
+              />
+              <button type="submit" class="px-4 py-2.5 bg-accent-600 text-white text-sm font-medium rounded-lg hover:bg-accent-700 transition-colors">Prijavi se</button>
+            </form>
+            <div class="mt-8">
+              <h5 class="text-sm font-medium mb-4">Pratite Nas</h5>
+              <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Facebook"><span class="text-xs font-bold">F</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="LinkedIn"><span class="text-xs font-bold">L</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Instagram"><span class="text-xs font-bold">I</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="YouTube"><span class="text-xs font-bold">Y</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/10 pt-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadržana.</p>
+            <div class="flex items-center gap-6 text-sm text-charcoal-500">
+              <a href="#" class="hover:text-accent-400 transition-colors">Politika Privatnosti</a>
+              <a href="#" class="hover:text-accent-400 transition-colors">Uslovi Korištenja</a>
+            </div>
+            <button id="scroll-top-btn" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Scroll to top">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/savjeti.js"></script>
+  </body>
+</html>

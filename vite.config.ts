@@ -12,6 +12,8 @@ export default defineConfig({
         main: resolve(root, 'index.html'),
         savjeti: resolve(root, 'savjeti.html'),
         tekstovi: resolve(root, 'tekstovi.html'),
+        tekstovi2: resolve(root, 'tekstovi-2.html'),
+        tekstovi3: resolve(root, 'tekstovi-3.html'),
       },
     },
   },
