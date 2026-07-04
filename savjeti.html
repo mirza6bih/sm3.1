@@ -62,8 +62,21 @@
     </nav>
 
     <!-- Hero -->
-    <section class="relative bg-primary-900 pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
-      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0">
+        <img
+          src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Arhitektonski nacrti i planovi"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/80 to-primary-800/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary-950/50 via-transparent to-transparent"></div>
+      </div>
+
+      <!-- Decorative elements -->
+      <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl"></div>
+
       <div class="container-custom relative z-10">
         <div class="max-w-3xl mx-auto text-center">
           <div class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
