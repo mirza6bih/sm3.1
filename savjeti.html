@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savjeti | SM Projekt</title>
+    <meta name="description" content="Savjeti i vodiči o projektovanju — od idejnog do izvedbenog projekta, put do građevinske dozvole i praktični savjeti za investitore." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <div class="container-custom">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-lg">SM</span>
+            </div>
+            <div>
+              <span id="logo-text" class="font-bold text-lg leading-tight text-white">SM Projekt</span>
+              <span id="logo-subtext" class="block text-xs leading-tight text-white/70">Arhitektura i Građevinarstvo</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html#home" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Početna</a>
+            <a href="index.html#about" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">O nama</a>
+            <a href="index.html#services" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Usluge</a>
+            <a href="index.html#contact" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Kontakt</a>
+            <a href="savjeti.html" class="nav-link text-sm font-semibold text-accent-300 hover:text-accent-200 transition-colors">Savjeti</a>
+            <a href="tekstovi.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Tekstovi</a>
+            <a href="index.html#contact" class="btn-primary !py-2.5 !px-5 text-sm">Zatražite ponudu</a>
+          </div>
+
+          <!-- Mobile toggle -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-white">
+            <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-charcoal-100 rounded-b-2xl shadow-xl">
+          <div class="py-4 px-4 space-y-1">
+            <a href="index.html#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Početna</a>
+            <a href="index.html#about" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">O nama</a>
+            <a href="index.html#services" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Usluge</a>
+            <a href="index.html#contact" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Kontakt</a>
+            <a href="savjeti.html" class="mobile-nav-link block px-4 py-3 text-accent-600 bg-accent-50 rounded-lg transition-colors font-semibold">Savjeti</a>
+            <a href="tekstovi.html" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Tekstovi</a>
+            <a href="index.html#contact" class="block px-4 py-3 bg-accent-600 text-white rounded-lg text-center font-medium hover:bg-accent-700 transition-colors mt-2">Zatražite ponudu</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative bg-primary-900 pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+      <div class="container-custom relative z-10">
+        <div class="max-w-3xl">
+          <div class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
+            <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
+            <span class="text-accent-300 text-sm font-medium">Savjeti i Vodiči</span>
+          </div>
+          <h1 class="heading-xl text-white mb-6">Savjeti o projektovanju</h1>
+          <p class="text-lg text-charcoal-300 leading-relaxed">
+            Praktični vodiči i uvidi iz naše prakse — od razlike između idejnog, glavnog i izvedbenog projekta,
+            preko puta do građevinske dozvole, do savjeta koji investitorima štede vrijeme i novac.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto space-y-10">
+
+          <!-- Article 1 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Osnove projektovanja</span>
+            <h2 class="heading-md text-primary-900 mb-4">Idejni, glavni i izvedbeni projekat — u čemu je razlika?</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Jedno od najčešćih pitanja investitora jeste zašto projekat prolazi kroz više faza.
+                Svaka faza ima svoju svrhu i nivo detaljnosti, i preskakanje faze najčešće se kasnije skupo plati.
+              </p>
+              <p>
+                <strong class="text-primary-900">Idejni projekat</strong> definiše osnovnu koncepciju objekta —
+                gabarite, spratnost, orijentaciju i raspored prostorija. To je faza u kojoj se donose ključne
+                odluke o izgledu i funkciji, i osnova je za dogovor sa investitorom prije ulaska u detalje.
+              </p>
+              <p>
+                <strong class="text-primary-900">Glavni projekat</strong> je najvažniji dio dokumentacije jer se na
+                osnovu njega izdaje građevinska dozvola. Obuhvata arhitektonsko-građevinski dio, konstrukciju,
+                instalacije i sve proračune. Ovdje objekat dobija svoju tehničku definiciju.
+              </p>
+              <p>
+                <strong class="text-primary-900">Izvedbeni projekat</strong> je razrada glavnog projekta do nivoa
+                detalja potrebnog za samu gradnju — detalji spojeva, armature, rasporeda i specifikacija.
+                Kvalitetan izvedbeni projekat smanjuje improvizaciju na gradilištu i greške u izvođenju.
+              </p>
+              <p>
+                <a href="tekstovi.html" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">→ Pročitajte detaljan tekst: koja je razlika i šta vam zaista treba</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Dozvole i procedura</span>
+            <h2 class="heading-md text-primary-900 mb-4">Put do građevinske dozvole</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Prije nego što se počne graditi, potrebno je proći kroz nekoliko koraka. Redoslijed i tačni nazivi
+                dokumenata mogu se razlikovati od općine do općine i od kantona do kantona, ali logika je svugdje slična.
+              </p>
+              <p>
+                Prvo se pribavlja <strong class="text-primary-900">lokacijska informacija ili urbanistička saglasnost</strong>,
+                koja definiše šta se i pod kojim uslovima može graditi na određenoj parceli. Na osnovu tih uslova izrađuje se
+                <strong class="text-primary-900">glavni projekat</strong>, koji zatim prolazi reviziju.
+              </p>
+              <p>
+                Sa kompletnom dokumentacijom podnosi se zahtjev za <strong class="text-primary-900">građevinsku dozvolu</strong>.
+                Nakon završetka gradnje, za korištenje objekta potrebna je i <strong class="text-primary-900">upotrebna dozvola</strong>,
+                kojom se potvrđuje da je objekat izveden u skladu sa projektom.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Napomena: procedure u FBiH nisu jedinstvene na cijeloj teritoriji — nadležnosti i tačni zahtjevi razlikuju
+                se po kantonima i općinama. Zato je korisno prije početka provjeriti uslove kod nadležne službe ili nas pitati.
+              </p>
+              <p>
+                <a href="tekstovi.html" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">→ Pročitajte naš detaljni vodič korak po korak do građevinske dozvole u FBiH</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Za investitore</span>
+            <h2 class="heading-md text-primary-900 mb-4">Zašto je dobra projektna dokumentacija isplativa investicija</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Postoji iskušenje da se na projektovanju uštedi jer se čini kao „papirologija" prije prave gradnje.
+                U praksi je najčešće obrnuto — kvalitetan projekat je ono što štiti budžet investicije.
+              </p>
+              <p>
+                Kompletna i usklađena dokumentacija znači precizan predmjer i predračun, manje nepredviđenih radova i
+                realniju procjenu troškova prije nego što se izlije prvi beton. Nejasnoće u projektu na gradilištu se
+                rješavaju improvizacijom, a improvizacija gotovo uvijek košta više od dobro odrađenog detalja na papiru.
+              </p>
+              <p>
+                Uz to, usklađenost arhitekture, konstrukcije i instalacija u fazi projekta sprječava sukobe koji se
+                inače otkrivaju tek u toku gradnje — kada su ispravke najskuplje.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Praktični vodič</span>
+            <h2 class="heading-md text-primary-900 mb-4">Kako se pripremiti za projektovanje objekta</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Što je investitor bolje pripremljen, to projektovanje ide brže i sa manje izmjena. Prije prvog sastanka
+                korisno je razmisliti o nekoliko stvari:
+              </p>
+              <ul class="space-y-3">
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Namjena i program:</strong> koliko prostorija, koja namjena, okvirna kvadratura i broj etaža.</span></li>
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Parcela:</strong> vlasnički list, kopija katastarskog plana i, ako postoji, ranija dokumentacija o lokaciji.</span></li>
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Budžet:</strong> realan okvir ulaganja pomaže da se koncept od početka usmjeri u izvodljivom pravcu.</span></li>
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Rokovi:</strong> željeni početak gradnje, kako bismo faze dokumentacije uskladili sa vašim planom.</span></li>
+              </ul>
+              <p>
+                Ne morate imati sve odgovore unaprijed — dio ovih odluka donosimo zajedno. Ali i gruba slika na početku
+                značajno ubrzava cijeli proces.
+              </p>
+            </div>
+          </article>
+
+          <!-- CTA -->
+          <div class="text-center pt-6 animate-on-scroll">
+            <p class="text-charcoal-600 mb-6">Imate pitanje o svom projektu? Rado ćemo pomoći.</p>
+            <a href="index.html#contact" class="btn-primary">Zatražite ponudu</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-950 text-white">
+      <div class="container-custom pt-20 pb-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand -->
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-6">
+              <div class="p-2 bg-accent-600 rounded-lg">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xl font-bold">SM</span>
+                <span class="text-xl font-bold text-accent-400">Projekt</span>
+              </div>
+            </a>
+            <p class="text-charcoal-400 leading-relaxed mb-6">
+              Fokusirana arhitektonska i građevinska projektna praksa koja isporučuje kompletnu
+              dokumentaciju — od idejnih nacrta do izvedbenih crteža.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-sm">Sarajevo, 71 000, Bosna i Hercegovina</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span class="text-sm">+387 63 435 010</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span class="text-sm">sm.projektovanje@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Brzi Linkovi</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Početna</a></li>
+              <li><a href="index.html#about" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>O Nama</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Usluge</a></li>
+              <li><a href="savjeti.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Savjeti</a></li>
+              <li><a href="tekstovi.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Tekstovi</a></li>
+              <li><a href="index.html#contact" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Kontakt</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Naši Deliverables</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Idejni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Glavni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Izvedbeni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predračun</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Ostala dokumentacija</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Procjena vrijednosti nekretnina</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Budite u Toku</h4>
+            <p class="text-charcoal-400 text-sm mb-4">
+              Pretplatite se na naš newsletter za najnovije novosti o projektima i industrijske uvide.
+            </p>
+            <form class="flex gap-2" onsubmit="event.preventDefault();">
+              <input
+                type="email"
+                placeholder="Vaš email"
+                class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-charcoal-500 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent"
+              />
+              <button type="submit" class="px-4 py-2.5 bg-accent-600 text-white text-sm font-medium rounded-lg hover:bg-accent-700 transition-colors">Prijavi se</button>
+            </form>
+            <div class="mt-8">
+              <h5 class="text-sm font-medium mb-4">Pratite Nas</h5>
+              <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Facebook"><span class="text-xs font-bold">F</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="LinkedIn"><span class="text-xs font-bold">L</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Instagram"><span class="text-xs font-bold">I</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="YouTube"><span class="text-xs font-bold">Y</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/10 pt-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadržana.</p>
+            <div class="flex items-center gap-6 text-sm text-charcoal-500">
+              <a href="#" class="hover:text-accent-400 transition-colors">Politika Privatnosti</a>
+              <a href="#" class="hover:text-accent-400 transition-colors">Uslovi Korištenja</a>
+            </div>
+            <button id="scroll-top-btn" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Scroll to top">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/savjeti.js"></script>
+  </body>
+</html>

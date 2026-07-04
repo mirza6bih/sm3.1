@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SM Projekt | Arhitektura i Građevinarstvo</title>
+    <meta name="description" content="Profesionalne usluge arhitektonskog i građevinskog projektovanja za stambene, poslovne i industrijske objekte." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <div class="container-custom">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="#home" class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-lg">SM</span>
+            </div>
+            <div>
+              <span id="logo-text" class="font-bold text-lg leading-tight text-white">SM Projekt</span>
+              <span id="logo-subtext" class="block text-xs leading-tight text-white/70">Arhitektura i Građevinarstvo</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="#home" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Početna</a>
+            <a href="#about" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">O nama</a>
+            <a href="#services" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Usluge</a>
+            <a href="#contact" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Kontakt</a>
+            <a href="savjeti.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Savjeti</a>
+            <a href="tekstovi.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Tekstovi</a>
+            <a href="#contact" class="btn-primary !py-2.5 !px-5 text-sm">Zatražite ponudu</a>
+          </div>
+
+          <!-- Mobile toggle -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-white">
+            <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-charcoal-100 rounded-b-2xl shadow-xl">
+          <div class="py-4 px-4 space-y-1">
+            <a href="#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Početna</a>
+            <a href="#about" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">O nama</a>
+            <a href="#services" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Usluge</a>
+            <a href="#contact" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Kontakt</a>
+            <a href="savjeti.html" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Savjeti</a>
+            <a href="tekstovi.html" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Tekstovi</a>
+            <a href="#contact" class="block px-4 py-3 bg-accent-600 text-white rounded-lg text-center font-medium hover:bg-accent-700 transition-colors mt-2">Zatražite ponudu</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center">
+      <!-- Background -->
+      <div class="absolute inset-0">
+        <img
+          src="https://images.pexels.com/photos/11000545/pexels-photo-11000545.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Moderna stambena zgrada"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/80 to-primary-800/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary-950/50 via-transparent to-transparent"></div>
+      </div>
+
+      <!-- Decorative elements -->
+      <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/3 left-1/6 w-96 h-96 bg-primary-400/10 rounded-full blur-3xl"></div>
+
+      <div class="container-custom relative z-10">
+        <div class="max-w-3xl">
+          <div class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 animate-fade-in">
+            <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
+            <span class="text-accent-300 text-sm font-medium">Građevinski Projektni Biro</span>
+          </div>
+
+          <h1 class="heading-xl text-white mb-6 mt-16 md:mt-0 animate-fade-in-up" style="animation-delay: 0.2s;">
+            Od Ideje do
+            <span class="block bg-gradient-to-r from-accent-400 to-accent-300 bg-clip-text text-transparent">Građevinske Dozvole</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-charcoal-300 leading-relaxed mb-10 max-w-2xl animate-fade-in-up" style="animation-delay: 0.4s;">
+            Fokusirana arhitektonska i građevinska projektna praksa koja isporučuje kompletnu dokumentaciju — od idejnih nacrta do izvedbenih crteža.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 0.6s;">
+            <a href="#contact" class="btn-primary group">
+              Zatražite ponudu
+              <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+            <a href="#services" class="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white/30 hover:bg-white/10 hover:border-white/50 transition-all duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2">Naše usluge</a>
+          </div>
+
+          <!-- Services strip -->
+          <div class="mt-16 grid grid-cols-2 sm:grid-cols-5 gap-6 animate-fade-in-up" style="animation-delay: 0.8s;">
+            <div class="group">
+              <div class="text-white font-semibold group-hover:text-accent-400 transition-colors">Idejni nacrti</div>
+              <div class="text-sm text-charcoal-400 mt-1">Conceptual Designs</div>
+            </div>
+            <div class="group">
+              <div class="text-white font-semibold group-hover:text-accent-400 transition-colors">Glavni projekti</div>
+              <div class="text-sm text-charcoal-400 mt-1">Permit Projects</div>
+            </div>
+            <div class="group">
+              <div class="text-white font-semibold group-hover:text-accent-400 transition-colors">Izvedbeni projekti</div>
+              <div class="text-sm text-charcoal-400 mt-1">Execution Designs</div>
+            </div>
+            <div class="group">
+              <div class="text-white font-semibold group-hover:text-accent-400 transition-colors">Predmjer i predračun</div>
+              <div class="text-sm text-charcoal-400 mt-1">Cost Estimates</div>
+            </div>
+            <div class="group">
+              <div class="text-white font-semibold group-hover:text-accent-400 transition-colors">Procjena nekretnina</div>
+              <div class="text-sm text-charcoal-400 mt-1">Valuation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/50 hover:text-white/80 transition-colors">
+        <span class="text-xs tracking-widest uppercase">Skrolaj</span>
+        <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Image -->
+          <div class="relative animate-on-scroll-left">
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Arhitektonski projekat i nacrti"
+                class="rounded-2xl shadow-2xl shadow-charcoal-200/50 w-full h-[500px] object-cover"
+              />
+              <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-accent-600 rounded-2xl -z-10"></div>
+              <div class="absolute -top-6 -left-6 w-24 h-24 border-2 border-primary-200 rounded-2xl -z-10"></div>
+            </div>
+
+            <!-- Floating badge -->
+            <div class="absolute -bottom-4 left-8 bg-white rounded-xl shadow-xl shadow-charcoal-200/30 p-5 flex items-center gap-4">
+              <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="font-bold text-primary-900">Licencirana Praksa</div>
+                <div class="text-sm text-charcoal-500">Usklađeno sa propisima</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="animate-on-scroll">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-50 rounded-full mb-6">
+              <span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span>
+              <span class="text-accent-700 text-sm font-medium">O nama</span>
+            </div>
+
+            <h2 class="heading-lg text-primary-900 mb-6">
+              Fokusirana Praksa <br />
+              <span class="text-accent-600">Izgrađena na Preciznosti</span>
+            </h2>
+
+            <p class="text-charcoal-600 leading-relaxed mb-6">
+              SM Projekt je mali, posvećeni projektni biro specijalizovan za arhitektonsko i
+              građevinsko projektovanje. Ne širimo se na previše oblasti — fokusiramo se na ono
+              što radimo najbolje: pružanje jasne, usklađene i izvodljive projektne dokumentacije
+              u svakoj fazi projekta.
+            </p>
+
+            <p class="text-charcoal-600 leading-relaxed mb-8">
+              Svaki projekat dobija našu punu pažnju. Od prve idejne skice kroz dokumentaciju
+              za dozvolu do detaljnih izvedbenih crteža, osiguravamo da je svaki dokument precizan,
+              temeljan i spreman za upotrebu.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-charcoal-700">Licencirani inženjeri i arhitekti sa direktnim učešćem u svakom projektu</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-charcoal-700">Potpuna usklađenost sa nacionalnim i EU građevinskim propisima i standardima</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-charcoal-700">Kompletna dokumentacija — od idejnih nacrta do izvedbenih projekata</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-accent-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-charcoal-700">Tačni troškovnici i predmjeri radova</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-6">
+              <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <div>
+                  <div class="text-sm text-charcoal-500">Licencirano</div>
+                  <div class="font-semibold text-primary-900">EU Usklađeno</div>
+                </div>
+              </div>
+              <div class="w-px h-10 bg-charcoal-200"></div>
+              <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <div class="text-sm text-charcoal-500">Svaka Faza</div>
+                  <div class="font-semibold text-primary-900">Potpuna Dokumentacija</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-charcoal-50">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-50 rounded-full mb-6">
+            <span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span>
+            <span class="text-accent-700 text-sm font-medium">Naše Usluge</span>
+          </div>
+          <h2 class="heading-lg text-primary-900 mb-4">
+            Kompletna Projektna <span class="text-accent-600">Dokumentacija</span>
+          </h2>
+          <p class="text-charcoal-500 text-lg">
+            Svaki dokument koji vaš projekat zahtijeva — od početnog koncepta do odobrenja
+            dozvole i crteža spremnih za izgradnju.
+          </p>
+        </div>
+
+        <!-- Process indicator -->
+        <div class="hidden lg:flex items-center justify-center gap-3 mb-12 text-sm text-charcoal-400">
+          <span class="px-3 py-1 bg-primary-800 text-white rounded-full font-medium">1</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+          <span class="px-3 py-1 bg-primary-800 text-white rounded-full font-medium">2</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+          <span class="px-3 py-1 bg-primary-800 text-white rounded-full font-medium">3</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+          <span class="px-3 py-1 bg-primary-800 text-white rounded-full font-medium">4</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+          <span class="px-3 py-1 bg-primary-800 text-white rounded-full font-medium">5</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+          <span class="px-3 py-1 bg-charcoal-200 text-charcoal-600 rounded-full font-medium">6</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6">
+          <!-- Service 1 -->
+          <div class="card p-8 group hover:-translate-y-1 animate-on-scroll" style="transition-delay: 0ms;">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-accent-600 transition-colors duration-300">
+                <svg class="w-7 h-7 text-primary-800 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-primary-900 leading-snug">Idejni Nacrti</h3>
+                <div class="text-sm text-accent-600 font-medium">Conceptual Designs</div>
+              </div>
+            </div>
+            <p class="text-charcoal-500 leading-relaxed mb-6">Početni dizajn koncepti i skice koji prevode vašu viziju u jasan, koherentan vizuelni prijedlog — temelj na kojem se gradi svaki uspješan projekat.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Analiza lokacije i izvodljivost</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Koncept skice i tlocrti</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">3D studije mase</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Preliminarni prostorni rasporedi</span></div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-charcoal-100">
+              <a href="#contact" class="text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors inline-flex items-center gap-1">Zatražite ovu uslugu <span class="transition-transform group-hover:translate-x-1">&rarr;</span></a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="card p-8 group hover:-translate-y-1 animate-on-scroll" style="transition-delay: 100ms;">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-accent-600 transition-colors duration-300">
+                <svg class="w-7 h-7 text-primary-800 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-primary-900 leading-snug">Glavni Projekti</h3>
+                <div class="text-sm text-accent-600 font-medium">Main Projects / Permit Designs</div>
+              </div>
+            </div>
+            <p class="text-charcoal-500 leading-relaxed mb-6">Kompletna projektna dokumentacija potrebna za građevinske dozvole — arhitektonski, građevinski i MEP crteži pripremljeni i ovjereni za regulatorno odobrenje.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Arhitektonski set za dozvolu</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Građevinski proračuni i crteži</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">MEP koordinacija</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Protivpožarna sigurnost i pristupačnost</span></div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-charcoal-100">
+              <a href="#contact" class="text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors inline-flex items-center gap-1">Zatražite ovu uslugu <span class="transition-transform group-hover:translate-x-1">&rarr;</span></a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="card p-8 group hover:-translate-y-1 animate-on-scroll hidden md:block" style="transition-delay: 200ms;">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-accent-600 transition-colors duration-300">
+                <svg class="w-7 h-7 text-primary-800 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-primary-900 leading-snug">Izvedbeni Projekti</h3>
+                <div class="text-sm text-accent-600 font-medium">Detailed Execution Designs</div>
+              </div>
+            </div>
+            <p class="text-charcoal-500 leading-relaxed mb-6">Detaljni tehnički crteži i specifikacije koji se koriste direktno na gradilištu — svaka dimenzija, spoj i materijal definisani za precizno izvođenje.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Detaljni građevinski crteži</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Listovi detalja konstrukcije</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Specifikacije materijala</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Detalji spojeva i veza</span></div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-charcoal-100">
+              <a href="#contact" class="text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors inline-flex items-center gap-1">Zatražite ovu uslugu <span class="transition-transform group-hover:translate-x-1">&rarr;</span></a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="card p-8 group hover:-translate-y-1 animate-on-scroll hidden md:block" style="transition-delay: 300ms;">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-accent-600 transition-colors duration-300">
+                <svg class="w-7 h-7 text-primary-800 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-primary-900 leading-snug">Predmjer i Predračun</h3>
+                <div class="text-sm text-accent-600 font-medium">Cost Estimates & Bills of Quantities</div>
+              </div>
+            </div>
+            <p class="text-charcoal-500 leading-relaxed mb-6">Tačni predmjeri radova i troškovnici koji vam daju potpunu preglednost troškova projekta — od preliminarnih budžeta do tenderske dokumentacije.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Predmjeri radova</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Preliminarne procjene troškova</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Tenderski predmjeri</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Savjeti za optimizaciju troškova</span></div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-charcoal-100">
+              <a href="#contact" class="text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors inline-flex items-center gap-1">Zatražite ovu uslugu <span class="transition-transform group-hover:translate-x-1">&rarr;</span></a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="card p-8 group hover:-translate-y-1 animate-on-scroll hidden md:block" style="transition-delay: 400ms;">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-accent-600 transition-colors duration-300">
+                <svg class="w-7 h-7 text-primary-800 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-primary-900 leading-snug">Ostala Dokumentacija</h3>
+                <div class="text-sm text-accent-600 font-medium">Related Documentation</div>
+              </div>
+            </div>
+            <p class="text-charcoal-500 leading-relaxed mb-6">Izvedeni crteži, tehnički izvještaji, procjene stanja i druga prateća dokumentacija za podršku vašem projektu kroz cijeli životni ciklus.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Dokumentacija izvedenog stanja</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Tehnički izvještaji</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Procjene stanja</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Izmjene i dopune projekta</span></div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-charcoal-100">
+              <a href="#contact" class="text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors inline-flex items-center gap-1">Zatražite ovu uslugu <span class="transition-transform group-hover:translate-x-1">&rarr;</span></a>
+            </div>
+          </div>
+
+          <!-- Service 6 - Procjena vrijednosti nekretnina -->
+          <div class="card p-8 group hover:-translate-y-1 animate-on-scroll" style="transition-delay: 500ms;">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-14 h-14 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-accent-600 transition-colors duration-300">
+                <svg class="w-7 h-7 text-primary-800 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-primary-900 leading-snug">Procjena Vrijednosti Nekretnina</h3>
+                <div class="text-sm text-accent-600 font-medium">Real Estate Valuation</div>
+              </div>
+            </div>
+            <p class="text-charcoal-500 leading-relaxed mb-6">Profesionalna procjena vrijednosti nekretnina za potrebe prodaje, kupovine ili poreskih svrha — izvještaji usklađeni sa međunarodnim standardima.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Procjene za prodaju nekretnina</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Tržišne procjene vrijednosti</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Procjene za kupovinu</span></div>
+              <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span><span class="text-sm text-charcoal-600">Poreske procjene</span></div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-charcoal-100">
+              <a href="#contact" class="text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors inline-flex items-center gap-1">Zatražite ovu uslugu <span class="transition-transform group-hover:translate-x-1">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding bg-primary-900 relative overflow-hidden">
+      <!-- Decorative background -->
+      <div class="absolute inset-0">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-primary-400/10 rounded-full blur-3xl"></div>
+        <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
+      </div>
+
+      <div class="container-custom relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
+            <span class="w-1.5 h-1.5 bg-accent-400 rounded-full"></span>
+            <span class="text-accent-300 text-sm font-medium">Zašto Odabrati Nas</span>
+          </div>
+          <h2 class="heading-lg text-white mb-4">
+            Dokumentacija na koju se <span class="text-accent-400">možete osloniti</span>
+          </h2>
+          <p class="text-charcoal-300 text-lg">
+            Fokusirana praksa znači da svaki set dokumenata dobija pažnju koju zaslužuje —
+            precizan, usklađen i spreman za svoju namjenu.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <!-- Reason cards -->
+          <div class="flex gap-5 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 animate-on-scroll" style="transition-delay: 0ms;">
+            <div class="w-12 h-12 bg-accent-500/20 rounded-lg flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Potpuna dokumentacija u svakoj fazi</h3>
+              <p class="text-charcoal-400 leading-relaxed text-sm">Od idejnih nacrta do izvedbenih projekata — isporučujemo potpuno koordinisane setove dokumenata spremne za dozvole i gradnju.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 animate-on-scroll" style="transition-delay: 80ms;">
+            <div class="w-12 h-12 bg-accent-500/20 rounded-lg flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Potpuna usklađenost sa propisima</h3>
+              <p class="text-charcoal-400 leading-relaxed text-sm">Svaki dizajn ispunjava ili premašuje nacionalne i EU građevinske standarde. Zahtjevi za dozvole prolaze glatko jer sve radimo kako treba iz prvog puta.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 animate-on-scroll" style="transition-delay: 160ms;">
+            <div class="w-12 h-12 bg-accent-500/20 rounded-lg flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Preciznost i temeljitost</h3>
+              <p class="text-charcoal-400 leading-relaxed text-sm">Detaljni crteži, tačni predmjeri i dobro definisane specifikacije ne ostavljaju mjesta za nejasnoće na gradilištu.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 animate-on-scroll" style="transition-delay: 240ms;">
+            <div class="w-12 h-12 bg-accent-500/20 rounded-lg flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Direktan kontakt sa projektantima</h3>
+              <p class="text-charcoal-400 leading-relaxed text-sm">Kao fokusirana praksa, licencirani inženjeri i arhitekte koje angažujete su ti koji rade posao — bez prebacivanja i gubitka konteksta.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 animate-on-scroll" style="transition-delay: 320ms;">
+            <div class="w-12 h-12 bg-accent-500/20 rounded-lg flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Predaja spremna za dozvole</h3>
+              <p class="text-charcoal-400 leading-relaxed text-sm">Naši glavni projekti su pripremljeni posebno za regulatorni pregled, sa svim potrebnim pečatima, proračunima i pratećom dokumentacijom.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 animate-on-scroll" style="transition-delay: 400ms;">
+            <div class="w-12 h-12 bg-accent-500/20 rounded-lg flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Izvodljivi dizajni</h3>
+              <p class="text-charcoal-400 leading-relaxed text-sm">Izvedbeni crteži koje izvođači mogu stvarno graditi — jasne dimenzije, praktični detalji i koordinisani setovi disciplina.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-charcoal-50">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-50 rounded-full mb-6">
+            <span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span>
+            <span class="text-accent-700 text-sm font-medium">Kontakt</span>
+          </div>
+          <h2 class="heading-lg text-primary-900 mb-4">
+            Započnite <span class="text-accent-600">Vaš Sljedeći Projekat</span>
+          </h2>
+          <p class="text-charcoal-500 text-lg">
+            Javite nam se da razgovaramo o Vašim arhitektonskim ili građevinskim potrebama.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-12">
+          <!-- Contact info -->
+          <div class="lg:col-span-2 space-y-8">
+            <div class="animate-on-scroll-left">
+              <h3 class="heading-sm text-primary-900 mb-6">Kontaktirajte Nas</h3>
+
+              <div class="space-y-6">
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-sm text-charcoal-400 mb-1">Adresa</div>
+                    <div class="text-charcoal-700 whitespace-pre-line leading-relaxed">Sarajevo, 71 000
+Bosna i Hercegovina</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-sm text-charcoal-400 mb-1">Telefon</div>
+                    <div class="text-charcoal-700 leading-relaxed">+387 63 435 010</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-sm text-charcoal-400 mb-1">Email</div>
+                    <div class="text-charcoal-700 leading-relaxed">sm.projektovanje@gmail.com</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-sm text-charcoal-400 mb-1">Radno Vrijeme</div>
+                    <div class="text-charcoal-700 whitespace-pre-line leading-relaxed">Pon - Pet: 8:00 - 17:00
+Sub: 9:00 - 13:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="rounded-2xl overflow-hidden h-64 shadow-sm border border-charcoal-100">
+              <iframe
+                title="Lokacija Ureda"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0!2d18.4131!3d43.8563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c9b3b7b7b7b7%3A0x2d7d6b4e7e7a0a0a!2sSarajevo!5e0!3m2!1sen!2sba!4v1600000000000!5m2!1sen!2sba"
+                class="w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="lg:col-span-3">
+            <div class="bg-white rounded-2xl shadow-sm border border-charcoal-100 p-8 md:p-10">
+              <h3 class="heading-sm text-primary-900 mb-2">Zatražite Ponudu</h3>
+              <p class="text-charcoal-500 mb-8">
+                Ispunite formu ispod i naš tim će Vam se javiti u roku od 24 sata.
+              </p>
+
+              <!-- Success message -->
+              <div id="success-message" class="hidden flex flex-col items-center justify-center py-16 text-center">
+                <svg class="w-16 h-16 text-accent-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="heading-sm text-primary-900 mb-2">Poruka Poslana!</h4>
+                <p class="text-charcoal-500">Hvala što ste nas kontaktirali. Javit ćemo Vam se uskoro.</p>
+              </div>
+
+              <!-- Form -->
+              <form id="contact-form" class="space-y-6">
+                <!-- Error message -->
+                <div id="error-message" class="hidden flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <svg class="w-5 h-5 text-red-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <p class="text-red-700 text-sm">Došlo je do greške pri slanju poruke. Molimo pokušajte ponovo.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-sm font-medium text-charcoal-700 mb-2" for="title">Naslov</label>
+                    <input
+                      type="text"
+                      id="title"
+                      name="title"
+                      required
+                      placeholder="Naslov poruke"
+                      class="w-full px-4 py-3 rounded-lg border border-charcoal-200 bg-charcoal-50/50 text-charcoal-800 placeholder-charcoal-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-charcoal-700 mb-2" for="name">Ime i Prezime</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Vaše ime"
+                      class="w-full px-4 py-3 rounded-lg border border-charcoal-200 bg-charcoal-50/50 text-charcoal-800 placeholder-charcoal-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-sm font-medium text-charcoal-700 mb-2" for="email">Email Adresa</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="vas@email.com"
+                      class="w-full px-4 py-3 rounded-lg border border-charcoal-200 bg-charcoal-50/50 text-charcoal-800 placeholder-charcoal-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-charcoal-700 mb-2" for="project_type">Kontakt telefon</label>
+                    <input
+                      type="tel"
+                      id="project_type"
+                      name="project_type"
+                      placeholder="061 234 567"
+                      class="w-full px-4 py-3 rounded-lg border border-charcoal-200 bg-charcoal-50/50 text-charcoal-800 placeholder-charcoal-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-charcoal-700 mb-2" for="message">Vaša Poruka</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows="5"
+                    placeholder="Šaljem vam upit za idejni projekat poslovnog objekta na 5 etaža i ukupne površine 1200 m²."
+                    class="w-full px-4 py-3 rounded-lg border border-charcoal-200 bg-charcoal-50/50 text-charcoal-800 placeholder-charcoal-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all resize-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  class="btn-primary w-full sm:w-auto group"
+                >
+                  <span id="btn-text">Pošaljite Poruku</span>
+                  <svg id="btn-icon" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                  <svg id="btn-spinner" class="hidden animate-spin -ml-1 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-950 text-white">
+      <div class="container-custom pt-20 pb-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand -->
+          <div>
+            <a href="#home" class="flex items-center gap-3 mb-6">
+              <div class="p-2 bg-accent-600 rounded-lg">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xl font-bold">SM</span>
+                <span class="text-xl font-bold text-accent-400">Projekt</span>
+              </div>
+            </a>
+            <p class="text-charcoal-400 leading-relaxed mb-6">
+              Fokusirana arhitektonska i građevinska projektna praksa koja isporučuje kompletnu
+              dokumentaciju — od idejnih nacrta do izvedbenih crteža.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-sm">Sarajevo, 71 000, Bosna i Hercegovina</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span class="text-sm">+387 63 435 010</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span class="text-sm">sm.projektovanje@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Brzi Linkovi</h4>
+            <ul class="space-y-3">
+              <li><a href="#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Početna</a></li>
+              <li><a href="#about" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>O Nama</a></li>
+              <li><a href="#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Usluge</a></li>
+              <li><a href="savjeti.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Savjeti</a></li>
+              <li><a href="tekstovi.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Tekstovi</a></li>
+              <li><a href="#contact" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Kontakt</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Naši Deliverables</h4>
+            <ul class="space-y-3">
+              <li><a href="#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Idejni projekti</a></li>
+              <li><a href="#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Glavni projekti</a></li>
+              <li><a href="#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Izvedbeni projekti</a></li>
+              <li><a href="#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predračun</a></li>
+              <li><a href="#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Ostala dokumentacija</a></li>
+              <li><a href="#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Procjena vrijednosti nekretnina</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Budite u Toku</h4>
+            <p class="text-charcoal-400 text-sm mb-4">
+              Pretplatite se na naš newsletter za najnovije novosti o projektima i industrijske uvide.
+            </p>
+            <form class="flex gap-2" onsubmit="event.preventDefault();">
+              <input
+                type="email"
+                placeholder="Vaš email"
+                class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-charcoal-500 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent"
+              />
+              <button type="submit" class="px-4 py-2.5 bg-accent-600 text-white text-sm font-medium rounded-lg hover:bg-accent-700 transition-colors">Prijavi se</button>
+            </form>
+
+            <!-- Social -->
+            <div class="mt-8">
+              <h5 class="text-sm font-medium mb-4">Pratite Nas</h5>
+              <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Facebook"><span class="text-xs font-bold">F</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="LinkedIn"><span class="text-xs font-bold">L</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Instagram"><span class="text-xs font-bold">I</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="YouTube"><span class="text-xs font-bold">Y</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/10 pt-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadržana.</p>
+            <div class="flex items-center gap-6 text-sm text-charcoal-500">
+              <a href="#" class="hover:text-accent-400 transition-colors">Politika Privatnosti</a>
+              <a href="#" class="hover:text-accent-400 transition-colors">Uslovi Korištenja</a>
+            </div>
+            <button id="scroll-top-btn" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Scroll to top">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

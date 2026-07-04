@@ -1,0 +1,2138 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tekstovi | SM Projekt</title>
+    <meta name="description" content="Stručni tekstovi o građevinarstvu i arhitekturi — konstrukcije, materijali, energetska efikasnost i temeljenje." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <div class="container-custom">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-accent-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-lg">SM</span>
+            </div>
+            <div>
+              <span id="logo-text" class="font-bold text-lg leading-tight text-white">SM Projekt</span>
+              <span id="logo-subtext" class="block text-xs leading-tight text-white/70">Arhitektura i Građevinarstvo</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html#home" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Početna</a>
+            <a href="index.html#about" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">O nama</a>
+            <a href="index.html#services" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Usluge</a>
+            <a href="index.html#contact" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Kontakt</a>
+            <a href="savjeti.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Savjeti</a>
+            <a href="tekstovi.html" class="nav-link text-sm font-semibold text-accent-300 hover:text-accent-200 transition-colors">Tekstovi</a>
+            <a href="index.html#contact" class="btn-primary !py-2.5 !px-5 text-sm">Zatražite ponudu</a>
+          </div>
+
+          <!-- Mobile toggle -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-white">
+            <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="w-6 h-6 close-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-charcoal-100 rounded-b-2xl shadow-xl">
+          <div class="py-4 px-4 space-y-1">
+            <a href="index.html#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Početna</a>
+            <a href="index.html#about" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">O nama</a>
+            <a href="index.html#services" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Usluge</a>
+            <a href="index.html#contact" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Kontakt</a>
+            <a href="savjeti.html" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Savjeti</a>
+            <a href="tekstovi.html" class="mobile-nav-link block px-4 py-3 text-accent-600 bg-accent-50 rounded-lg transition-colors font-semibold">Tekstovi</a>
+            <a href="index.html#contact" class="block px-4 py-3 bg-accent-600 text-white rounded-lg text-center font-medium hover:bg-accent-700 transition-colors mt-2">Zatražite ponudu</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative bg-primary-900 pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+      <div class="container-custom relative z-10">
+        <div class="max-w-3xl">
+          <div class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
+            <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
+            <span class="text-accent-300 text-sm font-medium">Stručni Tekstovi</span>
+          </div>
+          <h1 class="heading-xl text-white mb-6">Tekstovi o građevinarstvu i arhitekturi</h1>
+          <p class="text-lg text-charcoal-300 leading-relaxed">
+            Stručni tekstovi iz oblasti konstrukcija, materijala i savremenih pristupa projektovanju —
+            za investitore koji žele razumjeti dublje, i za kolege iz struke.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto space-y-10">
+
+          <!-- Article 0: Vodič do građevinske dozvole -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Dozvole i procedura</span>
+            <h2 class="heading-md text-primary-900 mb-4">Kako doći do građevinske dozvole u Federaciji BiH — vodič korak po korak</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Malo koja tema izaziva toliko nedoumica kod investitora kao pribavljanje građevinske dozvole. Razlog je
+                jednostavan: procedura nije jedan akt, nego lanac međusobno uslovljenih koraka, a svaki od njih ima svoje
+                rokove, dokumente i troškove. Ko taj lanac razumije unaprijed, gradi bez zastoja. Ko krene „napamet",
+                po pravilu gubi mjesece — a nerijetko i novac.
+              </p>
+              <p>
+                U ovom tekstu proći ćemo cijeli put, od parcele do upotrebne dozvole, onako kako on izgleda u praksi
+                Federacije BiH.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Prva i najvažnija napomena: propisi su kantonalni</h3>
+              <p>
+                U Federaciji BiH prostorno uređenje i građenje nisu uređeni jednim zakonom za cijelu Federaciju — svaki
+                kanton ima vlastiti zakon o prostornom uređenju i građenju. To znači da se nazivi akata, rokovi i pojedini
+                uslovi razlikuju od kantona do kantona, iako je logika procedure svugdje ista. Ono što ćete pročitati u
+                nastavku je zajednički okvir; tačne detalje za vašu lokaciju uvijek treba provjeriti u nadležnoj općinskoj
+                službi ili kod projektanta koji radi na tom području.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 0: Provjerite parcelu prije svega</h3>
+              <p>
+                Najskuplje greške dešavaju se prije nego što je i jedan papir predat. Prije kupovine zemljišta ili odluke
+                o gradnji potrebno je provjeriti dvije stvari:
+              </p>
+              <p>
+                <strong class="text-primary-900">Imovinsko-pravni status.</strong> Zemljišnoknjižni izvadak (ZK izvadak)
+                mora pokazivati čisto vlasništvo, bez tereta i suvlasničkih sporova. Neusklađenost katastra i gruntovnice —
+                česta pojava u BiH — mora se riješiti prije podnošenja zahtjeva, jer organ uprave neće izdati dozvolu na
+                parceli sa spornim vlasništvom.
+              </p>
+              <p>
+                <strong class="text-primary-900">Planska dokumentacija.</strong> Svaka parcela potpada pod neki prostorni
+                ili regulacioni plan. Iz njega se čita šta se na parceli uopšte smije graditi: namjena (stambena, poslovna,
+                poljoprivredna), maksimalna spratnost, koeficijent izgrađenosti, udaljenosti od međa i saobraćajnica.
+                Izvod iz planske dokumentacije možete zatražiti u općini i on je prvi dokument koji donosite projektantu.
+                Parcela na kojoj plan ne dozvoljava ono što ste zamislili — bez obzira koliko je lijepa i povoljna — za
+                vašu namjeru jednostavno ne vrijedi.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 1: Lokacijska informacija ili urbanistička saglasnost</h3>
+              <p>
+                Prvi formalni akt u proceduri jeste utvrđivanje urbanističko-tehničkih uslova gradnje. Zavisno od kantona
+                i vrste objekta, to će biti <strong class="text-primary-900">lokacijska informacija</strong> (jednostavniji,
+                brži akt, tamo gdje postoji detaljna planska dokumentacija) ili
+                <strong class="text-primary-900">urbanistička saglasnost</strong> (upravni postupak u kojem se uslovi
+                utvrđuju detaljnije, po pravilu tamo gdje detaljnog plana nema).
+              </p>
+              <p>
+                Uz zahtjev se obično prilažu kopija katastarskog plana, ZK izvadak i idejno rješenje objekta — skica koja
+                pokazuje šta i gdje namjeravate graditi. Rezultat ovog koraka su konkretni uslovi: gabariti, spratnost,
+                građevinska i regulaciona linija, uslovi priključenja na infrastrukturu. Ti uslovi postaju obavezujući
+                okvir za izradu glavnog projekta.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Praktičan savjet: idejno rješenje nemojte tretirati kao formalnost. Dobro promišljeno idejno rješenje u
+                ovoj fazi štedi značajan novac kasnije, jer se izmjene na papiru mjere stotinama maraka, a izmjene u
+                glavnom projektu — hiljadama.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 2: Glavni projekat</h3>
+              <p>
+                Glavni projekat je srce cijele dokumentacije i osnov po kojem se objekat gradi. Za porodičnu kuću on
+                tipično obuhvata: arhitektonsku fazu (osnove, presjeci, fasade, detalji), konstruktivnu fazu sa statičkim
+                proračunom (dimenzionisanje temelja, zidova, ploča i krova, uključujući seizmički proračun — Bosna i
+                Hercegovina je seizmički aktivno područje i to nije stavka na kojoj se štedi), fazu elektroinstalacija,
+                fazu mašinskih instalacija (grijanje, ventilacija), fazu vodovoda i kanalizacije, te prateće elaborate —
+                najčešće elaborat energetske efikasnosti, elaborat zaštite od požara i, kod zahtjevnijih terena,
+                geomehanički elaborat.
+              </p>
+              <p>
+                Projekat mora izraditi ovlašteno pravno lice registrovano za projektovanje, a svaku fazu potpisuje
+                odgovorni projektant odgovarajuće struke sa važećom licencom. Za složenije objekte zakon predviđa i
+                reviziju projekta od strane nezavisnog revidenta.
+              </p>
+              <p>
+                Ovdje se vraćamo na uslove iz urbanističke saglasnosti: glavni projekat mora biti usklađen s njima.
+                Odstupanje — makar i „sitno" povećanje gabarita — znači vraćanje na početak.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 3: Saglasnosti javnih preduzeća</h3>
+              <p>
+                Paralelno sa izradom ili po završetku glavnog projekta pribavljaju se saglasnosti nadležnih javnih
+                preduzeća i organa: elektrodistribucije, vodovoda i kanalizacije, po potrebi uprave za ceste (priključak
+                na javni put), komunalnih službi, protivpožarne saglasnosti i drugih, zavisno od lokacije i vrste objekta.
+                Spisak potrebnih saglasnosti definisan je već u urbanističkoj saglasnosti, pa iznenađenja ne bi smjelo
+                biti — ali rokovi javnih preduzeća znaju biti rastegljivi, pa je pametno krenuti s njima što ranije.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 4: Zahtjev za odobrenje za građenje</h3>
+              <p>
+                Kada je dokumentacija kompletna, podnosi se zahtjev za odobrenje za građenje (kolokvijalno: građevinska
+                dozvola) nadležnoj općinskoj, odnosno gradskoj službi. Standardni prilozi su: dokaz o pravu građenja
+                (ZK izvadak, po potrebi ugovori), kopija katastarskog plana, urbanistička saglasnost odnosno lokacijska
+                informacija, glavni projekat u propisanom broju primjeraka, pribavljene saglasnosti, te dokazi o uplati
+                naknada.
+              </p>
+              <p>
+                O naknadama vrijedi reći riječ više, jer su za mnoge investitore neugodno iznenađenje. Uz administrativne
+                takse, plaćaju se <strong class="text-primary-900">naknada za pogodnost gradskog građevinskog zemljišta
+                (renta)</strong> i <strong class="text-primary-900">naknada za uređenje građevinskog zemljišta</strong>,
+                koje se obračunavaju po kvadratnom metru korisne površine objekta i zavise od zone u kojoj se parcela
+                nalazi. Kod većih objekata u atraktivnim zonama ove naknade mogu biti stavka od više desetina hiljada
+                maraka — planirajte ih u budžetu od samog početka.
+              </p>
+              <p>
+                Organ uprave provjerava kompletnost i usklađenost dokumentacije i, ako je sve uredno, izdaje rješenje o
+                odobrenju za građenje. Zakonski rokovi za izdavanje po pravilu su 15 do 30 dana od kompletnog zahtjeva —
+                naglasak je na riječi <em>kompletnog</em>, jer svaki nedostajući dokument zaustavlja rok.
+              </p>
+              <p>
+                Važno: građevinska dozvola ima rok važenja — gradnja se, po pravilu, mora započeti u roku od jedne godine
+                od pravosnažnosti rješenja (rok varira po kantonima), inače dozvola prestaje važiti.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 5: Prijava gradnje i sama gradnja</h3>
+              <p>
+                Prije početka radova gradilište se prijavljuje nadležnoj službi i građevinskoj inspekciji, vrši se
+                iskolčenje objekta od strane ovlaštenog geodete, a na gradilištu se od prvog dana vodi građevinski
+                dnevnik. Investitor je dužan angažovati nadzornog inženjera — nezavisnog stručnjaka koji u ime investitora
+                kontroliše da li izvođač gradi po projektu i pravilima struke. Nadzor nije trošak nego osiguranje:
+                prosječna ušteda koju dobar nadzor ostvari sprječavanjem grešaka i nekvalitetnog rada višestruko premašuje
+                njegovu cijenu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Korak 6: Tehnički prijem i upotrebna dozvola</h3>
+              <p>
+                Završetkom gradnje priča nije gotova. Objekat se smije koristiti tek nakon tehničkog prijema — pregleda
+                koji vrši komisija stručnjaka — i izdavanja upotrebne dozvole. Za tehnički prijem pripremaju se projekat
+                izvedenog stanja (ako je bilo izmjena), atesti ugrađenih materijala i instalacija, geodetski snimak
+                izvedenog objekta i građevinski dnevnik. Tek s upotrebnom dozvolom objekat se može uknjižiti u zemljišne
+                knjige, osigurati, legalno priključiti na infrastrukturu i — što mnogi zaborave — legalno prodati po
+                punoj tržišnoj vrijednosti.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Koliko sve to traje?</h3>
+              <p>
+                Iskustveno, za porodičnu kuću na urednoj parceli, od prvog izvoda iz plana do pravosnažne građevinske
+                dozvole treba računati <strong class="text-primary-900">tri do šest mjeseci</strong>, pod uslovom da se
+                koraci vode paralelno gdje je to moguće i da dokumentacija bude kompletna iz prvog pokušaja. Neuredna
+                parcela, neusklađen katastar i gruntovnica, ili nedostatak planske dokumentacije mogu taj rok produžiti
+                i na godinu i više.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Umjesto zaključka</h3>
+              <p>
+                Procedura pribavljanja građevinske dozvole u FBiH nije ni brza ni jednostavna, ali je predvidiva — pod
+                uslovom da se vodi sistematično i da se svaki korak pripremi prije nego što prethodni završi. Najveći
+                saveznik investitora u tom procesu jeste projektant koji proceduru poznaje iz prakse, na konkretnom
+                terenu i u konkretnoj općini.
+              </p>
+              <p>
+                Ako planirate gradnju i želite provjeriti šta vaša parcela dozvoljava, ili vam treba kompletna projektna
+                dokumentacija — <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>.
+                Prva konsultacija i pregled dokumentacije ništa vas ne koštaju, a mogu vas poštedjeti najskupljih grešaka.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera. Propisi o prostornom uređenju i građenju u FBiH doneseni su
+                na nivou kantona i podložni su izmjenama, pa tačne uslove za konkretnu lokaciju uvijek provjerite u
+                nadležnoj službi.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0b: Idejni, glavni i izvedbeni -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Projektna dokumentacija</span>
+            <h2 class="heading-md text-primary-900 mb-4">Idejni, glavni i izvedbeni projekat — koja je razlika i šta vam zaista treba?</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Kada investitor prvi put dođe u projektni biro, gotovo po pravilu traži „projekat kuće" — u jednini.
+                A onda sazna da projekata ima više: idejno rješenje, idejni projekat, glavni projekat, izvedbeni projekat,
+                projekat izvedenog stanja... Razumljivo je da to zbunjuje. Još je razumljivije pitanje koje slijedi:
+                moram li ja sve to platiti?
+              </p>
+              <p>
+                Odgovor je: ne uvijek sve, ali svaki od ovih dokumenata postoji s razlogom. U ovom tekstu objasnit ćemo
+                šta je šta, čemu koji projekat služi i — najvažnije — šta vam je za vašu gradnju zaista potrebno.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Zašto uopšte postoji više nivoa projekta?</h3>
+              <p>
+                Projektovanje objekta je proces postepenog preciziranja. Na početku postoji ideja: kuća od oko 150
+                kvadrata, prizemlje i sprat, garaža, tri spavaće sobe. Na kraju mora postojati dokument po kojem majstor
+                zna tačno koliko šipki armature ugrađuje u nadvoj iznad prozora dnevnog boravka. Između te dvije tačke
+                leži ogroman raspon detaljnosti — i upravo taj raspon pokrivaju različiti nivoi projektne dokumentacije.
+              </p>
+              <p>
+                Svaki nivo ima svoju publiku: idejno rješenje govori investitoru i urbanisti, glavni projekat govori
+                organu uprave koji izdaje dozvolu, a izvedbeni projekat govori izvođaču na gradilištu. Kada se to
+                razumije, cijela hijerarhija postaje logična.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Idejno rješenje i idejni projekat — faza odluke</h3>
+              <p>
+                <strong class="text-primary-900">Idejno rješenje</strong> je prvi, najgrublji nivo: situacija objekta
+                na parceli, osnove etaža, karakteristični presjek i izgledi fasada, uz osnovne numeričke pokazatelje
+                (površine, spratnost, gabariti). Njegova svrha je dvostruka. Prvo, investitoru daje jasnu sliku šta
+                dobija — raspored prostorija, orijentaciju, odnos prema parceli i susjedima. Drugo, služi kao prilog
+                zahtjevu za urbanističku saglasnost odnosno lokacijsku informaciju, jer organ uprave mora vidjeti šta
+                se namjerava graditi da bi utvrdio urbanističko-tehničke uslove.
+              </p>
+              <p>
+                <strong class="text-primary-900">Idejni projekat</strong> je razrađeniji oblik idejnog rješenja i kod
+                zahtjevnijih objekata predstavlja zaseban korak; kod porodičnih kuća se u praksi ova dva pojma često
+                preklapaju.
+              </p>
+              <p>
+                Ovo je faza u kojoj se donose sve krupne odluke — i faza u kojoj su izmjene najjeftinije. Pomjeriti
+                stepenište, dodati sobu, okrenuti kuću za dvadeset stepeni prema jugu: na nivou idejnog rješenja to je
+                nekoliko sati rada. U glavnom projektu, ista izmjena povlači ponovni statički proračun i korekciju svih
+                instalaterskih faza. Na gradilištu, ona se mjeri hiljadama maraka i sedmicama kašnjenja.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Zato našim klijentima uvijek kažemo: vrijeme uloženo u idejnu fazu je najisplativije vrijeme cijelog
+                projekta. Ne potpisujte saglasnost na idejno rješenje dok niste sigurni da je to kuća u kojoj želite
+                živjeti.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Glavni projekat — faza dozvole</h3>
+              <p>
+                Glavni projekat je zakonski obavezan dokument na osnovu kojeg se izdaje odobrenje za građenje. To više
+                nije jedan crtež, nego elaborat od nekoliko stotina stranica koji obuhvata više projektnih faza:
+              </p>
+              <p>
+                <strong class="text-primary-900">Arhitektonska faza</strong> definiše objekat u cjelini — osnove svih
+                etaža sa dimenzijama i namjenom prostorija, presjeke, fasade, obračun površina, opis materijala i
+                završnih obrada.
+              </p>
+              <p>
+                <strong class="text-primary-900">Konstruktivna faza sa statičkim proračunom</strong> je dio koji se ne
+                vidi, a o kojem sve ovisi. Ovdje se dimenzionišu temelji, zidovi, stubovi, grede, međuspratne ploče i
+                krovna konstrukcija, uz obavezan proračun na seizmička dejstva — Bosna i Hercegovina je trusno područje
+                i konstrukcija koja „drži" samo vertikalno opterećenje nije konstrukcija nego rizik.
+              </p>
+              <p>
+                <strong class="text-primary-900">Instalaterske faze</strong> — elektroinstalacije jake i slabe struje,
+                vodovod i kanalizacija, mašinske instalacije (grijanje, hlađenje, ventilacija) — definišu trase,
+                kapacitete i priključke.
+              </p>
+              <p>
+                <strong class="text-primary-900">Prateći elaborati</strong> — energetske efikasnosti, zaštite od požara,
+                po potrebi geomehanički — zaokružuju dokumentaciju prema zahtjevima propisa.
+              </p>
+              <p>
+                Svaku fazu izrađuje i potpisuje odgovorni projektant odgovarajuće struke s važećom licencom, a projekat
+                kao cjelinu ovjerava ovlašteno pravno lice registrovano za projektovanje. Za određene kategorije objekata
+                propisana je i nezavisna revizija projekta.
+              </p>
+              <p>
+                Bitno je razumjeti čemu glavni projekat služi, a čemu ne. On dokazuje organu uprave da je objekat
+                usklađen s urbanističkim uslovima, da je konstruktivno stabilan i da zadovoljava propise. On je dovoljan
+                osnov za gradnju jednostavnijih objekata. Ali on, po svojoj prirodi, ne razrađuje svaki detalj do nivoa
+                radioničke izrade — i tu na scenu stupa treći nivo.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Izvedbeni projekat — faza gradilišta</h3>
+              <p>
+                Izvedbeni projekat razrađuje rješenja glavnog projekta do nivoa potrebnog za neposredno izvođenje:
+                detaljni armaturni nacrti sa specifikacijama svake pozicije čelika, detalji hidroizolacije i termičkih
+                mostova, sheme stolarije i bravarije sa svim mjerama, detalji fasade, razrade spojeva i oslonaca,
+                precizne specifikacije materijala i opreme.
+              </p>
+              <p>
+                Da li vam treba? Za porodičnu kuću uobičajene složenosti, dobro urađen glavni projekat s razrađenim
+                armaturnim planovima često je dovoljan — i to je razlog zašto se izvedbeni projekat kod manjih objekata
+                rijetko ugovara kao zaseban dokument. Ali postoje situacije u kojima je on izuzetno pametna investicija:
+                kada gradite putem tendera ili s izvođačem kojeg ne poznajete, jer precizna specifikacija onemogućava
+                „tumačenja" i skrivene doplate; kada je objekat konstruktivno ili oblikovno zahtjevan (velike raspone,
+                konzole, kose ploče, složenu fasadu); kada želite čvrst predračun radova, jer se tačan predmjer može
+                uraditi samo iz detaljno razrađenog projekta.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Naše iskustvo iz nadzora je nedvosmisleno: najveći broj sporova između investitora i izvođača nastaje
+                tamo gdje projekat „šuti", pa svako šutnju tumači u svoju korist. Izvedbeni projekat je način da projekat
+                ne šuti ni o čemu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Projekat izvedenog stanja — faza završetka</h3>
+              <p>
+                Za kraj, četvrti dokument koji se često miješa s prethodnima. Projekat izvedenog stanja izrađuje se
+                nakon završetka gradnje, i to samo ako je tokom izvođenja došlo do odstupanja od glavnog projekta.
+                On dokumentuje objekat onakvim kakav stvarno jeste i služi kao podloga za tehnički prijem i izdavanje
+                upotrebne dozvole. Njegova posebna varijanta javlja se i u postupcima legalizacije, gdje se snima
+                postojeći bespravno izgrađeni objekat.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Dakle — šta vam zaista treba?</h3>
+              <p>
+                Sažmimo praktično. Ako gradite porodičnu kuću: <strong class="text-primary-900">idejno rješenje</strong>
+                vam treba uvijek (i za vlastitu odluku i za urbanističku saglasnost),
+                <strong class="text-primary-900">glavni projekat</strong> vam treba obavezno (bez njega nema dozvole),
+                a <strong class="text-primary-900">izvedbeni projekat</strong> je opcija koju vrijedi ozbiljno razmotriti
+                ako gradite s nepoznatim izvođačem, želite čvrste cijene ili je objekat iole zahtjevniji. Ako gradite
+                poslovni, kolektivni stambeni ili javni objekat, izvedbeni projekat prestaje biti opcija i postaje
+                standard struke.
+              </p>
+              <p>
+                I jedan savjet iz prakse umjesto zaključka: kada poredite ponude projektnih biroa, ne poredite samo
+                cifre — poredite sadržaj. „Projekat kuće" za 1.500 KM i „projekat kuće" za 4.000 KM često nisu isti
+                dokument: prvi može biti arhitektonska faza s tipskim detaljima, a drugi kompletan glavni projekat sa
+                svim fazama, elaboratima i razrađenom armaturom. Najjeftinija ponuda na papiru zna biti najskuplja na
+                gradilištu.
+              </p>
+              <p>
+                Ako niste sigurni koji nivo dokumentacije odgovara vašem projektu —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">pitajte nas</a>.
+                Pregledat ćemo vašu situaciju i reći vam otvoreno šta vam treba, a šta ne. Ponekad je najbolji savjet
+                upravo onaj koji vas poštedi nepotrebnog troška.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera. Obim i sadržaj projektne dokumentacije propisani su
+                kantonalnim zakonima o prostornom uređenju i građenju u FBiH, pa tačne zahtjeve za konkretan objekat i
+                lokaciju uvijek provjerite u nadležnoj službi ili kod svog projektanta.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0c: Koliko košta projektovanje -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Cijene i ponude</span>
+            <h2 class="heading-md text-primary-900 mb-4">Koliko košta projektovanje kuće? Struktura cijene projektne dokumentacije — i zašto najjeftinija ponuda često ispadne najskuplja</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Ovo je vjerovatno najčešće pitanje koje projektant čuje, i jedino pošteno je odgovoriti na njega otvoreno.
+                Ali prije nego što dođemo do brojki, moramo raščistiti jedno pogrešno polazište: cijena projektovanja
+                nije cijena crteža. Crtež je samo nosač informacije. Ono što zapravo plaćate jeste inženjersko
+                odlučivanje — stotine odluka o dimenzijama, materijalima, konstrukciji i instalacijama, od kojih svaka
+                utiče na sigurnost, trajnost i troškove objekta koji će vas koštati dvjesto do petsto puta više od
+                samog projekta.
+              </p>
+              <p>Kada se to razumije, i brojke dobijaju drugačiji smisao.</p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Od čega se sastoji cijena projekta?</h3>
+              <p>
+                Kompletan glavni projekat porodične kuće nije jedan posao nego zbir više njih, i to je prvi razlog
+                velikih razlika u ponudama. Standardni sadržaj obuhvata:
+              </p>
+              <p>
+                <strong class="text-primary-900">Arhitektonsku fazu</strong> — funkcionalno rješenje, osnove, presjeke,
+                fasade, materijalizaciju. Ovo je faza koju investitor „vidi" i po kojoj najčešće sudi o cijelom projektu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Konstruktivnu fazu sa statičkim proračunom</strong> — dimenzionisanje
+                temelja, konstruktivnih zidova, ploča, greda i krova, uključujući seizmički proračun. Faza koju investitor
+                ne vidi, a koja nosi najveću inženjersku odgovornost u cijelom dokumentu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Instalaterske faze</strong> — elektroinstalacije, vodovod i kanalizacija,
+                mašinske instalacije. Svaku potpisuje inženjer odgovarajuće struke, što znači da iza kompletnog projekta
+                kuće stoje najmanje četiri licencirana inženjera.
+              </p>
+              <p>
+                <strong class="text-primary-900">Prateće elaborate</strong> — energetske efikasnosti, zaštite od požara,
+                po potrebi geomehanički elaborat (koji uključuje i terenska ispitivanja tla, pa se često ugovara i plaća
+                zasebno).
+              </p>
+              <p>
+                Uz to idu i poslovi koji se ne vide u sveskama: obilazak i snimanje parcele, usklađivanje s urbanističkim
+                uslovima, koordinacija svih faza međusobno, priprema dokumentacije za predaju i komunikacija s nadležnom
+                službom tokom postupka.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako se cijena obračunava — i koje su realne brojke?</h3>
+              <p>
+                U praksi u BiH susrećete dva modela: cijenu po kvadratnom metru bruto površine objekta i paušalnu cijenu
+                za cijeli projekat. Oba su legitimna; bitno je samo da znate šta je ponudom obuhvaćeno.
+              </p>
+              <p>
+                Orijentaciono, za tržište Federacije BiH: kompletan glavni projekat porodične kuće — sa svim fazama i
+                standardnim elaboratima — kreće se najčešće u rasponu od <strong class="text-primary-900">10 do 25 KM
+                po m²</strong> bruto građevinske površine, zavisno od složenosti objekta, terena i obima dokumentacije.
+                Za kuću od 150 do 200 m² to praktično znači ukupan iznos reda veličine
+                <strong class="text-primary-900">2.000 do 5.000 KM</strong>. Idejno rješenje, ako se ugovara zasebno,
+                obično nosi 15–25% te vrijednosti; izvedbeni projekat, tamo gdje se radi, dodaje otprilike 30–50% na
+                cijenu glavnog projekta.
+              </p>
+              <p>
+                Ove brojke navodimo kao orijentir, ne kao cjenovnik — konkretna cijena zavisi od konkretnog objekta.
+                Kosi i zahtjevan teren, veliki rasponi, razuđena osnova, suteren u padini ili nestandardna konstrukcija
+                opravdano podižu cijenu, jer podižu i količinu inženjerskog posla. Ali orijentir vam treba iz jednog
+                važnog razloga: da prepoznate ponude koje od njega drastično odstupaju — u oba smjera.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Stavimo cijenu u kontekst</h3>
+              <p>
+                Uzmimo kuću od 180 m² čija će gradnja, po današnjim cijenama u BiH, do useljivosti koštati negdje između
+                250.000 i 400.000 KM, zavisno od standarda opremanja. Kompletan projekat za takvu kuću — recimo 3.500 KM —
+                čini <strong class="text-primary-900">oko jedan posto</strong> ukupne investicije.
+              </p>
+              <p>
+                A taj jedan posto odlučuje o preostalih devedeset devet. Dobro funkcionalno rješenje štedi kvadrate
+                (svaki nepotreban kvadrat košta 1.500+ KM u gradnji); racionalno dimenzionisana konstrukcija štedi beton
+                i čelik bez ugrožavanja sigurnosti; promišljena energetska koncepcija štedi na grijanju svake godine
+                narednih pedeset godina. Nijedna druga stavka u budžetu gradnje nema takav omjer uloženog i dobijenog.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Zašto najjeftinija ponuda često ispadne najskuplja</h3>
+              <p>
+                Sada dolazimo do srži. Kada dobijete ponudu koja je upola niža od ostalih, novac se morao „naći" negdje.
+                U praksi se nalazi na tri mjesta, i sva tri plaćate kasnije — s kamatom.
+              </p>
+              <p>
+                <strong class="text-primary-900">Prvo mjesto: obim dokumentacije.</strong> „Projekat kuće za 1.200 KM"
+                nerijetko znači arhitektonsku fazu s tipskim, preslikanim detaljima — bez razrađene statike za vaš
+                konkretan objekat, s instalacijama svedenim na shemu principa. Takav dokument možda prođe proceduru,
+                ali na gradilištu ne odgovara ni na jedno stvarno pitanje. Odgovore onda daje izvođač — po vlastitom
+                nahođenju i vlastitom cjenovniku.
+              </p>
+              <p>
+                <strong class="text-primary-900">Drugo mjesto: predimenzionisanje umjesto proračuna.</strong> Paradoksalno,
+                jeftin projekat često znači skuplju gradnju: tamo gdje se ne računa precizno, dimenzioniše se „od oka,
+                pa neka bude deblje". Višak betona i armature u temeljima i pločama kuće od 180 m² lako premaši cijelu
+                uštedu na projektu — a da sigurnost time nije dobila ništa, jer sigurnost ne dolazi od debljine nego od
+                ispravnog proračuna.
+              </p>
+              <p>
+                <strong class="text-primary-900">Treće mjesto: vaše vrijeme.</strong> Nepotpuna dokumentacija vraća se
+                s dopunama iz nadležne službe, a svaki krug dopuna znači sedmice čekanja. Investitori koji su „uštedjeli"
+                na projektu često taj iznos višestruko potroše na produžene rokove, kirije i vezani kapital.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Postoji i četvrta, najskuplja varijanta: projekat koji šuti tamo gdje ne smije. Spor s izvođačem oko
+                toga šta je „podrazumijevano" u cijeni radova prosječno košta više od tri kompletna projekta — o živcima
+                da ne govorimo.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako pametno porediti ponude</h3>
+              <p>
+                Umjesto da poredite samo konačne cifre, tražite od svakog ponuđača da specificira: koje faze projekat
+                obuhvata (svih pet, ili samo arhitekturu?), koji elaborati su uključeni a koji se doplaćuju, da li je
+                uključen izlazak na teren i snimanje parcele, koliko izmjena idejnog rješenja je uključeno u cijenu,
+                da li ponuđač prati predmet kroz proceduru izdavanja dozvole, i ko su odgovorni projektanti po fazama.
+                Kada tako postavite pitanja, ponude odjednom postanu uporedive — i često se pokaže da „skuplja" ponuda
+                nudi znatno više po marki.
+              </p>
+              <p>
+                I posljednji savjet: tražite da vidite primjer ranije urađenog projekta. Ozbiljan biro to pokazuje bez
+                ustezanja, jer je razlika između dokumenta od 60 i dokumenta od 300 stranica vidljiva golim okom — i
+                vrijedi više od svakog marketinga.
+              </p>
+              <p>
+                Ako želite konkretnu procjenu za svoju parcelu i svoju ideju,
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>
+                s osnovnim podacima — lokacija, željena kvadratura, spratnost — i dobit ćete jasnu, specificiranu ponudu
+                u kojoj se tačno vidi šta plaćate. Bez sitnih slova i bez naknadnih doplata.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Navedeni rasponi cijena su orijentacioni i odražavaju tržišne prilike u FBiH u vrijeme pisanja
+                teksta. Konačna cijena projektne dokumentacije zavisi od složenosti objekta, lokacije i obima ugovorenih
+                usluga.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0d: Koliko košta gradnja -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Budžet i planiranje</span>
+            <h2 class="heading-md text-primary-900 mb-4">Koliko realno košta gradnja kuće u BiH u 2026. godini?</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Ako postoji pitanje na koje svaki investitor želi jednostavan odgovor, a svaki pošten inženjer mora
+                odgovoriti „zavisi" — onda je to ovo. Pa ipak, „zavisi" nije odgovor s kojim se planira budžet. Zato
+                ćemo u ovom tekstu uraditi ono što rijetko ko radi: raščlaniti od čega se cijena gradnje zapravo sastoji,
+                dati realne raspone po kvadratu za današnje tržište i, što je možda najvažnije, pokazati gdje se kriju
+                troškovi koje kalkulacije „po kvadratu" prešućuju.
+              </p>
+              <p>
+                Jedna napomena prije brojki: sve cijene u tekstu su orijentacione, odnose se na tržište Federacije BiH
+                i podložne su promjenama. Cilj im nije da zamijene predračun — nego da vas poštede nerealnih očekivanja
+                u oba smjera.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Prvo raščistimo pojmove: šta znači „kvadrat"?</h3>
+              <p>
+                Najveći broj nesporazuma oko cijene gradnje ne dolazi od cijena nego od pojmova. Kada neko kaže da je
+                „sagradio kuću za 1.200 KM po kvadratu", prvo pitanje glasi: po kvadratu čega i do koje faze?
+              </p>
+              <p>
+                <strong class="text-primary-900">Bruto građevinska površina</strong> obuhvata sve etaže mjerene po
+                vanjskim gabaritima — uključujući zidove, stepeništa, terase (obračunski umanjene) i podrum.
+                <strong class="text-primary-900">Neto korisna površina</strong> je ono po čemu kuća „izgleda" — i tipično
+                je 20–25% manja od bruto površine. Ista kuća, dakle, po neto kvadratu ispada četvrtinu „skuplja" nego po
+                bruto kvadratu, a da se ni jedna marka nije promijenila. Građevinske kalkulacije rade se po bruto
+                površini; kada poredite tuđa iskustva, uvijek provjerite o kojoj površini govore.
+              </p>
+              <p>Drugi pojam je faza završenosti, i tu razlikujemo tri standardne tačke:</p>
+              <p>
+                <strong class="text-primary-900">Gruba gradnja (roh-bau)</strong> — temelji, konstrukcija, zidovi, ploče,
+                krov s pokrivanjem, obično i vanjska stolarija. Kuća „pod ključem" u bukvalnom smislu: zaključava se,
+                ali se u njoj ne živi.
+              </p>
+              <p>
+                <strong class="text-primary-900">Završeno do useljivosti („ključ u ruke")</strong> — sve instalacije,
+                unutrašnja obrada, podovi, kupatila, fasada, stolarija. Nedostaje samo namještaj.
+              </p>
+              <p>
+                <strong class="text-primary-900">Potpuno opremljeno</strong> — s kuhinjom, namještajem i uređenim okolišem.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Realne brojke za 2026. godinu</h3>
+              <p>
+                Uz sve navedene ograde, evo orijentacionih raspona po bruto kvadratu za porodičnu kuću uobičajene
+                složenosti:
+              </p>
+              <p>
+                <strong class="text-primary-900">Gruba gradnja:</strong> okvirno
+                <strong class="text-primary-900">700–1.000 KM/m²</strong>. Donja granica podrazumijeva jednostavnu,
+                kompaktnu kuću na ravnom terenu; gornja razuđenije osnove, veće raspone ili rad u padini.
+              </p>
+              <p>
+                <strong class="text-primary-900">Ključ u ruke, standardna oprema:</strong> okvirno
+                <strong class="text-primary-900">1.500–2.000 KM/m²</strong>. U ovom rasponu se realno kreće najveći broj
+                porodičnih kuća — solidna keramika i parket, PVC stolarija kvalitetnijih profila, demit fasada,
+                standardna kupatila.
+              </p>
+              <p>
+                <strong class="text-primary-900">Ključ u ruke, viši standard:</strong>
+                <strong class="text-primary-900">2.000–2.600 KM/m²</strong> i naviše. Aluminijska stolarija s prekinutim
+                termičkim mostom, podno grijanje s toplotnom pumpom, kvalitetnija obrada, elementi pametne kuće.
+              </p>
+              <p>
+                <strong class="text-primary-900">Luksuzni segment:</strong> od
+                <strong class="text-primary-900">2.600–3.000 KM/m² pa nadalje</strong>, praktično bez gornje granice —
+                kamene fasade, velike staklene stijene, nestandardna konstrukcija i oprema po narudžbi vrlo brzo
+                pomjeraju cifru.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Praktično: kuća od 180 m² bruto, ključ u ruke standardnog kvaliteta, danas realno znači investiciju od
+                270.000 do 360.000 KM — bez zemljišta i bez troškova koje ćemo navesti niže.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta zapravo pomjera cijenu?</h3>
+              <p>
+                Iskustvo pokazuje da o konačnoj cifri ne odlučuje „kvalitet gradnje" kao apstraktan pojam, nego nekoliko
+                vrlo konkretnih odluka.
+              </p>
+              <p>
+                <strong class="text-primary-900">Teren i temeljenje.</strong> Kuća u padini sa suterenom i potpornim
+                zidovima može samo na zemljanim radovima i temeljenju pojesti razliku od desetina hiljada maraka u odnosu
+                na istu kuću na ravnom. Zato geomehanički elaborat nije trošak nego rano upozorenje.
+              </p>
+              <p>
+                <strong class="text-primary-900">Oblik objekta.</strong> Svaki lom fasade, erker, konzola i uvala na
+                krovu košta — i u materijalu i u radu i u detaljima hidroizolacije. Kompaktna kuća kvadratne osnove s
+                jednostavnim dvovodnim krovom je najekonomičnija forma koju gradnja poznaje. To ne znači da treba graditi
+                kutije; znači da svaku razuđenost treba svjesno platiti, a ne otkriti je u predračunu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Stolarija.</strong> Razlika između solidne PVC i kvalitetne aluminijske
+                stolarije na kući sa 40-ak m² otvora lako iznosi
+                <strong class="text-primary-900">10.000–20.000 KM</strong>. ALU ima svoje opravdanje kod velikih stijena
+                i kliznih sistema; kod standardnih prozora, kvalitetan PVC sedmokomorni profil s trostrukim staklom daje
+                odličan omjer cijene i performansi.
+              </p>
+              <p>
+                <strong class="text-primary-900">Fasada.</strong> Standardna demit fasada (EPS ili kamena vuna s
+                tankoslojnim malterom) prema ventilisanoj fasadi ili kamenim oblogama — razlika je višestruka po kvadratu
+                obloge. Kamen na cijeloj kući je luksuzna odluka; kamen kao akcenat na dijelu fasade često daje 80%
+                efekta za 20% cijene.
+              </p>
+              <p>
+                <strong class="text-primary-900">Instalacije grijanja.</strong> Klasično radijatorsko grijanje na pelet
+                naspram podnog grijanja s toplotnom pumpom zrak-voda: druga varijanta je početno skuplja za 15.000–25.000
+                KM na tipičnoj kući, ali dugoročno jeftinija u pogonu. Ovo je odluka koja se donosi u projektu — naknadna
+                promjena koncepta grijanja spada među najskuplje prepravke koje postoje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Troškovi koje „cijena po kvadratu" ne vidi</h3>
+              <p>
+                Sada dolazimo do dijela zbog kojeg mnogi budžeti puknu — ne zato što je gradnja poskupjela, nego zato
+                što u kalkulaciji nisu bile stavke koje s gradnjom neizbježno dolaze:
+                <strong class="text-primary-900">projektna dokumentacija</strong> (orijentaciono 1–1,5% investicije),
+                <strong class="text-primary-900">naknade uz građevinsku dozvolu</strong> — renta i uređenje građevinskog
+                zemljišta, koje zavisno od zone i kvadrature mogu iznositi od par hiljada do više desetina hiljada maraka,
+                <strong class="text-primary-900">priključci na infrastrukturu</strong> (struja, voda, kanalizacija ili
+                septička, po potrebi plin) — realno 5.000–15.000 KM ukupno, zavisno od udaljenosti i uslova distributera,
+                <strong class="text-primary-900">geodetski radovi</strong> (snimanje, iskolčenje, upis),
+                <strong class="text-primary-900">nadzor nad gradnjom</strong>, te
+                <strong class="text-primary-900">vanjsko uređenje</strong> — ograda, prilaz, parking, minimalno zelenilo —
+                koje se gotovo uvijek potcijeni, a rijetko košta ispod 15.000–30.000 KM ako se radi kako treba.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Zbrojeno, ove „nevidljive" stavke tipično dodaju 10–15% na cijenu samog objekta. Budžet koji ih ne sadrži
+                nije budžet nego želja.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako isplanirati budžet koji drži vodu</h3>
+              <p>
+                Iz svega navedenog slijedi jednostavna metodologija. Prvo, definišite ukupan iznos kojim raspolažete —
+                realno, uključujući kredit ako ga planirate. Drugo, od tog iznosa odbijte zemljište (ako ga nemate), pa
+                12–15% za prateće troškove, pa <strong class="text-primary-900">rezervu od najmanje 10%</strong> za
+                nepredviđeno — jer nepredviđeno na gradilištu nije mogućnost nego izvjesnost. Tek ono što ostane je novac
+                za objekat, i tek iz njega, podijeljenog s realnom cijenom kvadrata za željeni standard, dobijate
+                kvadraturu koju sebi možete priuštiti.
+              </p>
+              <p>
+                Primijetite da je ovo obrnut redoslijed od uobičajenog. Većina investitora prvo nacrta kuću iz snova,
+                pa onda traži način da je plati — i tu nastaju nedovršene kuće koje godinama stoje pod krovom bez fasade.
+                Ispravan put je suprotan: budžet definiše kvadraturu, a zadatak dobrog projektanta je da u toj kvadraturi
+                izvuče maksimum funkcije i kvaliteta. Dobro projektovana kuća od 140 m² pruža više od loše organizovanih
+                190 m² — a košta 75.000 KM manje.
+              </p>
+              <p>
+                Ako ste u fazi planiranja i želite provjeriti da li se vaša ideja i vaš budžet uopšte poznaju —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>.
+                Prije nego što se nacrta ijedna linija, proći ćemo zajedno kroz brojke. To je razgovor koji ništa ne
+                košta, a zna uštedjeti više od bilo kojeg drugog koraka u cijelom procesu.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Sve navedene cijene su orijentacione, odnose se na tržišne prilike u FBiH u vrijeme pisanja i
+                služe isključivo za okvirno planiranje. Tačnu cijenu za konkretan objekat daje samo predmjer i predračun
+                radova izrađen iz projektne dokumentacije.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0e: Pet grešaka investitora -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Za investitore</span>
+            <h2 class="heading-md text-primary-900 mb-4">Pet najčešćih grešaka investitora prije početka gradnje — i kako ih izbjeći</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                U inženjerskoj praksi postoji jedna neugodna pravilnost: najskuplje greške u gradnji ne dešavaju se na
+                gradilištu. Dešavaju se prije njega — u fazi kada se čini da se „još ništa ne radi", pa se odluke donose
+                brzo, usput i bez provjere. Kada se posljedice pokažu, beton je već izliven, ugovor već potpisan, a novac
+                već potrošen.
+              </p>
+              <p>
+                Dobra vijest je da se ove greške ponavljaju s takvom pravilnošću da ih je moguće pobrojati. Evo pet koje
+                u praksi viđamo najčešće, poredanih otprilike onim redom kojim investitora i dočekaju.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 1: Kupovina parcele prije provjere šta se na njoj smije graditi</h3>
+              <p>
+                Ovo je majka svih grešaka, i nažalost najčešća. Investitor pronađe parcelu — lijepa lokacija, dobar
+                prilaz, povoljna cijena — i kupi je. Tek potom, s papirima u ruci, dolazi kod projektanta i saznaje:
+                da parcela regulacionim planom nije predviđena za stambenu gradnju, ili da dozvoljena spratnost ne
+                odgovara zamišljenoj kući, ili da preko parcele prolazi planirana saobraćajnica ili infrastrukturni
+                koridor, ili da je parcela u zoni u kojoj se godinama čeka donošenje plana, pa se dozvola praktično ne
+                može ni dobiti.
+              </p>
+              <p>
+                Uz plansku dokumentaciju ide i imovinsko-pravna provjera: neusklađenost katastra i gruntovnice,
+                neriješeno nasljedstvo, upisani tereti ili suvlasnici koji se „poslije lako riješe" — sve su to problemi
+                koji se poslije ne rješavaju ni lako ni brzo ni jeftino.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: prije kapare, u općini zatražite izvod iz planske dokumentacije za parcelu, a iz zemljišne
+                knjige svjež ZK izvadak. To je dan-dva posla i simboličan trošak. Još bolje: povedite projektanta na
+                parcelu prije kupovine. Sat vremena stručnog pogleda na teren, nagib, orijentaciju i pristup vrijedi
+                više od svih oglasa — i to je usluga koju svaki ozbiljan biro rado pruži.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 2: Početak gradnje prije dozvole — „papiri će stići, majstori ne čekaju"</h3>
+              <p>
+                Logika je uvijek ista: sezona je kratka, ekipa je slobodna sada, a „svi tako rade". Rezultat je objekat
+                koji pravno ne postoji — a to znači: rizik rješenja o rušenju i novčanih kazni koje izriče građevinska
+                inspekcija, nemogućnost legalnog priključenja na struju i vodu, nemogućnost upisa, prodaje po tržišnoj
+                cijeni, kreditnog zaduženja s objektom kao hipotekom i naplate osiguranja ako se išta desi.
+              </p>
+              <p>
+                Poseban oblik ove greške je gradnja „po dozvoli, ali ne baš" — etaža više, gabarit širi, „pa ćemo poslije
+                legalizovati". Naknadno usklađivanje odstupanja košta višestruko više od uredne izmjene projekta prije
+                gradnje, a u nekim slučajevima nije ni moguće.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: jednostavno — redoslijed je dozvola pa gradnja, bez izuzetka. A da čekanje ne bi bilo
+                izgovor: uz urednu dokumentaciju i paralelno vođenje koraka, procedura za porodičnu kuću realno traje
+                tri do šest mjeseci. Ko planira gradnju u proljeće, dokumentaciju pokreće najkasnije u jesen.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 3: Štednja na onome što se ne vidi — tlo, temelji, konstrukcija</h3>
+              <p>
+                Investitori razumljivo vole ulagati u ono što se vidi: fasadu, stolariju, kupatila. A štede na onome što
+                se ne vidi: geomehaničkom ispitivanju tla („znam ja kakva je ovo zemlja, tu je i komšija gradio"),
+                statičkom proračunu („imamo tipski projekat, šta će nam statika") i hidroizolaciji („to je samo folija").
+              </p>
+              <p>
+                Problem je što fizika ne pregovara. Kuća prenosi svu svoju težinu na tlo preko temelja projektovanih
+                prema stvarnoj nosivosti tog tla — a nosivost se ne vidi golim okom i zna se drastično razlikovati na
+                dvadeset metara udaljenosti, pogotovo na nasutim i padinskim terenima kakvih je u Bosni mnogo. Slijeganje,
+                pukotine, vlaga u suterenu — to su štete koje se ne popravljaju farbom, a sanacija temelja postojećeg
+                objekta jedan je od najskupljih zahvata u građevinarstvu uopšte. Dodajmo i ono što se u našim krajevima
+                ne smije zaboraviti: živimo u seizmički aktivnom području, i razlika između kuće koja je proračunata na
+                zemljotres i one koja „valjda hoće izdržati" nije akademska.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: geomehanički elaborat na zahtjevnijem terenu, uredan statički proračun za konkretan
+                objekat (ne „tipski"), i izvođenje temelja i konstrukcije uz nadzor. Ukupan trošak ove tri stavke je
+                nekoliko procenata investicije; štete koje sprječavaju mjere se desetinama procenata.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 4: Ugovor s izvođačem „na riječ" — bez predmjera, bez specifikacija, bez dinamike</h3>
+              <p>
+                Četvrta greška ima najviše varijanti, ali isto jezgro: posao vrijedan trista hiljada maraka ugovori se
+                na dvije stranice teksta, ili na stisak ruke, s cijenom „po kvadratu, sve ukalkulisano". Šta je tačno
+                ukalkulisano — otkriva se u hodu, i to uvijek na isti način: ono što investitor podrazumijeva, izvođač
+                doplaćuje.
+              </p>
+              <p>
+                Korijen problema najčešće nije nepoštenje nego neodređenost. Tamo gdje ne postoji predmjer i predračun
+                sa stavkama, količinama i jediničnim cijenama, ne postoji ni osnov za poređenje ponuda, ni za obračun
+                izvedenog, ni za rješavanje spora. „Sve dogovoreno" bez papira znači: ništa dogovoreno.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: tražite ponude na osnovu predmjera iz projektne dokumentacije — tada su ponude uporedive
+                stavku po stavku, a ne „od oka". Ugovor treba definisati cijenu i šta ona obuhvata, dinamiku radova i
+                plaćanja vezanu za izvedene faze (nikad veliki avansi), garantne rokove i zadržani iznos do primopredaje.
+                I vodite građevinski dnevnik od prvog dana — on je, uz nadzor, vaš glavni svjedok da je građeno po
+                projektu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 5: Budžet bez rezerve — i kuća iz snova prije računa</h3>
+              <p>
+                Peta greška je tiha i najraširenija: investitor prvo nacrta kuću kakvu želi, pa onda traži način da je
+                plati. Budžet se zategne do posljednje marke, rezerva se „ostavi za poslije", prateći troškovi — naknade
+                uz dozvolu, priključci, vanjsko uređenje — ostanu izvan kalkulacije jer „to nije gradnja". A onda
+                stvarnost naplati svoje: iskop naiđe na vodu, cijene materijala se pomjere, nešto se u hodu poželi bolje.
+                Rezultat poznajemo svi, jer stoji pored puta u svakom bh. naselju: kuća pod krovom, bez fasade, već petu
+                godinu.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: obrnutim redoslijedom. Prvo ukupan raspoloživ iznos; od njega odbiti prateće troškove
+                (realno 10–15% investicije) i rezervu od najmanje 10%; tek ostatak je novac za objekat, i tek on definiše
+                kvadraturu i standard. Zadatak dobrog projektanta u tom trenutku nije da vam nacrta veću kuću, nego da u
+                zadatoj kvadraturi izvuče maksimum — a dobro organizovanih 140 kvadrata pruža više života od loše
+                organizovanih 190.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Zajednički imenilac</h3>
+              <p>
+                Ako pažljivo pogledate, svih pet grešaka ima isti korijen: odluke donesene bez provjerene informacije,
+                u fazi kada je provjera bila jeftina. Parcela se dala provjeriti prije kupovine; dozvola pribaviti prije
+                gradnje; tlo ispitati prije temelja; ugovor precizirati prije potpisa; budžet postaviti prije crteža.
+                Redoslijed je, pokazuje se, pola inženjerstva.
+              </p>
+              <p>
+                Druga polovina je znati koga pitati. Ako ste u bilo kojoj od ovih faza — od gledanja parcele do izbora
+                izvođača —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>
+                prije nego što odlučite. Razgovor i pregled dokumentacije ništa ne koštaju, a lista iznad najbolje
+                pokazuje koliko može uštedjeti.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera i zasnovan na iskustvima iz prakse. Procedure i obaveze
+                investitora propisane su kantonalnim zakonima o prostornom uređenju i građenju u FBiH, pa detalje za
+                konkretnu situaciju provjerite s nadležnom službom ili svojim projektantom.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0e: Pet grešaka investitora -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Za investitore</span>
+            <h2 class="heading-md text-primary-900 mb-4">Pet najčešćih grešaka investitora prije početka gradnje — i kako ih izbjeći</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                U inženjerskoj praksi postoji jedna neugodna pravilnost: najskuplje greške u gradnji ne dešavaju se na
+                gradilištu. Dešavaju se prije njega — u fazi kada se čini da se „još ništa ne radi", pa se odluke donose
+                brzo, usput i bez provjere. Kada se posljedice pokažu, beton je već izliven, ugovor već potpisan, a novac
+                već potrošen.
+              </p>
+              <p>
+                Dobra vijest je da se ove greške ponavljaju s takvom pravilnošću da ih je moguće pobrojati. Evo pet koje
+                u praksi viđamo najčešće, poredanih otprilike onim redom kojim investitora i dočekaju.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 1: Kupovina parcele prije provjere šta se na njoj smije graditi</h3>
+              <p>
+                Ovo je majka svih grešaka, i nažalost najčešća. Investitor pronađe parcelu — lijepa lokacija, dobar
+                prilaz, povoljna cijena — i kupi je. Tek potom, s papirima u ruci, dolazi kod projektanta i saznaje:
+                da parcela regulacionim planom nije predviđena za stambenu gradnju, ili da dozvoljena spratnost ne
+                odgovara zamišljenoj kući, ili da preko parcele prolazi planirana saobraćajnica ili infrastrukturni
+                koridor, ili da je parcela u zoni u kojoj se godinama čeka donošenje plana, pa se dozvola praktično ne
+                može ni dobiti.
+              </p>
+              <p>
+                Uz plansku dokumentaciju ide i imovinsko-pravna provjera: neusklađenost katastra i gruntovnice,
+                neriješeno nasljedstvo, upisani tereti ili suvlasnici koji se „poslije lako riješe" — sve su to problemi
+                koji se poslije ne rješavaju ni lako ni brzo ni jeftino.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: prije kapare, u općini zatražite izvod iz planske dokumentacije za parcelu, a iz zemljišne
+                knjige svjež ZK izvadak. To je dan-dva posla i simboličan trošak. Još bolje: povedite projektanta na
+                parcelu prije kupovine. Sat vremena stručnog pogleda na teren, nagib, orijentaciju i pristup vrijedi
+                više od svih oglasa — i to je usluga koju svaki ozbiljan biro rado pruži.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 2: Početak gradnje prije dozvole — „papiri će stići, majstori ne čekaju"</h3>
+              <p>
+                Logika je uvijek ista: sezona je kratka, ekipa je slobodna sada, a „svi tako rade". Rezultat je objekat
+                koji pravno ne postoji — a to znači: rizik rješenja o rušenju i novčanih kazni koje izriče građevinska
+                inspekcija, nemogućnost legalnog priključenja na struju i vodu, nemogućnost upisa, prodaje po tržišnoj
+                cijeni, kreditnog zaduženja s objektom kao hipotekom i naplate osiguranja ako se išta desi.
+              </p>
+              <p>
+                Poseban oblik ove greške je gradnja „po dozvoli, ali ne baš" — etaža više, gabarit širi, „pa ćemo poslije
+                legalizovati". Naknadno usklađivanje odstupanja košta višestruko više od uredne izmjene projekta prije
+                gradnje, a u nekim slučajevima nije ni moguće.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: jednostavno — redoslijed je dozvola pa gradnja, bez izuzetka. A da čekanje ne bi bilo
+                izgovor: uz urednu dokumentaciju i paralelno vođenje koraka, procedura za porodičnu kuću realno traje
+                tri do šest mjeseci. Ko planira gradnju u proljeće, dokumentaciju pokreće najkasnije u jesen.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 3: Štednja na onome što se ne vidi — tlo, temelji, konstrukcija</h3>
+              <p>
+                Investitori razumljivo vole ulagati u ono što se vidi: fasadu, stolariju, kupatila. A štede na onome što
+                se ne vidi: geomehaničkom ispitivanju tla („znam ja kakva je ovo zemlja, tu je i komšija gradio"),
+                statičkom proračunu („imamo tipski projekat, šta će nam statika") i hidroizolaciji („to je samo folija").
+              </p>
+              <p>
+                Problem je što fizika ne pregovara. Kuća prenosi svu svoju težinu na tlo preko temelja projektovanih
+                prema stvarnoj nosivosti tog tla — a nosivost se ne vidi golim okom i zna se drastično razlikovati na
+                dvadeset metara udaljenosti, pogotovo na nasutim i padinskim terenima kakvih je u Bosni mnogo.
+                Slijeganje, pukotine, vlaga u suterenu — to su štete koje se ne popravljaju farbom, a sanacija temelja
+                postojećeg objekta jedan je od najskupljih zahvata u građevinarstvu uopšte. Dodajmo i ono što se u našim
+                krajevima ne smije zaboraviti: živimo u seizmički aktivnom području, i razlika između kuće koja je
+                proračunata na zemljotres i one koja „valjda hoće izdržati" nije akademska.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: geomehanički elaborat na zahtjevnijem terenu, uredan statički proračun za konkretan
+                objekat (ne „tipski"), i izvođenje temelja i konstrukcije uz nadzor. Ukupan trošak ove tri stavke je
+                nekoliko procenata investicije; štete koje sprječavaju mjere se desetinama procenata.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 4: Ugovor s izvođačem „na riječ" — bez predmjera, bez specifikacija, bez dinamike</h3>
+              <p>
+                Četvrta greška ima najviše varijanti, ali isto jezgro: posao vrijedan trista hiljada maraka ugovori se
+                na dvije stranice teksta, ili na stisak ruke, s cijenom „po kvadratu, sve ukalkulisano". Šta je tačno
+                ukalkulisano — otkriva se u hodu, i to uvijek na isti način: ono što investitor podrazumijeva, izvođač
+                doplaćuje.
+              </p>
+              <p>
+                Korijen problema najčešće nije nepoštenje nego neodređenost. Tamo gdje ne postoji predmjer i predračun
+                sa stavkama, količinama i jediničnim cijenama, ne postoji ni osnov za poređenje ponuda, ni za obračun
+                izvedenog, ni za rješavanje spora. „Sve dogovoreno" bez papira znači: ništa dogovoreno.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: tražite ponude na osnovu predmjera iz projektne dokumentacije — tada su ponude uporedive
+                stavku po stavku, a ne „od oka". Ugovor treba definisati cijenu i šta ona obuhvata, dinamiku radova i
+                plaćanja vezanu za izvedene faze (nikad veliki avansi), garantne rokove i zadržani iznos do primopredaje.
+                I vodite građevinski dnevnik od prvog dana — on je, uz nadzor, vaš glavni svjedok da je građeno po
+                projektu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Greška 5: Budžet bez rezerve — i kuća iz snova prije računa</h3>
+              <p>
+                Peta greška je tiha i najraširenija: investitor prvo nacrta kuću kakvu želi, pa onda traži način da je
+                plati. Budžet se zategne do posljednje marke, rezerva se „ostavi za poslije", prateći troškovi — naknade
+                uz dozvolu, priključci, vanjsko uređenje — ostanu izvan kalkulacije jer „to nije gradnja". A onda
+                stvarnost naplati svoje: iskop naiđe na vodu, cijene materijala se pomjere, nešto se u hodu poželi bolje.
+                Rezultat poznajemo svi, jer stoji pored puta u svakom bh. naselju: kuća pod krovom, bez fasade, već petu
+                godinu.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Kako se štiti: obrnutim redoslijedom. Prvo ukupan raspoloživ iznos; od njega odbiti prateće troškove
+                (realno 10–15% investicije) i rezervu od najmanje 10%; tek ostatak je novac za objekat, i tek on definiše
+                kvadraturu i standard. Zadatak dobrog projektanta u tom trenutku nije da vam nacrta veću kuću, nego da u
+                zadatoj kvadraturi izvuče maksimum — a dobro organizovanih 140 kvadrata pruža više života od loše
+                organizovanih 190.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Zajednički imenilac</h3>
+              <p>
+                Ako pažljivo pogledate, svih pet grešaka ima isti korijen: odluke donesene bez provjerene informacije,
+                u fazi kada je provjera bila jeftina. Parcela se dala provjeriti prije kupovine; dozvola pribaviti prije
+                gradnje; tlo ispitati prije temelja; ugovor precizirati prije potpisa; budžet postaviti prije crteža.
+                Redoslijed je, pokazuje se, pola inženjerstva.
+              </p>
+              <p>
+                Druga polovina je znati koga pitati. Ako ste u bilo kojoj od ovih faza — od gledanja parcele do izbora
+                izvođača —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>
+                prije nego što odlučite. Razgovor i pregled dokumentacije ništa ne koštaju, a lista iznad najbolje
+                pokazuje koliko može uštedjeti.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera i zasnovan na iskustvima iz prakse. Procedure i obaveze
+                investitora propisane su kantonalnim zakonima o prostornom uređenju i građenju u FBiH, pa detalje za
+                konkretnu situaciju provjerite s nadležnom službom ili svojim projektantom.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0f: Legalizacija -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Legalizacija</span>
+            <h2 class="heading-md text-primary-900 mb-4">Legalizacija bespravno izgrađenih objekata u FBiH — šta je moguće, šta nije, i kako izgleda postupak</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                O bespravnoj gradnji u Bosni i Hercegovini teško je govoriti bez brojki koje zvuče nevjerovatno: procjene
+                govore o stotinama hiljada objekata izgrađenih bez odobrenja ili s odstupanjima od njega. Iza svake od
+                tih brojki stoji konkretna kuća i konkretna porodica — a vrlo često i konkretan problem koji se pojavi
+                tek godinama kasnije: pri prodaji, nasljeđivanju, kreditnom zaduženju ili prvoj posjeti građevinske
+                inspekcije.
+              </p>
+              <p>
+                Legalizacija je pravni mehanizam kojim se takav objekat naknadno uvodi u pravni sistem. U ovom tekstu
+                objasnit ćemo šta legalizacija jeste, šta se legalizovati može a šta ne, kako postupak izgleda korak po
+                korak i — bez uljepšavanja — koliko to košta i traje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Prvo najvažnije upozorenje: propisi su kantonalni i vezani za rokove</h3>
+              <p>
+                Kao i cjelokupna oblast građenja u Federaciji BiH, i legalizacija je uređena na nivou kantona — svaki
+                kanton ima svoj zakon ili odluke o legalizaciji, s vlastitim uslovima, naknadama i, što je ključno,
+                <strong class="text-primary-900">rokovima za podnošenje zahtjeva</strong>. Ti rokovi se povremeno
+                produžavaju, ali na to se ne smije računati: objekat za koji zahtjev nije podnesen u roku po pravilu
+                gubi mogućnost legalizacije po povoljnijim uslovima, a u krajnjoj liniji ostaje trajno izložen riziku
+                rušenja.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Zato je prvi savjet ovog teksta ujedno i najvažniji: ako imate bespravno izgrađen objekat ili objekat s
+                odstupanjima, provjerite odmah koji propis važi u vašem kantonu i koji rok teče. Sve ostalo je tehnika —
+                rok je sudbina.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta se uopšte smatra bespravnom gradnjom?</h3>
+              <p>
+                Pojam je širi nego što se obično misli. Bespravnom gradnjom ne smatra se samo kuća podignuta „u crno",
+                bez ijednog papira. Tu spadaju i objekti izgrađeni
+                <strong class="text-primary-900">s odstupanjem od izdate dozvole</strong> — etaža više, prošireni
+                gabarit, potkrovlje pretvoreno u stan; dograđeni i nadograđeni dijelovi postojećih legalnih objekata;
+                pomoćni objekti (garaže, ljetne kuhinje) građeni bez odobrenja; te objekti izgrađeni po dozvoli, ali
+                <strong class="text-primary-900">bez pribavljene upotrebne dozvole</strong> — što je posebna, blaža
+                kategorija, ali također zahtijeva sređivanje.
+              </p>
+              <p>
+                U praksi je najviše upravo „mješovitih" slučajeva: kuća s dozvolom iz osamdesetih, dograđena devedesetih
+                bez ičega, s potkrovljem uređenim dvijehiljaditih. Svaki takav slojeviti objekat rješava se kao cjelina,
+                i upravo tu stručna pomoć najviše znači.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta se može legalizovati — a šta ne</h3>
+              <p>
+                Ovdje dolazimo do pitanja zbog kojeg se ovaj tekst čita, pa odgovorimo otvoreno. Legalizacija nije
+                amnestija za sve — ona je provjera da li objekat, iako izgrađen mimo procedure,
+                <strong class="text-primary-900">zadovoljava suštinske uslove</strong> koje bi morao zadovoljiti i da
+                je građen redovno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Realno se može legalizovati</strong> objekat koji je u skladu s
+                namjenom prostora po važećoj planskoj dokumentaciji (ili se s njom može uskladiti), koji je izgrađen na
+                zemljištu na kojem podnosilac ima riješene imovinsko-pravne odnose (ili ih može riješiti), i koji je
+                <strong class="text-primary-900">konstruktivno stabilan i siguran za upotrebu</strong>.
+              </p>
+              <p>
+                <strong class="text-primary-900">Po pravilu se ne može legalizovati</strong> objekat izgrađen na javnim
+                površinama, u zaštitnim pojasevima infrastrukture (dalekovodi, magistralni cjevovodi, putni pojas), u
+                zonama zaštite izvorišta vode, na klizištima i plavnim područjima, u zaštićenim prirodnim i
+                kulturno-historijskim cjelinama — te objekat koji je u direktnoj i nepomirljivoj suprotnosti s planom
+                (npr. stoji na trasi planirane saobraćajnice). Ne može se legalizovati ni objekat koji ne zadovoljava
+                elementarne uslove stabilnosti — mada tu često postoji izlaz: sanacija i ojačanje konstrukcije po
+                projektu, pa legalizacija saniranog stanja.
+              </p>
+              <p>
+                Između ova dva pola postoji široka siva zona u kojoj ishod zavisi od konkretnog plana, konkretne
+                lokacije i kvaliteta pripremljene dokumentacije. Upravo za tu sivu zonu vrijedi angažovati stručnjaka
+                prije podnošenja zahtjeva — jer se loše pripremljen zahtjev lako odbije, a dobro pripremljen za isti
+                objekat prođe.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako postupak izgleda korak po korak</h3>
+              <p>Iako se detalji razlikuju po kantonima, kostur postupka je svugdje sličan.</p>
+              <p>
+                <strong class="text-primary-900">Korak 1: Zahtjev.</strong> Podnosi se nadležnoj općinskoj službi, u
+                propisanom roku, uz osnovne dokaze o objektu i zemljištu (ZK izvadak, kopija katastarskog plana). U
+                mnogim kantonima kao dokaz vremena gradnje služi avionski/satelitski snimak iz određene godine — objekti
+                vidljivi na snimku ulaze u režim legalizacije, noviji ne.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 2: Geodetski snimak izvedenog stanja.</strong> Ovlašteni geodeta
+                snima objekat kakav stvarno jeste — gabarite, položaj na parceli, spratnost — i izrađuje podlogu za
+                dalje korake i za upis.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 3: Snimak postojećeg stanja objekta / projekat izvedenog stanja.</strong>
+                Ovo je srce tehničke dokumentacije: arhitektonski snimak svih etaža, presjeka i izgleda objekta onakvog
+                kakav je izveden. Za razliku od redovnog projektovanja, ovdje se ne crta ono što će se graditi, nego se
+                dokumentuje ono što je izgrađeno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 4: Ocjena konstruktivne stabilnosti.</strong> Statičar pregleda
+                objekat i daje nalaz o njegovoj mehaničkoj otpornosti i stabilnosti. Kod urednih objekata to je potvrda;
+                kod problematičnih, nalaz definiše mjere sanacije koje su uslov legalizacije. Ovo je tačka na kojoj se
+                legalizacija razlikuje od pukog „kupovanja papira" — i dobro je da je tako, jer papir ne drži ploču.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 5: Rješenje i naknade.</strong> Ako je dokumentacija uredna i
+                objekat ispunjava uslove, organ donosi rješenje o legalizaciji (naknadno odobrenje za građenje), uz
+                plaćanje propisanih naknada — po pravilu iste one rente i naknade za uređenje građevinskog zemljišta
+                koje se plaćaju i u redovnom postupku, ponegdje uvećane po posebnim pravilima kantona.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 6: Upotrebna dozvola i upis.</strong> Nakon rješenja slijedi
+                tehnički pregled i upotrebna dozvola, a zatim upis objekta u katastar i zemljišnu knjigu. Tek tada je
+                krug zatvoren: objekat pravno postoji, može se prodati, naslijediti, opteretiti hipotekom i osigurati
+                punom snagom.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Koliko to košta i traje?</h3>
+              <p>
+                Troškovi legalizacije imaju tri dijela: <strong class="text-primary-900">tehnička dokumentacija</strong>
+                (geodetski snimak, snimak postojećeg stanja, statička ocjena — za prosječnu kuću ukupno reda veličine od
+                hiljadu do nekoliko hiljada maraka, zavisno od veličine i složenosti),
+                <strong class="text-primary-900">naknade</strong> (renta i uređenje zemljišta — najvarijabilnija stavka,
+                od simboličnih iznosa u rubnim zonama do desetina hiljada maraka u gradskim), i
+                <strong class="text-primary-900">administrativni troškovi</strong>. Vremenski, uredan predmet realno
+                traje od nekoliko mjeseci do godine — a slojeviti slučajevi s imovinskim komplikacijama i duže.
+              </p>
+              <p>
+                Nije malo. Ali poredimo s alternativom: objekat koji pravno ne postoji ne može se prodati po tržišnoj
+                cijeni (kupci s kreditom otpadaju odmah, jer banka ne uzima nelegalan objekat pod hipoteku), ne može se
+                legalno priključiti, osigurati ni urediti u nasljeđivanju bez komplikacija — a nad njim trajno visi
+                inspekcijski postupak.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Legalizacija nije trošak; ona je otključavanje vrijednosti koja u objektu već stoji zarobljena. Kuća
+                koja vrijedi 300.000 KM, a pravno ne postoji, na tržištu ne vrijedi ni pola toga.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Najčešća zabluda: „čekat ću, možda se donese povoljniji zakon"</h3>
+              <p>
+                Za kraj, o strategiji čekanja. Ona počiva na iskustvu da su se rokovi dosad produžavali — što je tačno —
+                i na nadi da će uvijek biti tako, što niko ne garantuje. U međuvremenu, dok se čeka: naknade se ne
+                smanjuju, inspekcija ne miruje, planska dokumentacija se mijenja (i može se promijeniti na štetu
+                objekta), a svaka životna situacija koja zahtijeva uredne papire — prodaja, kredit, ostavina — zatiče
+                objekat nespremnim. Iskustvo je jednoznačno: najjeftinija legalizacija je ona koja se pokrene odmah.
+              </p>
+              <p>
+                Ako imate objekat koji treba legalizovati — ili niste sigurni u kakvom je statusu —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>.
+                Pregledat ćemo dokumentaciju i plansku situaciju, reći vam otvoreno kakve su realne šanse i šta postupak
+                podrazumijeva u vašem slučaju, i pripremiti kompletnu tehničku dokumentaciju: od geodetskog snimka do
+                statičke ocjene. Prva procjena ništa ne košta — a odgovara na pitanje koje se ne isplati odgađati.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Legalizacija bespravno izgrađenih objekata u FBiH uređena je kantonalnim propisima koji se
+                međusobno razlikuju u uslovima, naknadama i rokovima, i podložni su izmjenama. Informacije u tekstu
+                predstavljaju opšti okvir; uslove i rokove za konkretan objekat obavezno provjerite u nadležnoj
+                općinskoj službi ili kod svog projektanta.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0f: Legalizacija -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Legalizacija</span>
+            <h2 class="heading-md text-primary-900 mb-4">Legalizacija bespravno izgrađenih objekata u FBiH — šta je moguće, šta nije, i kako izgleda postupak</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                O bespravnoj gradnji u Bosni i Hercegovini teško je govoriti bez brojki koje zvuče nevjerovatno: procjene
+                govore o stotinama hiljada objekata izgrađenih bez odobrenja ili s odstupanjima od njega. Iza svake od
+                tih brojki stoji konkretna kuća i konkretna porodica — a vrlo često i konkretan problem koji se pojavi
+                tek godinama kasnije: pri prodaji, nasljeđivanju, kreditnom zaduženju ili prvoj posjeti građevinske
+                inspekcije.
+              </p>
+              <p>
+                Legalizacija je pravni mehanizam kojim se takav objekat naknadno uvodi u pravni sistem. U ovom tekstu
+                objasnit ćemo šta legalizacija jeste, šta se legalizovati može a šta ne, kako postupak izgleda korak po
+                korak i — bez uljepšavanja — koliko to košta i traje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Prvo najvažnije upozorenje: propisi su kantonalni i vezani za rokove</h3>
+              <p>
+                Kao i cjelokupna oblast građenja u Federaciji BiH, i legalizacija je uređena na nivou kantona — svaki
+                kanton ima svoj zakon ili odluke o legalizaciji, s vlastitim uslovima, naknadama i, što je ključno,
+                <strong class="text-primary-900">rokovima za podnošenje zahtjeva</strong>. Ti rokovi se povremeno
+                produžavaju, ali na to se ne smije računati: objekat za koji zahtjev nije podnesen u roku po pravilu
+                gubi mogućnost legalizacije po povoljnijim uslovima, a u krajnjoj liniji ostaje trajno izložen riziku
+                rušenja.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Zato je prvi savjet ovog teksta ujedno i najvažniji: ako imate bespravno izgrađen objekat ili objekat
+                s odstupanjima, provjerite odmah koji propis važi u vašem kantonu i koji rok teče. Sve ostalo je
+                tehnika — rok je sudbina.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta se uopšte smatra bespravnom gradnjom?</h3>
+              <p>
+                Pojam je širi nego što se obično misli. Bespravnom gradnjom ne smatra se samo kuća podignuta „u crno",
+                bez ijednog papira. Tu spadaju i objekti izgrađeni <strong class="text-primary-900">s odstupanjem od
+                izdate dozvole</strong> — etaža više, prošireni gabarit, potkrovlje pretvoreno u stan; dograđeni i
+                nadograđeni dijelovi postojećih legalnih objekata; pomoćni objekti (garaže, ljetne kuhinje) građeni bez
+                odobrenja; te objekti izgrađeni po dozvoli, ali <strong class="text-primary-900">bez pribavljene
+                upotrebne dozvole</strong> — što je posebna, blaža kategorija, ali također zahtijeva sređivanje.
+              </p>
+              <p>
+                U praksi je najviše upravo „mješovitih" slučajeva: kuća s dozvolom iz osamdesetih, dograđena devedesetih
+                bez ičega, s potkrovljem uređenim dvijehiljaditih. Svaki takav slojeviti objekat rješava se kao cjelina,
+                i upravo tu stručna pomoć najviše znači.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta se može legalizovati — a šta ne</h3>
+              <p>
+                Ovdje dolazimo do pitanja zbog kojeg se ovaj tekst čita, pa odgovorimo otvoreno. Legalizacija nije
+                amnestija za sve — ona je provjera da li objekat, iako izgrađen mimo procedure,
+                <strong class="text-primary-900">zadovoljava suštinske uslove</strong> koje bi morao zadovoljiti i da
+                je građen redovno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Realno se može legalizovati</strong> objekat koji je u skladu s
+                namjenom prostora po važećoj planskoj dokumentaciji (ili se s njom može uskladiti), koji je izgrađen
+                na zemljištu na kojem podnosilac ima riješene imovinsko-pravne odnose (ili ih može riješiti), i koji je
+                <strong class="text-primary-900">konstruktivno stabilan i siguran za upotrebu</strong>.
+              </p>
+              <p>
+                <strong class="text-primary-900">Po pravilu se ne može legalizovati</strong> objekat izgrađen na javnim
+                površinama, u zaštitnim pojasevima infrastrukture (dalekovodi, magistralni cjevovodi, putni pojas),
+                u zonama zaštite izvorišta vode, na klizištima i plavnim područjima, u zaštićenim prirodnim i
+                kulturno-historijskim cjelinama — te objekat koji je u direktnoj i nepomirljivoj suprotnosti s planom
+                (npr. stoji na trasi planirane saobraćajnice). Ne može se legalizovati ni objekat koji ne zadovoljava
+                elementarne uslove stabilnosti — mada tu često postoji izlaz: sanacija i ojačanje konstrukcije po
+                projektu, pa legalizacija saniranog stanja.
+              </p>
+              <p>
+                Između ova dva pola postoji široka siva zona u kojoj ishod zavisi od konkretnog plana, konkretne lokacije
+                i kvaliteta pripremljene dokumentacije. Upravo za tu sivu zonu vrijedi angažovati stručnjaka prije
+                podnošenja zahtjeva — jer se loše pripremljen zahtjev lako odbije, a dobro pripremljen za isti objekat
+                prođe.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako postupak izgleda korak po korak</h3>
+              <p>Iako se detalji razlikuju po kantonima, kostur postupka je svugdje sličan.</p>
+              <p>
+                <strong class="text-primary-900">Korak 1: Zahtjev.</strong> Podnosi se nadležnoj općinskoj službi, u
+                propisanom roku, uz osnovne dokaze o objektu i zemljištu (ZK izvadak, kopija katastarskog plana).
+                U mnogim kantonima kao dokaz vremena gradnje služi avionski/satelitski snimak iz određene godine —
+                objekti vidljivi na snimku ulaze u režim legalizacije, noviji ne.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 2: Geodetski snimak izvedenog stanja.</strong> Ovlašteni geodeta
+                snima objekat kakav stvarno jeste — gabarite, položaj na parceli, spratnost — i izrađuje podlogu za
+                dalje korake i za upis.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 3: Snimak postojećeg stanja objekta / projekat izvedenog
+                stanja.</strong> Ovo je srce tehničke dokumentacije: arhitektonski snimak svih etaža, presjeka i izgleda
+                objekta onakvog kakav je izveden. Za razliku od redovnog projektovanja, ovdje se ne crta ono što će se
+                graditi, nego se dokumentuje ono što je izgrađeno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 4: Ocjena konstruktivne stabilnosti.</strong> Statičar pregleda
+                objekat i daje nalaz o njegovoj mehaničkoj otpornosti i stabilnosti. Kod urednih objekata to je potvrda;
+                kod problematičnih, nalaz definiše mjere sanacije koje su uslov legalizacije. Ovo je tačka na kojoj se
+                legalizacija razlikuje od pukog „kupovanja papira" — i dobro je da je tako, jer papir ne drži ploču.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 5: Rješenje i naknade.</strong> Ako je dokumentacija uredna i
+                objekat ispunjava uslove, organ donosi rješenje o legalizaciji (naknadno odobrenje za građenje), uz
+                plaćanje propisanih naknada — po pravilu iste one rente i naknade za uređenje građevinskog zemljišta
+                koje se plaćaju i u redovnom postupku, ponegdje uvećane po posebnim pravilima kantona.
+              </p>
+              <p>
+                <strong class="text-primary-900">Korak 6: Upotrebna dozvola i upis.</strong> Nakon rješenja slijedi
+                tehnički pregled i upotrebna dozvola, a zatim upis objekta u katastar i zemljišnu knjigu. Tek tada je
+                krug zatvoren: objekat pravno postoji, može se prodati, naslijediti, opteretiti hipotekom i osigurati
+                punom snagom.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Koliko to košta i traje?</h3>
+              <p>
+                Troškovi legalizacije imaju tri dijela: <strong class="text-primary-900">tehnička dokumentacija</strong>
+                (geodetski snimak, snimak postojećeg stanja, statička ocjena — za prosječnu kuću ukupno reda veličine
+                od hiljadu do nekoliko hiljada maraka, zavisno od veličine i složenosti),
+                <strong class="text-primary-900">naknade</strong> (renta i uređenje zemljišta — najvarijabilnija stavka,
+                od simboličnih iznosa u rubnim zonama do desetina hiljada maraka u gradskim), i
+                <strong class="text-primary-900">administrativni troškovi</strong>. Vremenski, uredan predmet realno
+                traje od nekoliko mjeseci do godine — a slojeviti slučajevi s imovinskim komplikacijama i duže.
+              </p>
+              <p>
+                Nije malo. Ali poredimo s alternativom: objekat koji pravno ne postoji ne može se prodati po tržišnoj
+                cijeni (kupci s kreditom otpadaju odmah, jer banka ne uzima nelegalan objekat pod hipoteku), ne može se
+                legalno priključiti, osigurati ni urediti u nasljeđivanju bez komplikacija — a nad njim trajno visi
+                inspekcijski postupak. Legalizacija nije trošak; ona je otključavanje vrijednosti koja u objektu već
+                stoji zarobljena. Kuća koja vrijedi 300.000 KM, a pravno ne postoji, na tržištu ne vrijedi ni pola toga.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Najčešća zabluda: „čekat ću, možda se donese povoljniji zakon"</h3>
+              <p>
+                Za kraj, o strategiji čekanja. Ona počiva na iskustvu da su se rokovi dosad produžavali — što je tačno —
+                i na nadi da će uvijek biti tako, što niko ne garantuje. U međuvremenu, dok se čeka: naknade se ne
+                smanjuju, inspekcija ne miruje, planska dokumentacija se mijenja (i može se promijeniti na štetu
+                objekta), a svaka životna situacija koja zahtijeva uredne papire — prodaja, kredit, ostavina — zatiče
+                objekat nespremnim. Iskustvo je jednoznačno: najjeftinija legalizacija je ona koja se pokrene odmah.
+              </p>
+              <p>
+                Ako imate objekat koji treba legalizovati — ili niste sigurni u kakvom je statusu —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>.
+                Pregledat ćemo dokumentaciju i plansku situaciju, reći vam otvoreno kakve su realne šanse i šta postupak
+                podrazumijeva u vašem slučaju, i pripremiti kompletnu tehničku dokumentaciju: od geodetskog snimka do
+                statičke ocjene. Prva procjena ništa ne košta — a odgovara na pitanje koje se ne isplati odgađati.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Legalizacija bespravno izgrađenih objekata u FBiH uređena je kantonalnim propisima koji se
+                međusobno razlikuju u uslovima, naknadama i rokovima, i podložni su izmjenama. Informacije u tekstu
+                predstavljaju opšti okvir; uslove i rokove za konkretan objekat obavezno provjerite u nadležnoj
+                općinskoj službi ili kod svog projektanta.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0g: Statički proračun -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Konstrukcije</span>
+            <h2 class="heading-md text-primary-900 mb-4">Zašto vam treba statički proračun — i šta se dešava kad ga nema</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Od svih faza projektne dokumentacije, statički proračun je najnevidljivija. Arhitektonsko rješenje se
+                gleda, o fasadi se raspravlja, kupatila se biraju mjesecima — a sveska s proračunom konstrukcije obično
+                se ne otvori nijednom. I to je, na neki način, u redu: statika i treba biti nevidljiva. Njen posao je da
+                se o njoj nikad ne razmišlja — ni kad zapuše vjetar, ni kad napada metar snijega, ni kad zatrese.
+              </p>
+              <p>
+                Ali upravo zato što je nevidljiva, statika je prva stavka na kojoj se pokušava uštedjeti. „Imamo tipski
+                projekat." „Majstor je zidao sto kuća, zna on koliko treba armature." „Šta će nam proračun za običnu
+                kuću." Ovaj tekst je odgovor na te tri rečenice — pisan iz ugla konstruktivca koji je vidio šta biva kad
+                se posluša svaka od njih.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta statički proračun zapravo jeste?</h3>
+              <p>
+                Pojednostavljeno: statički proračun je matematički dokaz da će konstrukcija nositi sve što je u njenom
+                vijeku može zadesiti — i da će to nositi uz propisanu rezervu sigurnosti.
+              </p>
+              <p>
+                „Sve što je može zadesiti" nije fraza nego precizna lista opterećenja: vlastita težina konstrukcije i
+                svih slojeva; korisno opterećenje ljudi, namještaja i opreme; snijeg — koji se u bosanskim planinskim
+                opštinama računa s vrijednostima među najvišima u regionu; vjetar; i, za naše podneblje presudno,
+                <strong class="text-primary-900">seizmičko dejstvo</strong>. Za svako od tih opterećenja, i za njihove
+                propisane kombinacije, proračun dokazuje da su temelji, zidovi, stubovi, grede, ploče i krov
+                dimenzionisani tako da izdrže — ne „otprilike", nego uz tačno definisane koeficijente sigurnosti prema
+                važećim standardima (danas su to evropski standardi, Eurocode, koji se primjenjuju i kod nas).
+              </p>
+              <p>
+                Rezultat proračuna nisu samo brojevi nego konkretni izvedbeni podaci: dimenzije svakog konstruktivnog
+                elementa, marka betona, količina, raspored i preklopi armature u svakoj poziciji. To je razlika između
+                „stavi tu nešto željeza" i „u ovu gredu ide 4Ø16 dolje, 2Ø12 gore, uzengije Ø8/15".
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Zašto je u Bosni ovo pitanje ozbiljnije nego drugdje</h3>
+              <p>
+                Bosna i Hercegovina leži u seizmički aktivnom pojasu. To nije teorijska napomena: Banja Luka 1969.
+                godine ostala je bez velikog dijela stambenog fonda; razorni zemljotresi u Albaniji 2019. i u Petrinji
+                2020. — na sat-dva vožnje od naših granica — podsjetili su cijeli region da se pitanje nije zatvorilo.
+                Seizmolozi ne znaju reći kada, ali znaju reći gdje su trusna područja — i znatan dio BiH u njima jeste.
+              </p>
+              <p>
+                Za konstrukciju, zemljotres je fundamentalno drugačije opterećenje od svih ostalih. Snijeg i namještaj
+                pritišću vertikalno, a kuće su vertikalno prirodno jake. Zemljotres trese
+                <strong class="text-primary-900">horizontalno</strong> — a horizontalna otpornost ne nastaje sama od
+                sebe. Ona se projektuje: pravilnim rasporedom nosivih zidova u oba pravca, vertikalnim i horizontalnim
+                serklažima koji zidove povezuju u cjelinu, krutim pločama koje sile raspodjeljuju, pravilnim detaljima
+                armiranja koji konstrukciji daju žilavost. Kuća može imati debele zidove i moćne temelje, i svejedno
+                biti seizmički ranjiva — ako su zidovi nepovezani, raspored neuravnotežen, a prizemlje „meko" zbog
+                velikih otvora za garažu i izloge.
+              </p>
+              <p>
+                Ništa od navedenog majstor ne može „osjetiti" iskustvom, iz jednostavnog razloga: greška se ne vidi ni
+                na gradilištu ni pedeset godina poslije. Vidi se jednom — i tada je kasno za popravni.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">„Ali komšijina kuća stoji već trideset godina bez ikakve statike"</h3>
+              <p>
+                Ovo je najčešći protivargument i zaslužuje pošten odgovor. Da, stoji — jer trideset godina nije
+                doživjela ono za šta se konstrukcije računaju. Statika se ne bavi prosječnim danom nego najgorim danom:
+                stogodišnjim snijegom, orkanskim udarom, potresom povratnog perioda od 475 godina. Kuća bez proračuna
+                nije kuća koja je dokazala sigurnost; to je kuća koja još nije bila testirana. Razlika između te dvije
+                stvari je cijela suština inženjerstva.
+              </p>
+              <p>
+                Postoji i drugi, prozaičniji odgovor: mnoge od tih kuća itekako pokazuju simptome — kose pukotine iznad
+                otvora, slegnute uglove, ploče koje „igraju", vlagu koja putuje kroz raspukle temelje. Vlasnici su na
+                njih navikli. Kupci, banke i vještaci nisu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta se konkretno dešava kad proračuna nema</h3>
+              <p>Posljedice gradnje „od oka" dolaze u tri oblika, po rastućoj cijeni.</p>
+              <p>
+                <strong class="text-primary-900">Prvi oblik: plaćate višak.</strong> Zvuči paradoksalno, ali gradnja bez
+                proračuna najčešće je <em>skuplja</em>. Tamo gdje niko nije računao, dimenzioniše se strahom: „daj
+                deblje, daj još željeza, neka se nađe". Na tipičnoj kući, višak betona i armature u odnosu na racionalno
+                proračunatu konstrukciju lako dostigne nekoliko hiljada maraka — više nego što košta kompletan statički
+                proračun. A pritom, i to je ključno, <strong class="text-primary-900">višak materijala ne znači višak
+                sigurnosti</strong>: pretjerana armatura na pogrešnom mjestu ništa ne pomaže elementu koji je zakinut na
+                pravom, a teža konstrukcija znači i veće seizmičke sile.
+              </p>
+              <p>
+                <strong class="text-primary-900">Drugi oblik: plaćate sanaciju.</strong> Slijeganje temelja projektovanih
+                bez podataka o tlu, progib preslabe ploče velikog raspona, pukotine od nadvoja „koji je majstor odredio" —
+                sve su to štete čija sanacija košta višestruko više od izvornog ispravnog rješenja. Sanacija temelja
+                postojeće kuće spada među najskuplje zahvate u građevinarstvu; proračun tih istih temelja na papiru je
+                koštao nekoliko stotina maraka.
+              </p>
+              <p>
+                <strong class="text-primary-900">Treći oblik ne opisujemo scenarijima</strong> — dovoljno je reći da su
+                savremeni propisi za seizmičko projektovanje pisani na iskustvima gradova koji su ih naučili na
+                najskuplji način. Kod konstrukcije, granica između uštede i hazarda prolazi tačno kroz proračun.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">A šta je s „tipskim projektima"?</h3>
+              <p>
+                Tipski projekat s interneta ili iz kataloga može biti odlična polazna ideja — ali njegova statika, ako
+                je uopšte ima, računata je za <em>neku</em> lokaciju: nečije tlo, nečiju snježnu zonu, nečiji seizmički
+                intenzitet. Vaša parcela ima svoje tlo (koje niko nije ispitao za katalog), svoju nadmorsku visinu i
+                svoju seizmičnost. Konstrukcija ispravna u ravnici može biti neupotrebljiva na planini pod metrom
+                snijega, i obrnuto. Tipski projekat se zato uvijek <strong class="text-primary-900">prilagođava</strong>:
+                provjerava se i ponovo računa za konkretnu lokaciju. To nije birokratski hir nego fizika — ista ona koja
+                ne pregovara.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Koliko statika košta — i kako prepoznati da je urađena kako treba</h3>
+              <p>
+                U strukturi cijene projekta, konstruktivna faza sa statičkim proračunom tipično nosi četvrtinu do
+                trećine ukupnog iznosa — dakle, za prosječnu kuću, red veličine nekoliko stotina do hiljadu i nešto
+                maraka. Naspram investicije od tristo hiljada, to je promil-dva. Nijedna polisa osiguranja na svijetu
+                ne nudi takav omjer premije i pokrića.
+              </p>
+              <p>
+                Kako prepoznati ozbiljan proračun? Tražite da ga vidite. Uredna konstruktivna faza sadrži tehnički opis
+                s jasno navedenim opterećenjima (uključujući seizmički proračun za vašu lokaciju), proračune elemenata,
+                i — najvažnije za gradilište — <strong class="text-primary-900">detaljne armaturne nacrte sa
+                specifikacijom armature</strong> za svaku poziciju. Ako „statika" staje na tri stranice generičkog
+                teksta bez armaturnih planova, to nije proračun nego alibi.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                I posljednje: proračun vrijedi koliko i njegovo izvođenje. Zato armiranje temelja, serklaža i ploča
+                treba primiti nadzorni inženjer prije betoniranja — jer je to jedini trenutak u kojem se armatura još
+                može vidjeti. Poslije nje ostaje samo povjerenje. Naš posao je da povjerenje zamijenimo dokazom.
+              </p>
+              <p>
+                Ako gradite, dograđujete, otvarate zid u postojećoj kući ili ste naslijedili objekat u čiju konstrukciju
+                niste sigurni —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">javite nam se</a>.
+                Statika je naša matična struka: od proračuna novih konstrukcija do ocjene i sanacije postojećih. Prvi
+                razgovor i pregled situacije ništa ne koštaju — a kod konstrukcije, rano pitanje je uvijek jeftinije od
+                kasnog odgovora.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera. Obaveza izrade konstruktivne faze projekta i primjena
+                važećih standarda za konstrukcije propisani su kantonalnim zakonima o prostornom uređenju i građenju u
+                FBiH i pratećim tehničkim propisima.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0h: Adaptacija, rekonstrukcija, dogradnja -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Dozvole i procedura</span>
+            <h2 class="heading-md text-primary-900 mb-4">Adaptacija, rekonstrukcija, dogradnja — šta od toga zahtijeva dozvolu?</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Najveći broj građevinskih poduhvata u BiH uopšte nisu nove kuće. To su zahvati na postojećim objektima:
+                renoviranje naslijeđene kuće, spajanje dvije prostorije rušenjem zida, pretvaranje potkrovlja u stan,
+                dogradnja garaže, zamjena krova. I upravo tu vlada najveća pravna magla — jer dok za novu kuću svako
+                zna da treba dozvola, za zahvate na postojećem objektu odgovori se traže po komšiluku, a komšiluk zna
+                svašta.
+              </p>
+              <p>
+                Posljedice pogrešne procjene idu u oba smjera. Ko za dozvolom posegne tamo gdje ne treba, gubi mjesece
+                i novac na nepotrebnu proceduru. Ko je preskoči tamo gdje treba, stvorio je bespravni zahvat — sa svim
+                rizicima o kojima smo pisali u tekstu o legalizaciji, od inspekcije do problema pri prodaji. Ovaj tekst
+                je zato pokušaj da se magla raščisti: šta je šta, gdje prolazi granica dozvole, i — jednako važno —
+                gdje prolazi granica konstruktivne sigurnosti.
+              </p>
+              <p>
+                Obavezna napomena prije svega: kao i cijela oblast građenja u FBiH, i ovo je uređeno
+                <strong class="text-primary-900">kantonalnim zakonima</strong>, koji se u definicijama i izuzecima
+                razlikuju. Ono što slijedi je zajednička logika svih tih propisa; za konkretan zahvat na konkretnoj
+                adresi, provjera u nadležnoj službi ili kod projektanta je obavezan prvi korak.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Ključni princip: pitanje nije „koliko je zahvat velik" nego „šta zahvat mijenja"</h3>
+              <p>
+                Laička intuicija kaže: mali radovi ne trebaju dozvolu, veliki trebaju. Propis, međutim, ne mjeri zahvat
+                kvadratima ni cijenom, nego onim što zahvat <strong class="text-primary-900">mijenja</strong> na
+                objektu. Tri su pitanja koja odlučuju:
+              </p>
+              <p>
+                Da li zahvat dira <strong class="text-primary-900">konstrukciju</strong> — nosive zidove, stubove,
+                grede, ploče, temelje, krovnu konstrukciju? Da li mijenja <strong class="text-primary-900">gabarit</strong> —
+                vanjske dimenzije, spratnost, volumen objekta? Da li mijenja
+                <strong class="text-primary-900">namjenu</strong> — stan u poslovni prostor, tavan u stambeni prostor,
+                garažu u stan?
+              </p>
+              <p>
+                Ako je odgovor na sva tri pitanja „ne", zahvat po pravilu spada u održavanje ili adaptaciju i najčešće
+                se izvodi bez odobrenja za građenje. Ako je bilo koji odgovor „da", ušli ste u zonu rekonstrukcije ili
+                dogradnje — a to znači dozvola, projekat i, gotovo uvijek, statika. Zapamtite ovaj trougao —
+                konstrukcija, gabarit, namjena — i devedeset posto dilema riješit ćete sami.
+              </p>
+              <p>Sada pojmove razmotajmo redom.</p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Tekuće održavanje — bez dozvole</h3>
+              <p>
+                Održavanje je sve ono čime objekat čuvate u postojećem stanju: krečenje i fasadersko-molerski radovi,
+                zamjena podova, obnova hidroizolacije, zamjena crijepa (bez zahvata u krovnu konstrukciju), zamjena
+                oluka, popravka instalacija, zamjena prozora i vrata <strong class="text-primary-900">istih dimenzija
+                na istim mjestima</strong>. Za ove radove odobrenje za građenje nije potrebno — objekat poslije njih
+                ostaje isti objekat, samo uredniji.
+              </p>
+              <p>
+                Jedina realna zamka kod održavanja jesu objekti u zaštićenim historijskim cjelinama i objekti pod
+                režimom zaštite kulturnog naslijeđa: tamo i „obično" mijenjanje stolarije ili boje fasade može
+                zahtijevati saglasnost nadležne službe zaštite. Ako je vaš objekat u starom gradskom jezgru —
+                provjerite prije nego što skele osvanu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Adaptacija — po pravilu bez dozvole, ali s jednom velikom zvjezdicom</h3>
+              <p>
+                Adaptacija je prilagođavanje prostora novim potrebama <strong class="text-primary-900">bez zadiranja u
+                konstrukciju, gabarit i namjenu</strong>: novi raspored pregradnih (nenosivih) zidova, novo kupatilo,
+                preuređenje kuhinje, obnova instalacija u stanu. U većini kantona ovakvi zahvati ne zahtijevaju
+                odobrenje za građenje (u nekim slučajevima je predviđena samo prijava radova nadležnoj službi —
+                provjerite lokalno pravilo).
+              </p>
+              <p>
+                A sada zvjezdica, i to krupna: <strong class="text-primary-900">granica adaptacije prolazi tačno kroz
+                pitanje koji je zid nosiv</strong>. Ruši li se pregradni zid od deset centimetara siporeksa —
+                adaptacija. Ruši li se, ili se u njemu otvara veliki otvor, zid koji nosi ploču iznad — to više nije
+                adaptacija nego zahvat u konstrukciju, dakle rekonstrukcija, dakle dozvola i statički proračun s
+                projektom ojačanja (greda, podvlaka, stubovi).
+              </p>
+              <p>
+                Problem je što laik nosivi zid od pregradnog često <strong class="text-primary-900">ne može
+                razlikovati</strong>. Debljina pomaže, ali vara: postoje nosivi zidovi od 12 cm i pregradni od 25.
+                U stambenim zgradama stvar je još ozbiljnija — zid u vašem stanu može nositi šest etaža iznad vas, i
+                njegovo „otvaranje radi prostranosti" ugrožava sve stanare, zbog čega je u zgradama za ovakve zahvate
+                uvijek potrebna i saglasnost i projekat.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
+                Pravilo je zato jednostavno: nijedan zid se ne ruši dok konstruktivac nije rekao šta taj zid radi.
+                Taj pregled traje sat vremena; posljedice pogrešne procjene mjere se pločama.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Rekonstrukcija — dozvola obavezna</h3>
+              <p>
+                Rekonstrukcija je svaki zahvat kojim se mijenjaju konstruktivni elementi, gabarit ili namjena postojećeg
+                objekta: otvaranje ili rušenje nosivih zidova, zamjena međuspratne konstrukcije, zamjena kompletne
+                krovne konstrukcije (pogotovo uz izmjenu nagiba ili visine), pretvaranje tavana u stambeno potkrovlje
+                s krovnim prozorima i badžama, prenamjena stambenog u poslovni prostor i obrnuto, ozbiljniji zahvati
+                na temeljima.
+              </p>
+              <p>
+                Za rekonstrukciju važi ista procedura kao za gradnju: urbanistička saglasnost odnosno lokacijska
+                informacija, glavni projekat rekonstrukcije — koji uz novo stanje sadrži i
+                <strong class="text-primary-900">snimak postojećeg stanja</strong> te statičku provjeru postojeće
+                konstrukcije za nova opterećenja — pa odobrenje za građenje. Tipičan primjer iz prakse: pretvaranje
+                tavana u stan. Naizgled „unutrašnji" posao, a u stvarnosti mijenja i namjenu, i opterećenje na
+                postojeću ploču (koja je računata za tavan, ne za stan!), i često krovnu geometriju. Tri „da" od tri
+                moguća — dozvola bez dileme.
+              </p>
+              <p>
+                Posebna kategorija je <strong class="text-primary-900">sanacija</strong> — vraćanje oštećenog objekta
+                u ispravno stanje (nakon požara, slijeganja, klizišta). Ona konstrukciju itekako dira, pa zahtijeva
+                projekat i, po pravilu, odobrenje, ali propisi za nju često predviđaju ubrzane procedure. Ako je
+                objekat oštećen, prvo statičar, pa služba — tim redom.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Dogradnja i nadogradnja — tretiraju se kao nova gradnja</h3>
+              <p>
+                Dogradnja (širenje objekta u tlocrtu — nova prostorija, garaža uz kuću, zimska bašta) i nadogradnja
+                (nova etaža ili povišenje) mijenjaju gabarit po definiciji, i propisi ih izjednačavaju s novom gradnjom:
+                puna procedura, od urbanističke saglasnosti do upotrebne dozvole.
+              </p>
+              <p>
+                Kod nadogradnje posebno naglašavamo konstruktivnu stranu, jer se ona uporno potcjenjuje: postojeća kuća
+                je temeljena i dimenzionisana za težinu koju <strong class="text-primary-900">već nosi</strong>. Nova
+                etaža znači novo trajno opterećenje na zidove i temelje koji za njega nisu računati — i znači promjenu
+                seizmičkog ponašanja cijelog objekta, jer masa dodana na vrh konstrukcije pri potresu radi najgori
+                mogući posao. Nekad postojeća konstrukcija ima rezervu, nekad treba ojačanje, a nekad je pošten
+                inženjerski odgovor: ova kuća drugu etažu ne može dobiti za razuman novac. Sva tri odgovora daje samo
+                proračun — nikad dojam.
+              </p>
+              <p>
+                I jedna česta zabluda za kraj ovog dijela: „dograđujem na svojoj parceli, koga se to tiče". Tiče se —
+                regulacioni plan i za postojeće objekte propisuje koeficijente izgrađenosti i udaljenosti od međa, pa
+                dogradnja može biti nedopustiva čak i kad je konstruktivno besprijekorna. Provjera plana ide prije skice.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sažetak koji možete zalijepiti na frižider</h3>
+              <p>
+                <strong class="text-primary-900">Bez dozvole:</strong> održavanje i tipična adaptacija — sve što ne
+                dira konstrukciju, gabarit i namjenu (uz oprez kod zaštićenih objekata i uz lokalnu provjeru treba li
+                prijava radova). <strong class="text-primary-900">S dozvolom:</strong> rekonstrukcija — svaki zahvat u
+                nosive elemente, krovnu konstrukciju, međuspratne ploče ili namjenu.
+                <strong class="text-primary-900">S dozvolom, kao nova gradnja:</strong> dogradnja i nadogradnja.
+                <strong class="text-primary-900">A prije svega toga:</strong> nijedan zid ne pada i nijedna etaža ne
+                raste dok konstruktivac nije pogledao objekat.
+              </p>
+              <p>
+                Planirate li zahvat na postojećem objektu, a niste sigurni u koju kategoriju spada —
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">pošaljite nam</a>
+                nekoliko fotografija i opis onoga što želite. Reći ćemo vam otvoreno šta zahvat traži od dokumentacije
+                i da li ga konstrukcija podnosi, a po potrebi izlazimo na objekat i radimo snimak postojećeg stanja sa
+                stručnom ocjenom. Taj prvi razgovor ništa ne košta — a razlika između adaptacije i rekonstrukcije, kako
+                smo vidjeli, zna koštati mnogo.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Definicije zahvata na postojećim objektima i uslovi za njihovo izvođenje propisani su
+                kantonalnim zakonima o prostornom uređenju i građenju u FBiH i međusobno se razlikuju. Tekst prikazuje
+                zajednički okvir; prije početka radova obavezno provjerite pravila koja važe u vašem kantonu i općini.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0i: Izbor parcele -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Za investitore</span>
+            <h2 class="heading-md text-primary-900 mb-4">Kako izabrati parcelu za gradnju — vodič kroz ono što oglasi ne pišu</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Izbor parcele je prva i najnepovratnija odluka u cijelom procesu gradnje. Kuću možete preprojektovati,
+                izvođača promijeniti, budžet preraspodijeliti — parcelu, kad je jednom kupite, mijenjati ne možete.
+                A ipak, upravo se ta odluka najčešće donosi najbrže: na osnovu lokacije, cijene i utiska sa sunčanog
+                popodneva.
+              </p>
+              <p>
+                Ovaj tekst je pokušaj da tu odluku usporimo i naoružamo. Napisan je iz ugla projektanata koji parcele
+                gledaju poslije kupovine — kad se od terena mora napraviti najbolje što se može — i koji zato dobro
+                znaju šta bi kupci voljeli da su provjerili prije.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj prvi: pravni — šta se na parceli smije</h3>
+              <p>
+                O ovome smo detaljno pisali u tekstu o greškama investitora, pa ovdje samo učvrstimo temelj: prije bilo
+                kakve kapare, parcela mora proći dvije provjere.
+              </p>
+              <p>
+                <strong class="text-primary-900">Planska dokumentacija.</strong> Izvod iz regulacionog ili prostornog
+                plana (dobija se u općini) kaže šta se na parceli smije graditi: namjenu, spratnost, koeficijente
+                izgrađenosti, građevinsku liniju, udaljenosti od međa. Bez tog papira ne znate da li kupujete
+                građevinsko zemljište ili skupu livadu. Posebno provjerite da preko parcele ili uz nju nije planirana
+                saobraćajnica, dalekovod ili drugi infrastrukturni koridor — planovi znaju „vidjeti" ono što na terenu
+                još ne postoji.
+              </p>
+              <p>
+                <strong class="text-primary-900">Imovinsko-pravni status.</strong> Svjež ZK izvadak bez tereta,
+                usklađenost katastra i gruntovnice, jasne međe (idealno obilježene i potvrđene geodetskim snimkom).
+                Suvlasništvo „koje će se lako riješiti" i međa „koju svi znaju gdje je" — dva su najskuplja optimizma
+                u prometu zemljištem.
+              </p>
+              <p>Tek kad parcela prođe pravni sloj, vrijedi je gledati dalje. Sada dolazi ono o čemu se piše rjeđe.</p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj drugi: teren — šta parcela fizički jeste</h3>
+              <p>
+                <strong class="text-primary-900">Nagib.</strong> Ravna parcela je najjeftinija za gradnju; to je
+                poznato. Manje je poznato koliko padina košta: potporni zidovi, veći iskopi, složenije temeljenje,
+                suteren koji „morate" napraviti — na strmijim terenima ovi troškovi lako dodaju 15–30% na cijenu
+                objekta. To ne znači da padinu treba izbjegavati: padina daruje pogled, svjetlo i etažu više bez
+                povećanja gabarita u planu. Znači da razliku u cijeni parcele treba računati zajedno s razlikom u
+                cijeni gradnje — jeftinija strma parcela s pogledom i skuplja ravna bez njega često se na kraju sretnu
+                u istoj ukupnoj cifri. Birajte, dakle, svjesno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Tlo.</strong> Ono što se ne vidi, a o svemu odlučuje. Nasip, glina
+                koja bubri, visok nivo podzemne vode, stijena na pola metra dubine — svako od toga mijenja koncept i
+                cijenu temeljenja. Signali koje možete uočiti i sami: trska i vodoljubivo rastinje (voda), okolne kuće
+                s pukotinama ili saniranim soklovima, svježi nasipi („parcela je nasuta i poravnata" u oglasu je
+                rečenica koju treba čitati s posebnom pažnjom — pitanje je čime i kada). Kod ozbiljne sumnje,
+                geomehaničko sondiranje prije kupovine košta nekoliko stotina maraka i predstavlja najisplativiju
+                analizu u cijelom procesu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Voda — u svim oblicima.</strong> Provjerite da li je parcela u plavnoj
+                zoni (blizina potoka i rijeka, tragovi mulja na okolnim ogradama), kuda otiče oborinska voda s okolnih
+                terena (parcela u „džepu" padine prima tuđu vodu), te — na padinama — postoje li znaci klizišta:
+                nakrivljena stabla, valovit teren, pukotine u okolnim potpornim zidovima. Klizište je jedini problem na
+                ovoj listi koji novac ponekad ne može riješiti; od takve parcele se odustaje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj treći: infrastruktura — šta do parcele dolazi</h3>
+              <p>
+                <strong class="text-primary-900">Pristupni put.</strong> Zvuči banalno, a među najčešćim je problemima
+                u praksi: parcela mora imati <strong class="text-primary-900">pravno uređen</strong> pristup s javnog
+                puta — ne stazu „kojom se oduvijek prolazi" preko komšijine njive. Provjerite i širinu i nagib pristupa:
+                put kojim ne može proći mješalica i kamion s materijalom znači pretovar i poskupljenje svake faze
+                gradnje, a zimi na strmom prilazu i svakodnevni problem.
+              </p>
+              <p>
+                <strong class="text-primary-900">Priključci.</strong> Za svaki od njih pitanje nije samo „ima li ga u
+                ulici" nego „koliko košta do moje parcele": struja (udaljenost od trafostanice i raspoloživa snaga —
+                pogotovo ako planirate toplotnu pumpu ili punjač za auto), voda (pritisak u mreži na višim kotama zna
+                biti mizeran), kanalizacija (ako je nema, računajte septičku jamu ili mini-prečistač — i prostor za njih
+                na parceli), te internet, koji je za sve više kupaca postao infrastruktura prvog reda. Udaljenost od
+                mreža mjeri se novcem: svaki metar priključnog voda je stavka, a stotinjak metara do najbližeg stuba
+                može značiti i deset hiljada maraka prije prvog iskopa.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj četvrti: orijentacija i okruženje — kako će se na parceli živjeti</h3>
+              <p>
+                <strong class="text-primary-900">Sunce.</strong> Parcela s pristupom sa sjevera je mala tajna
+                projektantskog zanata: kuća se tada prirodno postavlja uz sjevernu među, s dnevnim prostorima i baštom
+                prema jugu, u privatnosti od ulice. Parcela s pristupom s juga traži pažljivije rješenje da dnevni
+                boravak ne završi gledajući u ulicu ili u sjenku vlastite garaže. Ni jedno ni drugo nije prepreka —
+                ali je razlika koju dobar projektant koristi, a loš trpi. Na padinama pazite i na
+                <strong class="text-primary-900">zasjenjenje reljefom</strong>: parcela na sjevernoj strani brda u
+                dolini zimi zna ostati bez direktnog sunca sedmicama.
+              </p>
+              <p>
+                <strong class="text-primary-900">Okruženje — današnje i buduće.</strong> Prošetajte lokacijom u
+                različita doba dana i sedmice: saobraćaj ponedjeljkom u osam ujutro, miris i buka okolnih pogona,
+                punoća ulice parkiranim autima. A zatim se vratite planskoj dokumentaciji s drugim pitanjem: ne šta
+                smijem ja, nego <strong class="text-primary-900">šta smiju susjedi</strong>. Prazna parcela s pogledom
+                preko puta vrijedi malo ako plan na njoj dozvoljava četiri etaže. Pogled se ne kupuje kupovinom svoje
+                parcele — on se provjerava u tuđim koeficijentima.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Sloj peti: ekonomija — cijela jednačina, ne pola</h3>
+              <p>
+                Sad sve sastavimo. Prava cijena parcele nije cifra iz oglasa, nego zbir: cijena zemljišta + trošak
+                dovođenja priključaka + korekcija cijene gradnje zbog terena i tla + naknade koje slijede uz dozvolu
+                (renta zavisi od zone!) + eventualni troškovi pravnog sređivanja. Tek ta suma je uporediva među
+                parcelama.
+              </p>
+              <p>
+                Kad se tako računa, tabela se često preokrene: „skupa" parcela u opremljenoj zoni s ravnim terenom i
+                priključcima na međi ispadne jeftinija od „povoljne" ledine do koje treba dovesti sve, preko puta koji
+                treba tek uknjižiti, na tlu koje traži ploču umjesto traka. Oglas prodaje kvadrate; vi kupujete ukupan
+                trošak stanovanja na tom mjestu.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Umjesto zaključka: sat vremena koji mijenja sve</h3>
+              <p>
+                Većina provjera iz ovog teksta ne traži ni novac ni struku — traži samo da se obave prije kapare, a ne
+                poslije. Za ostatak — čitanje plana, ocjenu terena, procjenu troškova temeljenja i priključaka — postoji
+                rješenje koje uporno preporučujemo i u ovom slučaju otvoreno reklamiramo, jer iza njega stojimo:
+                <strong class="text-primary-900">povedite projektanta na parcelu prije kupovine</strong>. Sat-dva
+                stručnog obilaska s izvodom iz plana u ruci pretvara kupovinu na dojam u kupovinu s pokrićem — i
+                nerijetko uštedi upravo onih nekoliko desetina hiljada maraka koje razdvajaju dobru odluku od skupe.
+              </p>
+              <p>
+                Gledate parcelu i dvoumite se?
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">Pošaljite nam</a>
+                lokaciju i ono što o njoj znate — pregledat ćemo plansku situaciju i reći vam na šta da obratite pažnju,
+                a po dogovoru izlazimo i na teren. Taj razgovor ništa ne košta, a dolazi u jedinom trenutku kad još sve
+                opcije stoje otvorene: prije potpisa.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Tekst je informativnog karaktera. Uslovi gradnje na konkretnoj parceli utvrđuju se planskom
+                dokumentacijom i propisima kantona i općine na čijem se području parcela nalazi, pa ih prije kupovine
+                obavezno provjerite u nadležnoj službi.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 0j: Nadzor nad gradnjom -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Gradnja i nadzor</span>
+            <h2 class="heading-md text-primary-900 mb-4">Nadzor nad gradnjom — zašto je obavezan i kako vas štiti</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Kada investitor prvi put čuje da uz izvođača mora platiti i nadzornog inženjera, reakcija je gotovo
+                uvijek ista: „Zar ja plaćam nekoga da gleda kako drugi rade?" Pitanje je legitimno — i zaslužuje ozbiljan
+                odgovor, a ne pozivanje na propis. Jer nadzor jeste zakonska obaveza, ali to je najmanje zanimljivo o
+                njemu. Zanimljivo je zašto ta obaveza postoji, šta nadzorni inženjer stvarno radi, i zašto je — po našem
+                dubokom uvjerenju, izgrađenom na gradilištima, ne u kancelariji — nadzor najisplativija stavka u budžetu
+                svake gradnje.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Osnovni problem: sukob interesa ugrađen u svaku gradnju</h3>
+              <p>
+                Krenimo od strukture situacije. Gradnja je posao u kojem investitor plaća nešto u šta se ne razumije,
+                izvođaču čiji je interes — sasvim legitimno — da posao završi što brže i uz što manji vlastiti trošak.
+                Devedeset posto onoga što se plaća biva zauvijek sakriveno: armatura nestaje u betonu, hidroizolacija
+                pod estrihom, instalacije pod žbukom. Kvalitet se, dakle, ne može provjeriti na kraju — na kraju se vidi
+                samo keramika.
+              </p>
+              <p>
+                U takvoj strukturi, investitor bez stručnog zastupnika nije ugovorna strana nego posmatrač. Nadzorni
+                inženjer je odgovor sistema na taj problem: <strong class="text-primary-900">stručnjak koji na
+                gradilištu zastupa isključivo interes investitora</strong>, s ovlaštenjem da traži, zaustavi i ne prizna.
+                Zato zakon i traži da nadzor bude nezavisan od izvođača — nadzor kojeg predloži i „uračuna" izvođač nije
+                nadzor nego dekor. To je prva stvar koju treba znati: nadzornog inženjera birate i angažujete vi, ne
+                majstor.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Šta nadzorni inženjer konkretno radi?</h3>
+              <p>
+                Riječ „nadzor" zvuči pasivno — kao neko ko povremeno navrati i pogleda. Stvarni sadržaj posla je
+                drugačiji, i vrijedi ga nabrojati konkretno.
+              </p>
+              <p>
+                <strong class="text-primary-900">Kontroliše da se gradi po projektu.</strong> Svaka dimenzija, svaki
+                materijal, svaki detalj — ono što je u projektu proračunato i plaćeno, to na gradilištu mora i biti.
+                Odstupanja bez saglasnosti projektanta nadzor ne propušta; a kad su izmjene opravdane, nadzor ih kanališe
+                kroz propisanu proceduru umjesto kroz „dogovorili smo se s majstorom".
+              </p>
+              <p>
+                <strong class="text-primary-900">Prima radove koji se zatvaraju — prije nego što se zatvore.</strong>
+                Ovo je srce posla. Armatura temelja, serklaža i ploča pregleda se i prima
+                <strong class="text-primary-900">prije betoniranja</strong>, jer je to posljednji trenutak u kojem se
+                količina, profili, raspored i preklopi armature mogu vidjeti i uporediti s armaturnim nacrtima. Isto
+                važi za hidroizolaciju prije zatrpavanja, instalacije prije žbukanja, slojeve poda prije estriha. Svaki
+                od tih prijema upisuje se u građevinski dnevnik — i svaki od njih je tačka na kojoj se loša gradnja
+                zaustavlja jeftino. Poslije betoniranja, ista greška se ne popravlja nego sanira, a to su dvije
+                nesamjerljive cijene.
+              </p>
+              <p>
+                <strong class="text-primary-900">Kontroliše materijale i ateste.</strong> Beton koji stiže na gradilište
+                mora biti marke iz projekta i s pratećom dokumentacijom; čelik, blokovi, izolacije — sve što se ugrađuje
+                mora imati dokaz kvaliteta. Bez nadzora, atesti se skupljaju „poslije, za tehnički" — što znači nikad
+                ili napamet. S nadzorom, dokumentacija raste zajedno s kućom, i tehnički prijem na kraju prolazi bez
+                drame.
+              </p>
+              <p>
+                <strong class="text-primary-900">Kontroliše obračun.</strong> Nadzor ovjerava građevinske situacije —
+                obračune izvedenih radova po kojima izvođaču plaćate. Svaka stavka i količina provjerava se prema
+                stvarno izvedenom i prema ugovorenom predmjeru. Ovo je dio posla koji se najdirektnije mjeri novcem:
+                razlika između „piše da je ugrađeno" i „izmjereno je da je ugrađeno" na prosječnoj kući nije zanemariva —
+                a bez nadzora je ne mjeri niko.
+              </p>
+              <p>
+                <strong class="text-primary-900">Vodi red u papirima i procesu.</strong> Uredno vođen građevinski
+                dnevnik (o kojem smo pisali u tekstu o greškama investitora), evidentirane izmjene, dokumentovani
+                prijemi faza — sve to nije birokratija nego memorija gradilišta. Ako spora nikad ne bude, dnevnik je
+                koštao malo. Ako spora bude, dnevnik je jedini svjedok koji ne mijenja iskaz.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">„Ali ja imam dobrog majstora, radio je i bratu i komšiji"</h3>
+              <p>
+                Vjerujemo — i nemamo ništa protiv dobrih majstora; s njima je i nadzoru posao lakši i ljepši. Ali
+                argument promašuje strukturu problema iz dva razloga.
+              </p>
+              <p>
+                Prvi: dobar izvođač i nezavisna kontrola nisu alternative nego par, u svakoj ozbiljnoj djelatnosti.
+                I najbolji pilot leti uz kontrolne liste i drugu ruku u kokpitu; i najbolja apoteka ima duplu provjeru
+                lijeka. Kontrola nije uvreda kvalitetu — ona je uslov da kvalitet bude dokaziv, a ne stvar povjerenja.
+              </p>
+              <p>
+                Drugi, praktičniji: „dobar majstor" je po pravilu dobar u onome što najčešće radi. Zidanje i
+                betoniranje — vrlo vjerovatno. Ali da li zna zašto je projektant tražio baš takav raspored uzengija u
+                čvoru grede i stuba (odgovor je: seizmika — o čemu smo pisali u tekstu o statičkom proračunu), ili kako
+                se pravilno izvodi detalj hidroizolacije na spoju temelja i zida u padini? Možda zna. Nadzor postoji da
+                „možda" zamijeni sa „provjereno". Kuća se ne gradi na povjerenju u prosjek — gradi se na provjeri svakog
+                kritičnog detalja.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Koliko nadzor košta — i koliko vraća</h3>
+              <p>
+                Nadzor za porodičnu kuću tipično se ugovara kao procenat vrijednosti radova (najčešće oko jedan posto,
+                zavisno od obima i dinamike) ili kao fiksni mjesečni iznos za period gradnje. Na investiciji od 300.000
+                KM, govorimo dakle o iznosu reda veličine dvije do četiri hiljade maraka za cijelu gradnju.
+              </p>
+              <p>
+                Šta stoji na drugoj strani vage? Precizno obračunate situacije umjesto paušalnih; greške zaustavljene
+                prije betoniranja umjesto sanacija poslije njega; materijali koji odgovaraju plaćenima; dokumentacija
+                spremna za tehnički prijem bez naknadnog „sastavljanja"; i — teško mjerljivo, ali svakome ko je gradio
+                poznato — mir investitora koji zna da na gradilištu ima svoje oči. Naše iskustvo, a ono se poklapa sa
+                svjetskim: nadzor se vrati već na obračunu, a sve što spriječi je čista dobit. Zato ga ne opisujemo kao
+                trošak nego onako kako smo počeli ovu seriju tekstova: kao osiguranje s premijom od jedan posto i
+                pokrićem od svih ostalih devedeset devet.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Kako izabrati nadzornog inženjera</h3>
+              <p>
+                Tri kriterija, po važnosti. <strong class="text-primary-900">Nezavisnost:</strong> nikakve poslovne
+                veze s izvođačem — to je uslov bez kojeg sve ostalo ne vrijedi.
+                <strong class="text-primary-900">Struka koja odgovara fazi:</strong> za grubu gradnju to je građevinski
+                inženjer konstruktivnog usmjerenja, jer se tada donose sve odluke koje kuća nosi do kraja vijeka; kod
+                složenijih objekata nadzor je timski, po fazama (građevinska, elektro, mašinska).
+                <strong class="text-primary-900">Prisustvo, ne formalnost:</strong> ugovorite jasno šta nadzor
+                obuhvata — obavezno prisustvo svim prijemima faza koje se zatvaraju, dostupnost za vanredne situacije,
+                ovjeru situacija. Nadzor koji se pojavi dvaput i potpiše na kraju nije jeftiniji nadzor; to je skuplji
+                pečat.
+              </p>
+              <p>
+                Prirodno je pitanje može li nadzor raditi biro koji je radio i projekat. Može — i to ima svoje
+                prednosti: niko ne poznaje projekat bolje od njegovog autora, pa se pitanja s gradilišta rješavaju u
+                istom danu, bez prevodilaca između papira i terena. Bitno je samo da ostane ona prva, nepregovoriva
+                tačka: nezavisnost od izvođača.
+              </p>
+
+              <h3 class="heading-sm text-primary-900 pt-4">Za kraj serije: gradnja kao lanac provjera</h3>
+              <p>
+                Ovim tekstom zaokružujemo seriju vodiča za investitore — od parcele, preko dozvole i projekta, do
+                gradilišta. Ako iz svih deset tekstova treba izvući jednu misao, ona bi glasila:
+                <strong class="text-primary-900">uspješna gradnja nije niz sretnih okolnosti nego lanac provjera</strong> —
+                plana prije kupovine, tla prije temelja, projekta prije dozvole, ugovora prije potpisa, armature prije
+                betona. Nadzor je posljednja karika tog lanca, ona koja sve prethodne drži zategnutim tamo gdje se
+                odluke pretvaraju u beton.
+              </p>
+              <p>
+                Planirate gradnju i treba vam nadzor — ili tek slažete cijeli lanac od početka?
+                <a href="index.html#contact" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">Javite nam se</a>.
+                Radimo i projektovanje i nadzor, na način o kojem smo u ovih deset tekstova otvoreno pisali: s
+                proračunom umjesto dojma, s papirima umjesto obećanja, i s vašim interesom kao jedinim na koji
+                odgovaramo. Prvi razgovor, kao i uvijek — ništa ne košta.
+              </p>
+              <p class="text-sm text-charcoal-500 border-l-2 border-charcoal-300 pl-4">
+                Napomena: Obaveza stručnog nadzora nad građenjem, uslovi za nadzornog inženjera i sadržaj nadzora
+                propisani su kantonalnim zakonima o prostornom uređenju i građenju u FBiH. Tekst je informativnog
+                karaktera; detalje za konkretnu gradnju provjerite u važećem propisu svog kantona.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 1 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Konstrukcije</span>
+            <h2 class="heading-md text-primary-900 mb-4">Projektovanje na seizmičkim područjima</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Bosna i Hercegovina spada u seizmički aktivna područja, i to je činjenica koja mora oblikovati
+                svaku konstrukciju od prvog koncepta. Seizmička otpornost se ne "dodaje" na kraju proračuna —
+                ona se postiže prije svega pravilnom koncepcijom objekta.
+              </p>
+              <p>
+                Osnovna načela su jednostavna, a presudna: <strong class="text-primary-900">pravilnost osnove i po visini</strong>
+                (izbjegavanje naglih promjena krutosti), <strong class="text-primary-900">kontinuitet vertikalnih elemenata</strong>
+                od temelja do krova, i jasna putanja prenosa horizontalnih sila. Objekat pravilne, simetrične osnove sa
+                dobro raspoređenim zidovima ili jezgrima ponašaće se pri potresu neuporedivo bolje od nepravilnog,
+                čak i uz isti utrošak materijala.
+              </p>
+              <p>
+                Savremeni proračun zasniva se na evropskim normama (Eurocode 8), koje definišu projektno seizmičko
+                opterećenje prema lokaciji, tipu tla i značaju objekta. Posebnu pažnju zahtijevaju detalji armiranja —
+                duktilnost konstrukcije, odnosno njena sposobnost da se deformiše bez loma, postiže se upravo pravilnim
+                detaljima čvorova, uzengija i preklopa, a ne samo količinom armature.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Materijali</span>
+            <h2 class="heading-md text-primary-900 mb-4">Beton, čelik ili drvo — kako se bira konstruktivni sistem</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Izbor osnovnog materijala konstrukcije rijetko je stvar ukusa — on proizlazi iz namjene objekta,
+                raspona, lokacije, budžeta i dinamike gradnje.
+              </p>
+              <p>
+                <strong class="text-primary-900">Armirani beton</strong> je kod nas dominantan izbor za stambene i
+                poslovne objekte: trajan je, otporan na požar, prilagodljiv gotovo svakoj formi i oslanja se na
+                lokalno dostupnu radnu snagu i materijal. Njegova masa je prednost kod zvučne izolacije, ali i
+                dodatno seizmičko opterećenje koje proračun mora obuhvatiti.
+              </p>
+              <p>
+                <strong class="text-primary-900">Čelik</strong> dolazi do izražaja kod velikih raspona i brze montaže —
+                hale, industrijski objekti, nadogradnje. Manja težina konstrukcije znači manje temelje, ali zahtijeva
+                pažljivu protivpožarnu zaštitu i kvalitetnu antikorozivnu obradu.
+              </p>
+              <p>
+                <strong class="text-primary-900">Drvo</strong>, posebno lijepljeno lamelirano i CLT, doživljava povratak
+                kao konstruktivni materijal — lagano je, obnovljivo i omogućava izuzetno brzu montažu. Kod nas se najviše
+                koristi za krovne konstrukcije i manje objekte, a savremeni inženjerski proizvodi od drveta otvaraju
+                prostor i za ozbiljnije konstrukcije.
+              </p>
+              <p>
+                U praksi, najbolja rješenja su često kombinovana: betonsko jezgro i temelji, čelična ili drvena
+                krovna konstrukcija — svaki materijal tamo gdje mu je mjesto.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Energetska efikasnost</span>
+            <h2 class="heading-md text-primary-900 mb-4">Fasada kao inženjerski sistem, ne samo izgled</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Fasada je mjesto gdje se susreću arhitektura, građevinska fizika i ekonomija održavanja objekta.
+                Odluka o fasadnom sistemu utiče na potrošnju energije narednih pedeset godina.
+              </p>
+              <p>
+                Kontaktne fasade (tzv. <strong class="text-primary-900">demit fasade</strong>) su najrasprostranjenije
+                rješenje — ekonomične su i energetski efikasne, uz uslov pravilne izvedbe: kvalitetno lijepljenje i
+                tiplovanje izolacije, armiranje mrežicom i obrada detalja oko otvora. Većina problema sa ovim fasadama
+                ne dolazi od sistema, nego od loše izvedbe detalja.
+              </p>
+              <p>
+                <strong class="text-primary-900">Ventilisane fasade</strong> (kamen, keramika, HPL, lim) odvajaju
+                završnu oblogu od izolacije zračnim slojem koji odvodi vlagu. Skuplje su, ali izuzetno trajne i
+                pogodne za reprezentativne objekte. Kod njih je ključan proračun podkonstrukcije i termičkih mostova
+                na mjestima sidrenja.
+              </p>
+              <p>
+                Bez obzira na sistem, tri detalja odlučuju o kvalitetu: <strong class="text-primary-900">termički mostovi</strong>
+                (balkoni, nadvoji, sokle), <strong class="text-primary-900">zaptivenost</strong> spojeva oko stolarije, i
+                <strong class="text-primary-900">upravljanje vlagom</strong> — paropropusnost slojeva mora biti usklađena
+                da konstrukcija "diše" prema vani.
+              </p>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="card p-8 md:p-10 animate-on-scroll">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Geotehnika</span>
+            <h2 class="heading-md text-primary-900 mb-4">Temeljenje: sve počinje od tla</h2>
+            <div class="space-y-4 text-charcoal-600 leading-relaxed">
+              <p>
+                Nijedan dio konstrukcije nije toliko skriven, a toliko presudan, kao temelji. Greške u nadzemnoj
+                konstrukciji obično se vide i mogu se sanirati; greške u temeljenju otkrivaju se kasno i koštaju najviše.
+              </p>
+              <p>
+                Zato ozbiljno projektovanje počinje <strong class="text-primary-900">geomehaničkim ispitivanjem tla</strong> —
+                istražnim bušotinama ili raskopima koji daju sliku o nosivosti, slojevima i nivou podzemne vode.
+                Trošak tog elaborata je zanemariv u odnosu na rizik temeljenja "napamet".
+              </p>
+              <p>
+                Na dobrom tlu, <strong class="text-primary-900">trakasti temelji ili temeljna ploča</strong> rješavaju
+                većinu stambenih objekata. Temeljna ploča je posebno racionalna kod slabijeg ili neujednačenog tla jer
+                raspodjeljuje opterećenje i smanjuje diferencijalna slijeganja. Kod loših tla ili teških objekata
+                prelazi se na <strong class="text-primary-900">duboko temeljenje</strong> — šipove koji opterećenje
+                prenose u nosive slojeve.
+              </p>
+              <p>
+                Posebna tema na našim terenima su <strong class="text-primary-900">padine i klizišta</strong>: drenaža,
+                potporne konstrukcije i pravilno vođenje oborinskih voda često su važniji za stabilnost objekta od
+                same dimenzije temelja.
+              </p>
+            </div>
+          </article>
+
+          <!-- CTA -->
+          <div class="text-center pt-6 animate-on-scroll">
+            <p class="text-charcoal-600 mb-6">Trebate stručno mišljenje za svoj objekat? Javite nam se.</p>
+            <a href="index.html#contact" class="btn-primary">Zatražite ponudu</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-950 text-white">
+      <div class="container-custom pt-20 pb-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <!-- Brand -->
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-6">
+              <div class="p-2 bg-accent-600 rounded-lg">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xl font-bold">SM</span>
+                <span class="text-xl font-bold text-accent-400">Projekt</span>
+              </div>
+            </a>
+            <p class="text-charcoal-400 leading-relaxed mb-6">
+              Fokusirana arhitektonska i građevinska projektna praksa koja isporučuje kompletnu
+              dokumentaciju — od idejnih nacrta do izvedbenih crteža.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-sm">Sarajevo, 71 000, Bosna i Hercegovina</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span class="text-sm">+387 63 435 010</span>
+              </div>
+              <div class="flex items-center gap-3 text-charcoal-400">
+                <svg class="w-4 h-4 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span class="text-sm">sm.projektovanje@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Brzi Linkovi</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Početna</a></li>
+              <li><a href="index.html#about" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>O Nama</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Usluge</a></li>
+              <li><a href="savjeti.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Savjeti</a></li>
+              <li><a href="tekstovi.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Tekstovi</a></li>
+              <li><a href="index.html#contact" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Kontakt</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Naši Deliverables</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Idejni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Glavni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Izvedbeni projekti</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predračun</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Ostala dokumentacija</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Procjena vrijednosti nekretnina</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Budite u Toku</h4>
+            <p class="text-charcoal-400 text-sm mb-4">
+              Pretplatite se na naš newsletter za najnovije novosti o projektima i industrijske uvide.
+            </p>
+            <form class="flex gap-2" onsubmit="event.preventDefault();">
+              <input
+                type="email"
+                placeholder="Vaš email"
+                class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-charcoal-500 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent"
+              />
+              <button type="submit" class="px-4 py-2.5 bg-accent-600 text-white text-sm font-medium rounded-lg hover:bg-accent-700 transition-colors">Prijavi se</button>
+            </form>
+            <div class="mt-8">
+              <h5 class="text-sm font-medium mb-4">Pratite Nas</h5>
+              <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Facebook"><span class="text-xs font-bold">F</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="LinkedIn"><span class="text-xs font-bold">L</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Instagram"><span class="text-xs font-bold">I</span></a>
+                <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="YouTube"><span class="text-xs font-bold">Y</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/10 pt-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadržana.</p>
+            <div class="flex items-center gap-6 text-sm text-charcoal-500">
+              <a href="#" class="hover:text-accent-400 transition-colors">Politika Privatnosti</a>
+              <a href="#" class="hover:text-accent-400 transition-colors">Uslovi Korištenja</a>
+            </div>
+            <button id="scroll-top-btn" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-charcoal-400 hover:bg-accent-600 hover:text-white hover:border-accent-600 transition-all" aria-label="Scroll to top">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/savjeti.js"></script>
+  </body>
+</html>
