@@ -5,14 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Savjeti | SM Projekt</title>
-    <meta name="description" content="Savjeti i vodiči o projektovanju — od idejnog do izvedbenog projekta, put do građevinske dozvole i praktični savjeti za investitore." />
+    <meta name="description" content="Savjeti i vodici o projektovanju — od idejnog do izvedbenog projekta, put do građevinske dozvole i praktični savjeti za investitore." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body class="antialiased">
-    <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <!-- Navbar - starts with white/light background for subpages -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-lg">
       <div class="container-custom">
         <div class="flex items-center justify-between h-20">
           <!-- Logo -->
@@ -21,24 +21,24 @@
               <span class="text-white font-bold text-lg">SM</span>
             </div>
             <div>
-              <span id="logo-text" class="font-bold text-lg leading-tight text-white">SM Projekt</span>
-              <span id="logo-subtext" class="block text-xs leading-tight text-white/70">Arhitektura i Građevinarstvo</span>
+              <span id="logo-text" class="font-bold text-lg leading-tight text-primary-900">SM Projekt</span>
+              <span id="logo-subtext" class="block text-xs leading-tight text-charcoal-500">Arhitektura i Gradjevinarstvo</span>
             </div>
           </a>
 
           <!-- Desktop nav -->
           <div class="hidden lg:flex items-center gap-8">
-            <a href="index.html#home" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Početna</a>
-            <a href="index.html#about" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">O nama</a>
-            <a href="index.html#services" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Usluge</a>
-            <a href="index.html#contact" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Kontakt</a>
-            <a href="savjeti.html" class="nav-link text-sm font-semibold text-accent-300 hover:text-accent-200 transition-colors">Savjeti</a>
-            <a href="tekstovi.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Tekstovi</a>
+            <a href="index.html#home" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Pocetna</a>
+            <a href="index.html#about" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">O nama</a>
+            <a href="index.html#services" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Usluge</a>
+            <a href="index.html#contact" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Kontakt</a>
+            <a href="savjeti.html" class="nav-link text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors">Savjeti</a>
+            <a href="tekstovi.html" class="nav-link text-sm font-medium text-charcoal-600 hover:text-accent-600 transition-colors">Tekstovi</a>
             <a href="index.html#contact" class="btn-primary !py-2.5 !px-5 text-sm">Zatražite ponudu</a>
           </div>
 
           <!-- Mobile toggle -->
-          <button id="mobile-menu-btn" class="lg:hidden p-2 text-white">
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-charcoal-700">
             <svg class="w-6 h-6 menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -51,7 +51,7 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-charcoal-100 rounded-b-2xl shadow-xl">
           <div class="py-4 px-4 space-y-1">
-            <a href="index.html#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Početna</a>
+            <a href="index.html#home" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Pocetna</a>
             <a href="index.html#about" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">O nama</a>
             <a href="index.html#services" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Usluge</a>
             <a href="index.html#contact" class="mobile-nav-link block px-4 py-3 text-charcoal-700 hover:bg-accent-50 hover:text-accent-600 rounded-lg transition-colors font-medium">Kontakt</a>
@@ -64,133 +64,147 @@
     </nav>
 
     <!-- Hero -->
-    <section class="relative bg-primary-900 pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+    <section class="relative bg-primary-900 pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden min-h-[320px] flex items-center">
       <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+      <!-- Decorative elements -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-80 h-80 bg-primary-400/10 rounded-full blur-3xl"></div>
       <div class="container-custom relative z-10">
-        <div class="max-w-3xl">
-          <div class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
             <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
-            <span class="text-accent-300 text-sm font-medium">Savjeti i Vodiči</span>
+            <span class="text-accent-300 text-sm font-medium">Savjeti i Vodici</span>
           </div>
-          <h1 class="heading-xl text-white mb-6">Savjeti o projektovanju</h1>
-          <p class="text-lg text-charcoal-300 leading-relaxed">
-            Praktični vodiči i uvidi iz naše prakse — od razlike između idejnog, glavnog i izvedbenog projekta,
-            preko puta do građevinske dozvole, do savjeta koji investitorima štede vrijeme i novac.
+          <h1 class="heading-xl text-white mb-4">Savjeti o projektovanju</h1>
+          <p class="text-lg text-charcoal-300 leading-relaxed max-w-2xl mx-auto">
+            Prakticni vodici i uvidi iz nase prakse — od razlike izmedu idejnog, glavnog i izvedbenog projekta,
+            preko puta do gradjevinske dozvole, do savjeta koji investitorima stede vrijeme i novac.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Articles -->
-    <section class="section-padding bg-white">
+    <section class="section-padding bg-charcoal-50">
       <div class="container-custom">
-        <div class="max-w-4xl mx-auto space-y-10">
+        <div class="max-w-4xl mx-auto space-y-8">
 
           <!-- Article 1 -->
           <article class="card p-8 md:p-10 animate-on-scroll">
             <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Osnove projektovanja</span>
-            <h2 class="heading-md text-primary-900 mb-4">Idejni, glavni i izvedbeni projekat — u čemu je razlika?</h2>
+            <h2 class="heading-md text-primary-900 mb-4">Idejni, glavni i izvedbeni projekat — u cemu je razlika?</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
               <p>
-                Jedno od najčešćih pitanja investitora jeste zašto projekat prolazi kroz više faza.
-                Svaka faza ima svoju svrhu i nivo detaljnosti, i preskakanje faze najčešće se kasnije skupo plati.
+                Jedno od najcescih pitanja investitora jeste zasto projekat prolazi kroz vise faza.
+                Svaka faza ima svoju svrhu i nivo detaljnosti, i preskakanje faze najcesce se kasnije skupo plati.
               </p>
               <p>
-                <strong class="text-primary-900">Idejni projekat</strong> definiše osnovnu koncepciju objekta —
-                gabarite, spratnost, orijentaciju i raspored prostorija. To je faza u kojoj se donose ključne
+                <strong class="text-primary-900">Idejni projekat</strong> definise osnovnu koncepciju objekta —
+                gabarite, spratnost, orijentaciju i raspored prostorija. To je faza u kojoj se donose kljucne
                 odluke o izgledu i funkciji, i osnova je za dogovor sa investitorom prije ulaska u detalje.
               </p>
               <p>
-                <strong class="text-primary-900">Glavni projekat</strong> je najvažniji dio dokumentacije jer se na
-                osnovu njega izdaje građevinska dozvola. Obuhvata arhitektonsko-građevinski dio, konstrukciju,
-                instalacije i sve proračune. Ovdje objekat dobija svoju tehničku definiciju.
+                <strong class="text-primary-900">Glavni projekat</strong> je najvazniji dio dokumentacije jer se na
+                osnovu njega izdaje gradjevinska dozvola. Obuhvata arhitektonsko-gradjevinski dio, konstrukciju,
+                instalacije i sve proracune. Ovdje objekat dobija svoju tehnicku definiciju.
               </p>
               <p>
                 <strong class="text-primary-900">Izvedbeni projekat</strong> je razrada glavnog projekta do nivoa
                 detalja potrebnog za samu gradnju — detalji spojeva, armature, rasporeda i specifikacija.
-                Kvalitetan izvedbeni projekat smanjuje improvizaciju na gradilištu i greške u izvođenju.
+                Kvalitetan izvedbeni projekat smanjuje improvizaciju na gradilistu i greske u izvodjenu.
               </p>
-              <p>
-                <a href="tekstovi.html" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">→ Pročitajte detaljan tekst: koja je razlika i šta vam zaista treba</a>
-              </p>
+              <div class="pt-4">
+                <a href="tekstovi.html#projektna-dokumentacija" class="inline-flex items-center text-accent-600 font-medium hover:text-accent-700 transition-colors group">
+                  Procitajte detaljan tekst
+                  <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
 
           <!-- Article 2 -->
           <article class="card p-8 md:p-10 animate-on-scroll">
             <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Dozvole i procedura</span>
-            <h2 class="heading-md text-primary-900 mb-4">Put do građevinske dozvole</h2>
+            <h2 class="heading-md text-primary-900 mb-4">Put do gradjevinske dozvole</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
               <p>
-                Prije nego što se počne graditi, potrebno je proći kroz nekoliko koraka. Redoslijed i tačni nazivi
-                dokumenata mogu se razlikovati od općine do općine i od kantona do kantona, ali logika je svugdje slična.
+                Prije nego sto se pocne graditi, potrebno je proci kroz nekoliko koraka. Redoslijed i tacni nazivi
+                dokumenata mogu se razlikovati od opcine do opcine i od kantona do kantona, ali logika je svugdje slicna.
               </p>
               <p>
-                Prvo se pribavlja <strong class="text-primary-900">lokacijska informacija ili urbanistička saglasnost</strong>,
-                koja definiše šta se i pod kojim uslovima može graditi na određenoj parceli. Na osnovu tih uslova izrađuje se
+                Prvo se pribavlja <strong class="text-primary-900">lokacijska informacija ili urbanisticka saglasnost</strong>,
+                koja definise sta se i pod kojim uslovima moze graditi na odredenoj parceli. Na osnovu tih uslova izrađuje se
                 <strong class="text-primary-900">glavni projekat</strong>, koji zatim prolazi reviziju.
               </p>
               <p>
-                Sa kompletnom dokumentacijom podnosi se zahtjev za <strong class="text-primary-900">građevinsku dozvolu</strong>.
-                Nakon završetka gradnje, za korištenje objekta potrebna je i <strong class="text-primary-900">upotrebna dozvola</strong>,
-                kojom se potvrđuje da je objekat izveden u skladu sa projektom.
+                Sa kompletnom dokumentacijom podnosi se zahtjev za <strong class="text-primary-900">gradjevinsku dozvolu</strong>.
+                Nakon zavrsetka gradnje, za koristenje objekta potrebna je i <strong class="text-primary-900">upotrebna dozvola</strong>,
+                kojom se potvrduje da je objekat izveden u skladu sa projektom.
               </p>
               <p class="text-sm text-charcoal-500 border-l-2 border-accent-500 pl-4">
-                Napomena: procedure u FBiH nisu jedinstvene na cijeloj teritoriji — nadležnosti i tačni zahtjevi razlikuju
-                se po kantonima i općinama. Zato je korisno prije početka provjeriti uslove kod nadležne službe ili nas pitati.
+                Napomena: procedure u FBiH nisu jedinstvene na cijeloj teritoriji — nadleznosti i tacni zahtjevi razlikuju
+                se po kantonima i opcinama. Zato je korisno prije pocetka provjeriti uslove kod nadlezne sluzbe ili nas pitati.
               </p>
-              <p>
-                <a href="tekstovi.html" class="text-accent-600 font-medium hover:text-accent-700 transition-colors">→ Pročitajte naš detaljni vodič korak po korak do građevinske dozvole u FBiH</a>
-              </p>
+              <div class="pt-4">
+                <a href="tekstovi.html#vodic-dozvole" class="inline-flex items-center text-accent-600 font-medium hover:text-accent-700 transition-colors group">
+                  Procitajte nas detaljni vodic korak po korak
+                  <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </article>
 
           <!-- Article 3 -->
           <article class="card p-8 md:p-10 animate-on-scroll">
             <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Za investitore</span>
-            <h2 class="heading-md text-primary-900 mb-4">Zašto je dobra projektna dokumentacija isplativa investicija</h2>
+            <h2 class="heading-md text-primary-900 mb-4">Zasto je dobra projektna dokumentacija isplativa investicija</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
               <p>
-                Postoji iskušenje da se na projektovanju uštedi jer se čini kao „papirologija" prije prave gradnje.
-                U praksi je najčešće obrnuto — kvalitetan projekat je ono što štiti budžet investicije.
+                Postoji iskusenje da se na projektovanju ustedi jer se cini kao „papirologija" prije prave gradnje.
+                U praksi je najcesce obrnuto — kvalitetan projekat je ono sto stiti budzet investicije.
               </p>
               <p>
-                Kompletna i usklađena dokumentacija znači precizan predmjer i predračun, manje nepredviđenih radova i
-                realniju procjenu troškova prije nego što se izlije prvi beton. Nejasnoće u projektu na gradilištu se
-                rješavaju improvizacijom, a improvizacija gotovo uvijek košta više od dobro odrađenog detalja na papiru.
+                Kompletna i uskladena dokumentacija znaci precizan predmjer i predracun, manje nepredvidenih radova i
+                realniju procjenu troskova prije nego sto se izlije prvi beton. Nejasnoce u projektu na gradilistu se
+                rjesavaju improvizacijom, a improvizacija gotovo uvijek kosta vise od dobro odrađenog detalja na papiru.
               </p>
               <p>
-                Uz to, usklađenost arhitekture, konstrukcije i instalacija u fazi projekta sprječava sukobe koji se
-                inače otkrivaju tek u toku gradnje — kada su ispravke najskuplje.
+                Uz to, uskladenoast arhitekture, konstrukcije i instalacija u fazi projekta sprjecava sukobe koji se
+                inace otkrivaju tek u toku gradnje — kada su ispravke najskuplje.
               </p>
             </div>
           </article>
 
           <!-- Article 4 -->
           <article class="card p-8 md:p-10 animate-on-scroll">
-            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Praktični vodič</span>
+            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-accent-600 mb-3">Prakticni vodic</span>
             <h2 class="heading-md text-primary-900 mb-4">Kako se pripremiti za projektovanje objekta</h2>
             <div class="space-y-4 text-charcoal-600 leading-relaxed">
               <p>
-                Što je investitor bolje pripremljen, to projektovanje ide brže i sa manje izmjena. Prije prvog sastanka
+                Sto je investitor bolje pripremljen, to projektovanje ide brze i sa manje izmjena. Prije prvog sastanka
                 korisno je razmisliti o nekoliko stvari:
               </p>
               <ul class="space-y-3">
-                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Namjena i program:</strong> koliko prostorija, koja namjena, okvirna kvadratura i broj etaža.</span></li>
-                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Parcela:</strong> vlasnički list, kopija katastarskog plana i, ako postoji, ranija dokumentacija o lokaciji.</span></li>
-                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Budžet:</strong> realan okvir ulaganja pomaže da se koncept od početka usmjeri u izvodljivom pravcu.</span></li>
-                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Rokovi:</strong> željeni početak gradnje, kako bismo faze dokumentacije uskladili sa vašim planom.</span></li>
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Namjena i program:</strong> koliko prostorija, koja namjena, okvirna kvadratura i broj etaza.</span></li>
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Parcela:</strong> vlasnicki list, kopija katastarskog plana i, ako postoji, ranija dokumentacija o lokaciji.</span></li>
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Budzet:</strong> realan okvir ulaganja pomaze da se koncept od pocetka usmjeri u izvodljivom pravcu.</span></li>
+                <li class="flex gap-3"><span class="w-1.5 h-1.5 mt-2.5 bg-accent-500 rounded-full shrink-0"></span><span><strong class="text-primary-900">Rokovi:</strong> zeljeni pocetak gradnje, kako bismo faze dokumentacije uskladili sa vasim planom.</span></li>
               </ul>
               <p>
-                Ne morate imati sve odgovore unaprijed — dio ovih odluka donosimo zajedno. Ali i gruba slika na početku
-                značajno ubrzava cijeli proces.
+                Ne morate imati sve odgovore unaprijed — dio ovih odluka donosimo zajedno. Ali i gruba slika na pocetku
+                znacajno ubrzava cijeli proces.
               </p>
             </div>
           </article>
 
           <!-- CTA -->
-          <div class="text-center pt-6 animate-on-scroll">
-            <p class="text-charcoal-600 mb-6">Imate pitanje o svom projektu? Rado ćemo pomoći.</p>
+          <div class="bg-primary-900 rounded-2xl p-8 md:p-10 text-center animate-on-scroll">
+            <h3 class="text-2xl font-bold text-white mb-3">Imate pitanje o svom projektu?</h3>
+            <p class="text-charcoal-300 mb-6 max-w-xl mx-auto">Rado cemo pomoci. Kontaktirajte nas za besplatnu pocetnu konsultaciju.</p>
             <a href="index.html#contact" class="btn-primary">Zatražite ponudu</a>
           </div>
 
@@ -216,8 +230,8 @@
               </div>
             </a>
             <p class="text-charcoal-400 leading-relaxed mb-6">
-              Fokusirana arhitektonska i građevinska projektna praksa koja isporučuje kompletnu
-              dokumentaciju — od idejnih nacrta do izvedbenih crteža.
+              Fokusirana arhitektonska i gradjevinska projektna praksa koja isporucuje kompletnu
+              dokumentaciju — od idejnih nacrta do izvedbenih crteza.
             </p>
             <div class="space-y-3">
               <div class="flex items-center gap-3 text-charcoal-400">
@@ -246,7 +260,7 @@
           <div>
             <h4 class="text-lg font-semibold mb-6">Brzi Linkovi</h4>
             <ul class="space-y-3">
-              <li><a href="index.html#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Početna</a></li>
+              <li><a href="index.html#home" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Pocetna</a></li>
               <li><a href="index.html#about" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>O Nama</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Usluge</a></li>
               <li><a href="savjeti.html" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Savjeti</a></li>
@@ -257,12 +271,12 @@
 
           <!-- Services -->
           <div>
-            <h4 class="text-lg font-semibold mb-6">Naši Deliverables</h4>
+            <h4 class="text-lg font-semibold mb-6">Nasi Deliverables</h4>
             <ul class="space-y-3">
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Idejni projekti</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Glavni projekti</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Izvedbeni projekti</a></li>
-              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predračun</a></li>
+              <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Predmjer i predracun</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Ostala dokumentacija</a></li>
               <li><a href="index.html#services" class="text-charcoal-400 hover:text-accent-400 transition-colors text-sm inline-flex items-center gap-2"><span class="w-1 h-1 bg-accent-500/50 rounded-full"></span>Procjena vrijednosti nekretnina</a></li>
             </ul>
@@ -272,12 +286,12 @@
           <div>
             <h4 class="text-lg font-semibold mb-6">Budite u Toku</h4>
             <p class="text-charcoal-400 text-sm mb-4">
-              Pretplatite se na naš newsletter za najnovije novosti o projektima i industrijske uvide.
+              Pretplatite se na nas newsletter za najnovije novosti o projektima i industrijske uvide.
             </p>
             <form class="flex gap-2" onsubmit="event.preventDefault();">
               <input
                 type="email"
-                placeholder="Vaš email"
+                placeholder="Vas email"
                 class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-charcoal-500 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent"
               />
               <button type="submit" class="px-4 py-2.5 bg-accent-600 text-white text-sm font-medium rounded-lg hover:bg-accent-700 transition-colors">Prijavi se</button>
@@ -297,7 +311,7 @@
         <!-- Divider -->
         <div class="border-t border-white/10 pt-8">
           <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadržana.</p>
+            <p class="text-charcoal-500 text-sm">&copy; <span id="current-year"></span> SM Projekt. Sva prava zadrzana.</p>
             <div class="flex items-center gap-6 text-sm text-charcoal-500">
               <a href="#" class="hover:text-accent-400 transition-colors">Politika Privatnosti</a>
               <a href="#" class="hover:text-accent-400 transition-colors">Uslovi Korištenja</a>
