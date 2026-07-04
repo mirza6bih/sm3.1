@@ -73,9 +73,20 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-left').forEach(el => {
-  observer.observe(el);
-});
+// Check all animated elements immediately for those already in view
+function checkAnimatedElements() {
+  document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-left').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+    if (isInViewport) {
+      el.classList.add('is-visible');
+    }
+    observer.observe(el);
+  });
+}
+
+// Run on load
+checkAnimatedElements();
 
 // Scroll to top button
 const scrollTopBtn = document.getElementById('scroll-top-btn');
